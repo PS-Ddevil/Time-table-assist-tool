@@ -1,2 +1,2 @@
 # Time-table-assist-tool
-Project under CS308
+Project under CS308 - Large Applications Practicum
