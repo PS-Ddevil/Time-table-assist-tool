@@ -37,3 +37,21 @@ Selecting more than one occasions for one slot in a day
 Error notice view
 
 .. image:: img/Tut2_2.png
+
+Working in GUI #2
+-----------------
+
+.. image:: img/Tut3_0.png
+
+Anamolies Management:
+---------------------
+
+Case 1
+^^^^^^
+
+.. image:: img/Tut3_1.png
+
+Case 2
+^^^^^^
+
+.. image:: img/Tut3_2.png
