@@ -1,5 +1,5 @@
 # Time-table-assist-tool
-It is project under CS308 - Large Applications Practicum course under mentor Siddartha sharma. </br>
+It is group project under CS308 - Large Applications Practicum course under mentor Dr. Siddartha sharma. </br>
 It support checking of conflict arise due to slot,classroom and faculty while making time table of IIT Mandi.
 
 # Contributer
