@@ -4,7 +4,7 @@ It support checking of conflict arise due to slot,classroom and faculty while ma
 
 # Contributer
 Purushottam Sinha (B17053@students.iitmandi.ac.in) 
-Deepak Kumar (B17039@students.iitmandi.ac.in) [@deepakjnv880]
+Deepak Kumar (B17039@students.iitmandi.ac.in) [@deepakjnv880](https://github.com/deepakjnv880)
 Vinay Kumar (B17070@students.iitmandi.ac.in)
 Roshan Sharma (B17054@students.iitmandi.ac.in)
 
