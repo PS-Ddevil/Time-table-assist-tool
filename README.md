@@ -13,12 +13,13 @@ Go to the folder and run below command : -
 * Either work according to the given issues or raise new issue
 * Make changes and commit them to user local repository.
 * Make a pull request with the details about the changes.
+* Pull request will be merged once being checked by the moderator.
 
-## Documentation
+# Documentation
 Refer: https://time-table-assist-tool.readthedocs.io/
 
 # Contributer
-[Purushottam Sinha](https://github.com/PS-Ddevil) 
-[Deepak Kumar](https://github.com/deepakjnv880) 
-[Vinay Kumar](https://github.com/vinayskywalker)
-[Roshan Sharma](https://github.com/roshan21097) 
+[Purushottam Sinha](https://github.com/PS-Ddevil)  
+[Deepak Kumar](https://github.com/deepakjnv880)  
+[Vinay Kumar](https://github.com/vinayskywalker)  
+[Roshan Sharma](https://github.com/roshan21097)
