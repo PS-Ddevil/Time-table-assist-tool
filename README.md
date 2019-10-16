@@ -3,10 +3,10 @@ It is project under CS308 - Large Applications Practicum course. </br>
 It support checking of conflict arise due to slot,classroom and faculty while making time table.
 
 # Contributer
-Purushottam Sinha (B17053@students.iitmandi.ac.in) 
-Deepak Kumar (B17039@students.iitmandi.ac.in) [@deepakjnv880](https://github.com/deepakjnv880)
-Vinay Kumar (B17070@students.iitmandi.ac.in)
-Roshan Sharma (B17054@students.iitmandi.ac.in)
+[Purushottam Sinha](https://github.com/PS-Ddevil)  </br>
+[Deepak Kumar](https://github.com/deepakjnv880) </br>
+[Vinay Kumar](https://github.com/vinayskywalker)  </br>
+[Roshan Sharma](https://github.com/deepakjnv880) 
 
 
 # How to run
