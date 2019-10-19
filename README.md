@@ -7,6 +7,8 @@ Go to the folder and run below command : -
 
     sudo apt-get install python3-tk
     python3 main.py
+    sudo apt-get install sqlite3
+    sudo apt-get install sqlitebrowser
 
 # Want to contibute
 * Fork the repository into ur account.

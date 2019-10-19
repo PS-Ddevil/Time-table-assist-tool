@@ -1,5 +1,17 @@
 from tkinter import *
 from tkinter import messagebox
+import sqlite3
+db=sqlite3.connect('Time table')
+cursor=db.cursor();
+cursor.execute('create table if not exists subject(subject_code text primary key,subject_name text,slot_id text,FOREIGN KEY(slot_id) REFERENCES slot(slot_id))')
+db.commit();
+cursor.execute('create table if not exists slot(slot_id text primary key,faculty_id integer,FOREIGN KEY(faculty_id) REFERENCES faculty(facluty_id) )')
+db.commit();
+cursor.execute('create table if not exists faculty(faculty_id integer primary key,faculty_name text)')
+db.commit();
+# cursor.execute('insert into faculty VALUES (9,"dillep ad")');
+# db.commit();
+print('All table created')
 master = Tk() 
 master.title("Time table assist tool")
 Label(master, text='Dummy').grid(row=0) 
