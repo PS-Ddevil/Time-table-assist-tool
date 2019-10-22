@@ -13,7 +13,8 @@ Installation
    :maxdepth: 3
    :caption: Content:
 
-   demo
+   user_manual
+   developer
    contributors
-   license
    help
+   license

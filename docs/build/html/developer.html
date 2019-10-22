@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Developer Manual &#8212; time-table-assist-tool 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributors" href="contributors.html" />
+    <link rel="prev" title="User Manual" href="user_manual.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="developer-manual">
+<h1><strong>Developer Manual</strong><a class="headerlink" href="#developer-manual" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="software-requirements">
+<h2><em>Software Requirements</em><a class="headerlink" href="#software-requirements" title="Permalink to this headline">¶</a></h2>
+<p>The following softwares are needed to be installed:</p>
+<ul class="simple">
+<li><p>Python3</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>tkinter</p></li>
+<li><p>openepyxl</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Sphinx</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">python3</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">tk</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">openepyxl</span>
+</pre></div>
+</div>
+<p>Sphinx installation in needed in case you want to work on the documentation</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span>
+</pre></div>
+</div>
+<p>Note that to compile the changes made to the documentation you have to move to the docs folder and compile your changes</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">docs</span><span class="o">/</span>
+<span class="n">make</span> <span class="n">html</span>
+</pre></div>
+</div>
+<p>The file will be changes in the <em>build/html</em> folder</p>
+<p>For more information on working with sphinx you can refer:
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html">https://www.sphinx-doc.org/en/master/index.html</a></p>
+</div>
+<div class="section" id="working-on-the-project">
+<h2><em>Working on the Project</em><a class="headerlink" href="#working-on-the-project" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Clone the Repository</p></li>
+<li><p>Working on any of the given modules:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>GUI#1</p></li>
+<li><p>GUI#2</p></li>
+<li><p>Documentation</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="clone-the-repository">
+<h3>Clone the Repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><dl class="simple">
+<dt>Got to the given link</dt><dd><p><a class="reference external" href="https://github.com/PS-Ddevil/Time-table-assist-tool">https://github.com/PS-Ddevil/Time-table-assist-tool</a></p>
+</dd>
+</dl>
+</li>
+<li><p>Click on the fork option to make a copy of the repo on your profile</p></li>
+</ol>
+<a class="reference internal image-reference" href="_images/Fork1.png"><img alt="_images/Fork1.png" class="align-center" src="_images/Fork1.png" style="width: 80%;" /></a>
+<ol class="arabic simple" start="3">
+<li><p>Go to a desired location on you local system(PC).</p></li>
+<li><p>Open the terminal by pressing <em>Alt+Ctrl+T</em></p></li>
+<li><p>Run the command</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/&lt;</span><span class="n">git</span><span class="o">-</span><span class="n">username</span><span class="o">&gt;/</span><span class="n">Time</span><span class="o">-</span><span class="n">table</span><span class="o">-</span><span class="n">assist</span><span class="o">-</span><span class="n">tool</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>Where &lt;git-username&gt; refers to the Username of your Github Profile</p>
+</div>
+<div class="section" id="working-on-gui-1">
+<h3>Working on GUI#1<a class="headerlink" href="#working-on-gui-1" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>Move to the cloned the folder</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">Time</span><span class="o">-</span><span class="n">table</span><span class="o">-</span><span class="n">assist</span><span class="o">-</span><span class="n">tool</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Open the <em>prob1.py</em> file.</p>
+<blockquote>
+<div><p>Open the <em>prob1.py</em> file in any text editor of your choice</p>
+<p>For Sublime Editor:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">subl</span> <span class="n">prob1</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>For Atom Editor:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">atom</span> <span class="n">prob1</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>For Visual Studio Code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="n">prob1</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>There are three broad sections in the code</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>GUI Development</p></li>
+<li><p>Slot management algorithm section</p></li>
+<li><p>Slot rendering section</p></li>
+</ul>
+</div></blockquote>
+<p>SECTION 1:</p>
+<a class="reference internal image-reference" href="_images/dev_GUI1_1.png"><img alt="_images/dev_GUI1_1.png" class="align-center" src="_images/dev_GUI1_1.png" style="width: 623.4px; height: 296.4px;" /></a>
+<p>SECTION 2:</p>
+<a class="reference internal image-reference" href="_images/dev_GUI1_2.png"><img alt="_images/dev_GUI1_2.png" class="align-center" src="_images/dev_GUI1_2.png" style="width: 625.1999999999999px; height: 350.4px;" /></a>
+<p>SECTION 3:</p>
+<a class="reference internal image-reference" href="_images/dev_GUI1_3.png"><img alt="_images/dev_GUI1_3.png" class="align-center" src="_images/dev_GUI1_3.png" style="width: 625.1999999999999px; height: 223.2px;" /></a>
+<ol class="arabic simple" start="4">
+<li><p>Modify the code accordingly and commit changes when necessary.</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">time-table-assist-tool</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Content:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="user_manual.html"><strong>User Manual</strong></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Developer Manual</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#software-requirements"><em>Software Requirements</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#working-on-the-project"><em>Working on the Project</em></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#clone-the-repository">Clone the Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#working-on-gui-1">Working on GUI#1</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Need Help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html#contact">Contact</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="user_manual.html" title="previous chapter"><strong>User Manual</strong></a></li>
+      <li>Next: <a href="contributors.html" title="next chapter">Contributors</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Purushottam Sinha.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/developer.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
