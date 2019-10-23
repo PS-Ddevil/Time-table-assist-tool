@@ -5,10 +5,10 @@ import openpyxl
 from tkinter import filedialog
 
 file_path = ""
-master = Tk()
-master.title("SLot Selection")
-master.geometry("500x500+300+300")
-frame1=Frame(master,bd=10,height=500,padx=10,pady=10,width=1500)
+master2 = Tk()
+master2.title("SLot Selection")
+master2.geometry("500x500+300+300")
+frame1=Frame(master2,bd=10,height=500,padx=10,pady=10,width=1500)
 frame1.pack()
 
 v = StringVar(frame1)
@@ -60,7 +60,7 @@ def ConstraintCheck(var,i,name,focus,*args):
         
     wb.save(str(os.path.join(file_path, v.get())))
 
-frame2=Frame(master,bd=10,height=500,padx=10,pady=10,width=1500)
+frame2=Frame(master2,bd=10,height=500,padx=10,pady=10,width=1500)
 frame2.pack()
 def DisplayGUI(*args):
     global file_path
