@@ -9,6 +9,10 @@ Go to the folder and run below command : -
     python3 main.py
     sudo apt-get install sqlite3
     sudo apt-get install sqlitebrowser
+    pip3 install xlwt
+    pip3 install xlsxwriter
+    pip3 install xlrd
+    pip3 install openpyxl
 
 # Want to contibute
 * Fork the repository into ur account.

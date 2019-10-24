@@ -1,6 +1,9 @@
 from tkinter import *
 from tkinter import messagebox
-
+import save as s
+import redo as r
+import initialize_excel_files
+initialize_excel_files.slot()
 master = Tk()
 master.title("Time table assist tool")
 
@@ -60,4 +63,13 @@ for i in range(1,6):
         	w.grid(row=i,column=j)
         cr_vars[z].trace("w", lambda *_, var=z, row_val=i: update_options(var, row_val))
         z = z + 1
+
+Label(master, text='\n').grid(row=7)
+button = Button(master, text='Redo',activeforeground='blue',activebackground='red', command=lambda: r.redo_in_excel_sheet(cr_vars))
+button.grid(row=8,column=3)
+button = Button(master, text='Save',activeforeground='blue',activebackground='red', command=lambda: s.save_in_excel_sheet(old_var))
+button.grid(row=8,column=5)
+# print(len(cr_vars))
+# print(old_var)
+
 mainloop()
