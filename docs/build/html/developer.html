@@ -86,10 +86,11 @@
 <li><p>Documentation</p></li>
 </ul>
 </div></blockquote>
-<div class="section" id="clone-the-repository">
-<h3>Clone the Repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="getting-started">
+<h3>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
 <p>These are the basic steps needed to start developing on the application.</p>
 <ol class="arabic simple">
+<li><p>Create a Github Account.</p></li>
 <li><dl class="simple">
 <dt>Got to the given link</dt><dd><p><a class="reference external" href="https://github.com/PS-Ddevil/Time-table-assist-tool">https://github.com/PS-Ddevil/Time-table-assist-tool</a></p>
 </dd>
@@ -98,7 +99,7 @@
 <li><p>Click on the fork option to make a copy of the repo on your profile</p></li>
 </ol>
 <a class="reference internal image-reference" href="_images/Fork1.png"><img alt="_images/Fork1.png" class="align-center" src="_images/Fork1.png" style="width: 80%;" /></a>
-<ol class="arabic simple" start="3">
+<ol class="arabic simple" start="4">
 <li><p>Go to a desired location on you local system(PC).</p></li>
 <li><p>Open the terminal by pressing <em>Alt+Ctrl+T</em></p></li>
 <li><p>Run the command</p></li>
@@ -106,7 +107,35 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/&lt;</span><span class="n">git</span><span class="o">-</span><span class="n">username</span><span class="o">&gt;/</span><span class="n">Time</span><span class="o">-</span><span class="n">table</span><span class="o">-</span><span class="n">assist</span><span class="o">-</span><span class="n">tool</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
-<p>Where &lt;git-username&gt; refers to the Username of your Github Profile</p>
+<p>where &lt;git-username&gt; refers to the Username of your Github profile</p>
+<ol class="arabic simple" start="7">
+<li><p>Check out the branch to work on. By default the master branch in selected.</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">v2</span><span class="o">.</span><span class="mi">0</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="8">
+<li><p>To create a new branch to work on.</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="o">-</span><span class="n">b</span> <span class="n">branch</span><span class="o">-</span><span class="n">name</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="9">
+<li><p>Incase you fix some issue you can commit the changes.</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;Some XYZ changes&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="10">
+<li><p>Push changes in the branch to your forked reposiory on the Github.</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">branch</span><span class="o">-</span><span class="n">name</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="11">
+<li><p>Submit a pull request from your branch to the respective branch (master or X.Y).</p></li>
+<li><p>Wait for a core developer to review your changes.</p></li>
+</ol>
 </div>
 <div class="section" id="working-on-gui-1">
 <h3>Working on GUI#1<a class="headerlink" href="#working-on-gui-1" title="Permalink to this headline">¶</a></h3>
@@ -282,8 +311,8 @@
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="brach-model">
-<h2><em>Brach Model</em><a class="headerlink" href="#brach-model" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="branch-model">
+<h2><em>Branch Model</em><a class="headerlink" href="#branch-model" title="Permalink to this headline">¶</a></h2>
 <p>The branch are made when a new major portion is added into the application. Only minor changes and bug removal in the branch would be appretiated.</p>
 <div class="section" id="conventions">
 <h3>Conventions<a class="headerlink" href="#conventions" title="Permalink to this headline">¶</a></h3>
@@ -327,19 +356,20 @@
 <li class="toctree-l2"><a class="reference internal" href="#software-requirements"><em>Software Requirements</em></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bug-reports-and-feature-requests"><em>Bug Reports and Feature Requests</em></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#contributing-on-the-project"><em>Contributing on the Project</em></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#clone-the-repository">Clone the Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting Started</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#working-on-gui-1">Working on GUI#1</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#working-on-gui-2">Working on GUI#2</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#core-developers"><em>Core Developers</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#brach-model"><em>Brach Model</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#branch-model"><em>Branch Model</em></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#conventions">Conventions</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change.html">Change Log</a></li>
 <li class="toctree-l1"><a class="reference internal" href="help.html">Need Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html#contact">Contact</a></li>

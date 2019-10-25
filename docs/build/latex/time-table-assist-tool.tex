@@ -344,8 +344,17 @@ For more information on working with sphinx you can refer:
 \sphinxurl{https://www.sphinx-doc.org/en/master/index.html}
 
 
-\subsection{\sphinxstyleemphasis{Working on the Project}}
-\label{\detokenize{developer:working-on-the-project}}\begin{enumerate}
+\subsection{\sphinxstyleemphasis{Bug Reports and Feature Requests}}
+\label{\detokenize{developer:bug-reports-and-feature-requests}}
+If you have encontered a problem with the application or have an idea for a new feature, please submit it as an issue tracker on Github.
+
+After getting approval from a moderator, you may make a pull requests to the repository.
+
+
+\subsection{\sphinxstyleemphasis{Contributing on the Project}}
+\label{\detokenize{developer:contributing-on-the-project}}
+The recommended way for new contributors to submit code to Sphinx is to fork the repository on GitHub and then submit a pull request after committing the changes. The pull request will then need to be approved by one of the core developers before it is merged into the main repository.
+\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 Clone the Repository
@@ -367,9 +376,14 @@ Documentation
 \end{itemize}
 
 
-\subsubsection{Clone the Repository}
-\label{\detokenize{developer:clone-the-repository}}\begin{enumerate}
+\subsubsection{Getting Started}
+\label{\detokenize{developer:getting-started}}
+These are the basic steps needed to start developing on the application.
+\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+Create a Github Account.
+
 \item {} \begin{description}
 \item[{Got to the given link}] \leavevmode
 \sphinxurl{https://github.com/PS-Ddevil/Time-table-assist-tool}
@@ -384,7 +398,7 @@ Click on the fork option to make a copy of the repo on your profile
 \noindent{\hspace*{\fill}\sphinxincludegraphics[width=0.800\linewidth]{{Fork1}.png}\hspace*{\fill}}
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\setcounter{enumi}{2}
+\setcounter{enumi}{3}
 \item {} 
 Go to a desired location on you local system(PC).
 
@@ -400,7 +414,7 @@ Run the command
 \PYG{n}{git} \PYG{n}{clone} \PYG{n}{https}\PYG{p}{:}\PYG{o}{/}\PYG{o}{/}\PYG{n}{github}\PYG{o}{.}\PYG{n}{com}\PYG{o}{/}\PYG{o}{\PYGZlt{}}\PYG{n}{git}\PYG{o}{\PYGZhy{}}\PYG{n}{username}\PYG{o}{\PYGZgt{}}\PYG{o}{/}\PYG{n}{Time}\PYG{o}{\PYGZhy{}}\PYG{n}{table}\PYG{o}{\PYGZhy{}}\PYG{n}{assist}\PYG{o}{\PYGZhy{}}\PYG{n}{tool}\PYG{o}{.}\PYG{n}{git}
 \end{sphinxVerbatim}
 
-Where \textless{}git-username\textgreater{} refers to the Username of your Github Profile
+where \textless{}git-username\textgreater{} refers to the Username of your Github profile
 
 
 \subsubsection{Working on GUI\#1}
@@ -458,15 +472,37 @@ Slot rendering section
 
 SECTION 1:
 
-\noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{dev_GUI1_1}.png}\hspace*{\fill}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} DEFINING THE GUI ELEMENTS}
+\PYG{n}{Label}\PYG{p}{(}\PYG{n}{master}\PYG{p}{,} \PYG{n}{text}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{n}{row}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{n}{Label}\PYG{p}{(}\PYG{n}{master}\PYG{p}{,} \PYG{n}{text}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{8:00 \PYGZhy{} 8:50}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}\PYG{n}{borderwidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{relief}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{solid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}\PYG{n}{bg}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{red}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{n}{row}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{n}{column}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{)}
+\PYG{n}{Label}\PYG{p}{(}\PYG{n}{master}\PYG{p}{,} \PYG{n}{text}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{9:00 \PYGZhy{} 9:50}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}\PYG{n}{border}\PYG{o}{.}\PYG{o}{.}\PYG{o}{.}\PYG{o}{.}\PYG{o}{.}\PYG{o}{.}
+\end{sphinxVerbatim}
 
 SECTION 2:
 
-\noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{dev_GUI1_2}.png}\hspace*{\fill}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} THIS SECTION DEFINES THE ALGORITHM TO UPDATE THE OPTIONS IN THE GUI}
+\PYG{k}{def} \PYG{n+nf}{update\PYGZus{}options}\PYG{p}{(}\PYG{n}{var}\PYG{p}{,} \PYG{n}{row\PYGZus{}val}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{cr} \PYG{o}{=} \PYG{n}{cr\PYGZus{}vars}\PYG{p}{[}\PYG{n}{var}\PYG{p}{]}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{p}{)}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{old\PYGZus{}var}\PYG{p}{[}\PYG{n}{var}\PYG{p}{]} \PYG{o}{==} \PYG{n}{cr}\PYG{p}{)}\PYG{p}{:}
+        \PYG{k}{return} \PYG{l+m+mi}{0}
+    \PYG{k}{if} \PYG{n}{match}\PYG{p}{[}\PYG{n}{row\PYGZus{}val}\PYG{p}{]}\PYG{p}{[}\PYG{n+nb}{ord}\PYG{p}{(}\PYG{n}{cr}\PYG{p}{)}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{65}\PYG{p}{]} \PYG{o}{==} \PYG{n+nb+bp}{True}\PYG{p}{:}
+        \PYG{n}{cr\PYGZus{}vars}\PYG{p}{[}\PYG{n}{var}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{SLOT}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+        \PYG{n}{messagebox}\PYG{o}{.}\PYG{n}{showerror}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Erro....}
+\end{sphinxVerbatim}
 
 SECTION 3:
 
-\noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{dev_GUI1_3}.png}\hspace*{\fill}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} THIS SECTION DEFINES THE RENDERING OF THE SLOTS IN THE GUI\PYGZsq{}S TIMETABLE MATRIX}
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{6}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{for} \PYG{n}{j} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{10}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{cr\PYGZus{}vars}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{StringVar}\PYG{p}{(}\PYG{n}{master}\PYG{p}{)}\PYG{p}{)}
+        \PYG{n}{cr\PYGZus{}vars}\PYG{p}{[}\PYG{n}{z}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{SLOT}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+        \PYG{n}{old\PYGZus{}var}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{SLOT}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+        \PYG{n}{left\PYGZus{}course} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{A}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{B}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{o}{.}\PYG{o}{.}
+\end{sphinxVerbatim}
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{3}
@@ -534,19 +570,54 @@ DialogBOX
 
 SECTION 1:
 
-\noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{dev_GUI2_2}.png}\hspace*{\fill}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{DropDown}\PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{global} \PYG{n}{lists}\PYG{p}{,}\PYG{n}{v}
+    \PYG{n}{v}\PYG{o}{.}\PYG{n}{set}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Select File}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+    \PYG{n}{w} \PYG{o}{=} \PYG{n}{OptionMenu}\PYG{p}{(}\PYG{n}{frame1}\PYG{p}{,} \PYG{n}{v}\PYG{p}{,} \PYG{o}{*}\PYG{n}{lists}\PYG{p}{)}
+    \PYG{n}{w}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{n}{row}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{n}{column}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{n}{columnspan}\PYG{o}{=}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{n}{sticky}\PYG{o}{=}\PYG{n}{W}\PYG{o}{+}\PYG{n}{E}\PYG{o}{+}\PYG{n}{N}\PYG{o}{+}\PYG{n}{S}\PYG{p}{)}
+    \PYG{n}{w}\PYG{o}{.}\PYG{n}{config}\PYG{p}{(}\PYG{n}{width}\PYG{o}{=}\PYG{l+m+mi}{45}\PYG{p}{)}
+    \PYG{n}{v}\PYG{o}{.}\PYG{n}{trace}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{w}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{n}{DisplayGUI}\PYG{p}{)}
+\end{sphinxVerbatim}
 
 SECTION 2:
 
-\noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{dev_GUI2_3}.png}\hspace*{\fill}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{ConstraintCheck}\PYG{p}{(}\PYG{n}{var}\PYG{p}{,}\PYG{n}{i}\PYG{p}{,}\PYG{n}{name}\PYG{p}{,}\PYG{n}{focus}\PYG{p}{,}\PYG{o}{*}\PYG{n}{args}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{global} \PYG{n}{file\PYGZus{}path}
+    \PYG{n}{wb} \PYG{o}{=} \PYG{n}{openpyxl}\PYG{o}{.}\PYG{n}{load\PYGZus{}workbook}\PYG{p}{(}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{file\PYGZus{}path}\PYG{p}{,} \PYG{n}{v}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{ws} \PYG{o}{=} \PYG{n}{wb}\PYG{o}{.}\PYG{n}{active}
+    \PYG{n}{j}\PYG{o}{=}\PYG{l+m+mi}{0}
+    \PYG{k}{for} \PYG{n}{j} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{n}{ws}\PYG{o}{.}\PYG{n}{max\PYGZus{}row}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{c1}\PYG{o}{=}\PYG{n}{ws}\PYG{o}{.}\PYG{n}{cell}\PYG{p}{(}\PYG{n}{j}\PYG{p}{,}\PYG{l+m+mi}{5}\PYG{p}{)}
+        \PYG{k}{if} \PYG{n}{i}\PYG{o}{==}\PYG{n}{j}\PYG{p}{:}
+            \PYG{k}{continue}
+        \PYG{k}{if} \PYG{n}{c1}\PYG{o}{.}\PYG{n}{value}\PYG{o}{==}\PYG{n}{var}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
+            \PYG{n}{messagebox}\PYG{o}{.}\PYG{n}{showerror}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Err...}
+\end{sphinxVerbatim}
 
 SECTION 3:
 
-\noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{dev_GUI2_4}.png}\hspace*{\fill}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{DisplayGUI}\PYG{p}{(}\PYG{o}{*}\PYG{n}{args}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{global} \PYG{n}{file\PYGZus{}path}
+    \PYG{k}{for} \PYG{n}{widget} \PYG{o+ow}{in} \PYG{n}{frame2}\PYG{o}{.}\PYG{n}{winfo\PYGZus{}children}\PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{widget}\PYG{o}{.}\PYG{n}{destroy}\PYG{p}{(}\PYG{p}{)}
+    \PYG{n}{wb} \PYG{o}{=} \PYG{n}{openpyxl}\PYG{o}{.}\PYG{n}{load\PYGZus{}workbook}\PYG{p}{(}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{file\PYGZus{}path}\PYG{p}{,} \PYG{n}{v}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{ws} \PYG{o}{=} \PYG{n}{wb}\PYG{o}{.}\PYG{n}{active}
+    \PYG{n}{slots}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Slot A}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Slot B}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Slot C}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Slo...}
+\end{sphinxVerbatim}
 
 SECTION 4:
 
-\noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{dev_GUI2_5}.png}\hspace*{\fill}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{DialogBox}\PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
+   \PYG{k}{global} \PYG{n}{file\PYGZus{}path}
+   \PYG{n}{file\PYGZus{}path}\PYG{o}{=}\PYG{n}{filedialog}\PYG{o}{.}\PYG{n}{askdirectory}\PYG{p}{(}\PYG{p}{)}
+   \PYG{k}{global} \PYG{n}{lists}\PYG{p}{,} \PYG{n}{v}
+   \PYG{n}{a}\PYG{o}{=}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{file\PYGZus{}path}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{track.xlsx}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{)}
+   \PYG{n}{wb} \PYG{o}{=} \PYG{n}{openpyxl}\PYG{o}{.}\PYG{n}{load\PYGZus{}workb}\PYG{o}{.}\PYG{o}{.}\PYG{o}{.}\PYG{o}{.}
+\end{sphinxVerbatim}
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{3}
@@ -555,7 +626,57 @@ Include the required packages in the top of the file
 
 \end{enumerate}
 
-\noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{dev_GUI2_1}.png}\hspace*{\fill}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Include your packages here}
+\PYG{k+kn}{from} \PYG{n+nn}{tkinter} \PYG{k+kn}{import} \PYG{o}{*}
+\PYG{k+kn}{from} \PYG{n+nn}{tkinter} \PYG{k+kn}{import} \PYG{n}{messagebox}
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+\PYG{k+kn}{import} \PYG{n+nn}{openpyxl}
+\PYG{k+kn}{from} \PYG{n+nn}{tkinter} \PYG{k+kn}{import} \PYG{n}{filedialog}
+\end{sphinxVerbatim}
+
+
+\subsection{\sphinxstyleemphasis{Core Developers}}
+\label{\detokenize{developer:core-developers}}
+The core developers of the application have write access to the main repository. They can commit changes, accept/reject pull requests, and manage items on the issue tracker.
+
+You do not need to be a core developer or have write access to be involved in the development of the application. You can submit patches or create pull requests from forked repositories and have a core developer add the changes for you.
+
+The following are some general guidelines for core developers:
+\begin{itemize}
+\item {} 
+Questionable or extensive changes should be submitted as a pull request instead of being committed directly to the main repository. The pull request should be reviewed by another core developer before it is merged.
+
+\item {} 
+Trivial changes can be committed directly but be sure to keep the repository in a good working state and that all tests pass before pushing your changes.
+
+\item {} 
+When committing code written by someone else, please attribute the original author in the commit message and any relevant CHANGES entry.
+
+\end{itemize}
+
+
+\subsection{\sphinxstyleemphasis{Branch Model}}
+\label{\detokenize{developer:branch-model}}
+The branch are made when a new major portion is added into the application. Only minor changes and bug removal in the branch would be appretiated.
+
+
+\subsubsection{Conventions}
+\label{\detokenize{developer:conventions}}
+
+\paragraph{master:}
+\label{\detokenize{developer:master}}
+The is the most recent branch and the one which is currently deployed for the consumer.
+
+
+\paragraph{X.Y:}
+\label{\detokenize{developer:x-y}}
+Where X.Y stands for the MAJOR.MINOR release.
+
+
+\paragraph{X.Y.Z:}
+\label{\detokenize{developer:x-y-z}}
+Where X.Y.Z stands for MAJOR.MINOR.PATCH release.
 
 
 \section{Contributors}
@@ -567,6 +688,358 @@ Deepak Kumar (\sphinxhref{mailto:B17039@students.iitmandi.ac.in}{B17039@students
 Vinay Kumar (\sphinxhref{mailto:B17070@students.iitmandi.ac.in}{B17070@students.iitmandi.ac.in})
 
 Roshan Sharma (\sphinxhref{mailto:B17054@students.iitmandi.ac.in}{B17054@students.iitmandi.ac.in})
+
+
+\section{Change Log}
+\label{\detokenize{change:change-log}}\label{\detokenize{change::doc}}
+commit 6a394f12548cdef11c5d183a1e34d1f3e86e71d1
+Merge: 9bcaddb 5d2f2b3
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Fri Oct 25 10:33:15 2019 +0530
+\begin{quote}
+
+Merge pull request \#10 from deepakjnv880/master
+
+Save and redo added and also readme updated
+\end{quote}
+
+commit 5d2f2b353e9e8196f6c06cba5c49883eb4e32e61
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Fri Oct 25 01:52:21 2019 +0530
+\begin{quote}
+
+radme updated
+\end{quote}
+
+commit d11add6c3b03e1af4d7dd90a6d87f4b5c5bed7ad
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Thu Oct 24 22:13:03 2019 +0530
+\begin{quote}
+
+sqlite code deleted
+\end{quote}
+
+commit 9bcaddb51dd09f6eac833923c9bb809c94e566fb
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Tue Oct 22 22:19:53 2019 +0530
+\begin{quote}
+
+Changed names and initiated Main Interface
+\end{quote}
+
+commit 04df884256c53c71af68c5814e6087002a004907
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Tue Oct 22 21:23:10 2019 +0530
+\begin{quote}
+
+Adding after Resolving issues
+\end{quote}
+
+commit b2d46920be421fb5e1bce3b2532bfbb404de4de0
+Merge: dd865e7 f18c9b6
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Tue Oct 22 21:19:28 2019 +0530
+\begin{quote}
+
+Removing conflict
+\end{quote}
+
+commit dd865e732cfbcb6d1ec61774c9b622a78a9b739a
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Tue Oct 22 21:17:12 2019 +0530
+\begin{quote}
+
+Initialise developer manual
+\end{quote}
+
+commit f18c9b64f234399887a1bcc19bce5e356438e680
+Merge: c0f55c3 3629213
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Tue Oct 22 13:49:42 2019 +0530
+\begin{quote}
+
+Merge pull request \#9 from vinayskywalker/master
+
+constrain and conflict check
+\end{quote}
+
+commit 36292135e2bae55907bbb9f24ccca3bf88356502
+Author: vinayskywalker \textless{}\sphinxhref{mailto:vinaykumar.dakshana17@gmail.com}{vinaykumar.dakshana17@gmail.com}\textgreater{}
+Date:   Tue Oct 22 13:34:15 2019 +0530
+\begin{quote}
+
+constrain and conflict check
+\end{quote}
+
+commit c0f55c3c407e9f56acbbb39e81bf04812f835768
+Merge: fed3263 fdc059d
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Mon Oct 21 18:34:22 2019 +0530
+\begin{quote}
+
+Merge pull request \#8 from roshan21097/master
+
+second UI intiated
+\end{quote}
+
+commit fdc059d4775489c13d6f6005c6f745611ecc491e
+Author: Roshan Sharma \textless{}\sphinxhref{mailto:rsharma21097@gmail.com}{rsharma21097@gmail.com}\textgreater{}
+Date:   Mon Oct 21 18:29:24 2019 -0400
+\begin{quote}
+
+second UI intiated
+\end{quote}
+
+commit fed3263b023da6b3aedcf176d44dc8a9bfb05e2f
+Merge: c8e59c9 3a4adfe
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Sat Oct 19 18:24:04 2019 +0530
+\begin{quote}
+
+Merge pull request \#6 from deepakjnv880/master
+
+sqlite3 integrated and readme updated
+\end{quote}
+
+commit 3a4adfe07434bfc90a945bb2bbdda84dbb9cd8b3
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Sat Oct 19 16:36:22 2019 +0530
+\begin{quote}
+
+readme updated
+\end{quote}
+
+commit 51fd2051edaeb811808b1ff11d4a2ff7199c5efc
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Sat Oct 19 16:33:52 2019 +0530
+\begin{quote}
+
+sqlite3 integrated
+\end{quote}
+
+commit 083ff065863365268bfabdd54854892d3edb1c93
+Merge: 611aea9 c8e59c9
+Author: Deepak kumar \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Sat Oct 19 16:29:41 2019 +0530
+\begin{quote}
+
+Merge pull request \#1 from PS-Ddevil/master
+
+updating my repo
+\end{quote}
+
+commit c8e59c9d733819e1720ae45ff7a34f4bae1934a6
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Wed Oct 16 15:46:35 2019 +0530
+\begin{quote}
+
+docs GUI 2 initiated
+\end{quote}
+
+commit 4c03d8f0e051c386d75a7631a71dbfda97f1cde1
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Wed Oct 16 15:32:17 2019 +0530
+\begin{quote}
+
+Updated documentation
+\end{quote}
+
+commit c90f3cafbace541c10b9764ff0ed08ee1b03c7fb
+Merge: 78da67a 81be0bf
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Wed Oct 16 12:28:19 2019 +0530
+\begin{quote}
+
+Merge branch ‘master’ of \sphinxurl{https://github.com/PS-Ddevil/Time-table-assist-tool}
+\end{quote}
+
+commit 78da67a13eb34078497a648119a1f58e12ed6039
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Wed Oct 16 12:27:25 2019 +0530
+\begin{quote}
+
+Archived v1.0 Reports
+\end{quote}
+
+commit 81be0bf8f837d9996427833743a6ed5d095b4a7a
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Wed Oct 16 12:23:11 2019 +0530
+\begin{quote}
+
+Modified Contributions Section
+\end{quote}
+
+commit fa31f00f2c965d63a717475851ececcd0fffbc12
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Wed Oct 16 12:18:21 2019 +0530
+\begin{quote}
+
+Documentation up to date till 16/10/19
+\end{quote}
+
+commit 10e59c70bedaf1d581f7164172072d811d89d0e1
+Merge: b95df63 611aea9
+Author: Deepak kumar \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Wed Oct 16 11:57:07 2019 +0530
+\begin{quote}
+
+Merge pull request \#4 from deepakjnv880/master
+
+Readme updated
+\end{quote}
+
+commit 611aea9348665da66504fffb1bede5d8fe4f73e3
+Author: Deepak kumar \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Wed Oct 16 11:55:24 2019 +0530
+\begin{quote}
+
+Update README.md
+\end{quote}
+
+commit 79fa39aa99a3244db65b8444f3a4ceb8c50cba5a
+Author: Deepak kumar \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Wed Oct 16 11:54:22 2019 +0530
+\begin{quote}
+
+Update README.md
+\end{quote}
+
+commit a8150172c2e14ad1583100fffff4d478e1ef740c
+Author: Deepak kumar \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Wed Oct 16 11:51:46 2019 +0530
+\begin{quote}
+
+Update README.md
+\end{quote}
+
+commit b9bb7d5caa08ea4518aca06a4fca0f83006b6497
+Author: Deepak kumar \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Wed Oct 16 11:47:26 2019 +0530
+\begin{quote}
+
+Update README.md
+\end{quote}
+
+commit 405d51934feb2a76582423012f3719a4d03fa68e
+Author: Deepak kumar \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Wed Oct 16 11:46:05 2019 +0530
+\begin{quote}
+
+Update README.md
+\end{quote}
+
+commit 97bba41a8d0407770dba1664bbceb5ed247e3cbf
+Author: Deepak kumar \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Wed Oct 16 11:44:45 2019 +0530
+\begin{quote}
+
+Update README.md
+\end{quote}
+
+commit b95df63007ed07f8e60896128cf40bb3927e8ced
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Tue Oct 15 00:46:31 2019 +0530
+\begin{quote}
+
+Added DD
+\end{quote}
+
+commit 2376ac6d375dafa49985ea60d0b2dee7e28df097
+Merge: 0f4dc24 93c728a
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Mon Oct 14 23:52:03 2019 +0530
+\begin{quote}
+
+Merge branch ‘master’ of \sphinxurl{https://github.com/PS-Ddevil/Time-table-assist-tool}
+\end{quote}
+
+commit 0f4dc2421b3261bc2e2e63151d03c9a58625d661
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Mon Oct 14 23:50:12 2019 +0530
+\begin{quote}
+
+creating v1.0
+\end{quote}
+
+commit 93c728a33e0b8cbd5b17c3c813debbaa6b0d057a
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Fri Oct 11 16:47:41 2019 +0530
+\begin{quote}
+
+Added Documentation Reference
+\end{quote}
+
+commit c3af04e0e89a5438281af071a574514da75a8974
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Fri Oct 11 16:43:29 2019 +0530
+\begin{quote}
+
+added master\_doc
+\end{quote}
+
+commit 775fc433b39e5c93cf85fe04e514ea736dce573c
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Fri Oct 11 16:33:58 2019 +0530
+\begin{quote}
+
+Added .readthedocs.yml
+\end{quote}
+
+commit 61d7e71c2619f52af2ce7fb0d9b6459e3ea6b2c9
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Fri Oct 11 16:27:15 2019 +0530
+\begin{quote}
+
+Added Docs
+\end{quote}
+
+commit f8b83e7a39efe4c56773187ce6bc9555126cb946
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Fri Oct 11 03:31:02 2019 +0530
+\begin{quote}
+
+Improved GUI\#1
+\end{quote}
+
+commit 2625c958c0b2cca72183d10ddf1d6022250d0342
+Author: Deepak kumar \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Fri Oct 11 00:22:41 2019 +0530
+\begin{quote}
+
+Update README.md
+\end{quote}
+
+commit ec26c08940274c5c02c368bc0be8f7d789d4e2a9
+Author: Deepak kumar \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Fri Oct 11 00:20:00 2019 +0530
+\begin{quote}
+
+Update README.md
+\end{quote}
+
+commit 26b3738c898ab7613cbc17ad665c5b9251d55d69
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Fri Oct 11 00:14:59 2019 +0530
+\begin{quote}
+
+main.py added
+\end{quote}
+
+commit 9c0f400bea553deab57111db6bc810f1e4d3c831
+Author: Deepak kumar \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Wed Oct 9 14:14:29 2019 +0530
+\begin{quote}
+
+Update README.md
+\end{quote}
+
+commit 56775b6cf44bdba5f32090333d1641b73adbf5eb
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Wed Oct 9 14:02:48 2019 +0530
+\begin{quote}
+
+Initial commit
+\end{quote}
 
 
 \section{Need Help}

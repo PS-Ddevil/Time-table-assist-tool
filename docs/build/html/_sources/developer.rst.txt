@@ -56,29 +56,61 @@ The recommended way for new contributors to submit code to Sphinx is to fork the
  * GUI#2
  * Documentation
 
-Clone the Repository
----------------------
+Getting Started
+----------------
 
 These are the basic steps needed to start developing on the application.
 
-1. Got to the given link
+1. Create a Github Account.
+
+2. Got to the given link
     https://github.com/PS-Ddevil/Time-table-assist-tool
 
-2. Click on the fork option to make a copy of the repo on your profile
+3. Click on the fork option to make a copy of the repo on your profile
 
 .. image:: img/Fork1.png
     :width: 80%
     :align: center
 
-3. Go to a desired location on you local system(PC).
-4. Open the terminal by pressing *Alt+Ctrl+T*
-5. Run the command
+4. Go to a desired location on you local system(PC).
+
+5. Open the terminal by pressing *Alt+Ctrl+T*
+
+6. Run the command
 
 .. code-block:: python
 
     git clone https://github.com/<git-username>/Time-table-assist-tool.git
 
-Where <git-username> refers to the Username of your Github Profile
+where <git-username> refers to the Username of your Github profile
+
+7. Check out the branch to work on. By default the master branch in selected.
+
+.. code-block:: python
+
+    git checkout v2.0
+
+8. To create a new branch to work on. 
+
+.. code-block:: python
+
+    git checkout -b branch-name
+
+9. Incase you fix some issue you can commit the changes.
+
+.. code-block:: python
+    
+    git commit -m "Some XYZ changes"
+
+10. Push changes in the branch to your forked reposiory on the Github.
+
+.. code-block:: python
+
+    git push origin branch-name
+
+11. Submit a pull request from your branch to the respective branch (master or X.Y).
+
+12. Wait for a core developer to review your changes.
 
 Working on GUI#1
 -----------------
@@ -267,7 +299,7 @@ The following are some general guidelines for core developers:
     * When committing code written by someone else, please attribute the original author in the commit message and any relevant CHANGES entry.
 
 
-*Brach Model*
+*Branch Model*
 ==============
 
 The branch are made when a new major portion is added into the application. Only minor changes and bug removal in the branch would be appretiated.
