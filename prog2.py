@@ -1,3 +1,4 @@
+# Include your packages here
 from tkinter import *
 from tkinter import messagebox
 import os
@@ -62,6 +63,7 @@ def ConstraintCheck(var,i,name,focus,*args):
 
 frame2=Frame(master,bd=10,height=500,padx=10,pady=10,width=1500)
 frame2.pack()
+
 def DisplayGUI(*args):
     global file_path
     for widget in frame2.winfo_children():

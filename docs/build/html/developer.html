@@ -67,8 +67,14 @@
 <p>For more information on working with sphinx you can refer:
 <a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html">https://www.sphinx-doc.org/en/master/index.html</a></p>
 </div>
-<div class="section" id="working-on-the-project">
-<h2><em>Working on the Project</em><a class="headerlink" href="#working-on-the-project" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bug-reports-and-feature-requests">
+<h2><em>Bug Reports and Feature Requests</em><a class="headerlink" href="#bug-reports-and-feature-requests" title="Permalink to this headline">¶</a></h2>
+<p>If you have encontered a problem with the application or have an idea for a new feature, please submit it as an issue tracker on Github.</p>
+<p>After getting approval from a moderator, you may make a pull requests to the repository.</p>
+</div>
+<div class="section" id="contributing-on-the-project">
+<h2><em>Contributing on the Project</em><a class="headerlink" href="#contributing-on-the-project" title="Permalink to this headline">¶</a></h2>
+<p>The recommended way for new contributors to submit code to Sphinx is to fork the repository on GitHub and then submit a pull request after committing the changes. The pull request will then need to be approved by one of the core developers before it is merged into the main repository.</p>
 <ol class="arabic simple">
 <li><p>Clone the Repository</p></li>
 <li><p>Working on any of the given modules:</p></li>
@@ -82,6 +88,7 @@
 </div></blockquote>
 <div class="section" id="clone-the-repository">
 <h3>Clone the Repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this headline">¶</a></h3>
+<p>These are the basic steps needed to start developing on the application.</p>
 <ol class="arabic simple">
 <li><dl class="simple">
 <dt>Got to the given link</dt><dd><p><a class="reference external" href="https://github.com/PS-Ddevil/Time-table-assist-tool">https://github.com/PS-Ddevil/Time-table-assist-tool</a></p>
@@ -138,14 +145,160 @@
 </ul>
 </div></blockquote>
 <p>SECTION 1:</p>
-<a class="reference internal image-reference" href="_images/dev_GUI1_1.png"><img alt="_images/dev_GUI1_1.png" class="align-center" src="_images/dev_GUI1_1.png" style="width: 623.4px; height: 296.4px;" /></a>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># DEFINING THE GUI ELEMENTS</span>
+<span class="n">Label</span><span class="p">(</span><span class="n">master</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">Label</span><span class="p">(</span><span class="n">master</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;8:00 - 8:50&#39;</span><span class="p">,</span><span class="n">borderwidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">relief</span><span class="o">=</span><span class="s2">&quot;solid&quot;</span><span class="p">,</span><span class="n">bg</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">Label</span><span class="p">(</span><span class="n">master</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s1">&#39;9:00 - 9:50&#39;</span><span class="p">,</span><span class="n">border</span><span class="o">......</span>
+</pre></div>
+</div>
 <p>SECTION 2:</p>
-<a class="reference internal image-reference" href="_images/dev_GUI1_2.png"><img alt="_images/dev_GUI1_2.png" class="align-center" src="_images/dev_GUI1_2.png" style="width: 625.1999999999999px; height: 350.4px;" /></a>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># THIS SECTION DEFINES THE ALGORITHM TO UPDATE THE OPTIONS IN THE GUI</span>
+<span class="k">def</span> <span class="nf">update_options</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">row_val</span><span class="p">):</span>
+    <span class="n">cr</span> <span class="o">=</span> <span class="n">cr_vars</span><span class="p">[</span><span class="n">var</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">old_var</span><span class="p">[</span><span class="n">var</span><span class="p">]</span> <span class="o">==</span> <span class="n">cr</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">if</span> <span class="n">match</span><span class="p">[</span><span class="n">row_val</span><span class="p">][</span><span class="nb">ord</span><span class="p">(</span><span class="n">cr</span><span class="p">)</span><span class="o">-</span><span class="mi">65</span><span class="p">]</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">cr_vars</span><span class="p">[</span><span class="n">var</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">&quot;SLOT&quot;</span><span class="p">)</span>
+        <span class="n">messagebox</span><span class="o">.</span><span class="n">showerror</span><span class="p">(</span><span class="s2">&quot;Erro....</span>
+</pre></div>
+</div>
 <p>SECTION 3:</p>
-<a class="reference internal image-reference" href="_images/dev_GUI1_3.png"><img alt="_images/dev_GUI1_3.png" class="align-center" src="_images/dev_GUI1_3.png" style="width: 625.1999999999999px; height: 223.2px;" /></a>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># THIS SECTION DEFINES THE RENDERING OF THE SLOTS IN THE GUI&#39;S TIMETABLE MATRIX</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+        <span class="n">cr_vars</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">StringVar</span><span class="p">(</span><span class="n">master</span><span class="p">))</span>
+        <span class="n">cr_vars</span><span class="p">[</span><span class="n">z</span><span class="p">]</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">&quot;SLOT&quot;</span><span class="p">)</span>
+        <span class="n">old_var</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;SLOT&quot;</span><span class="p">)</span>
+        <span class="n">left_course</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="o">...</span>
+</pre></div>
+</div>
 <ol class="arabic simple" start="4">
 <li><p>Modify the code accordingly and commit changes when necessary.</p></li>
 </ol>
+</div>
+<div class="section" id="working-on-gui-2">
+<h3>Working on GUI#2<a class="headerlink" href="#working-on-gui-2" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>Move to the cloned the folder</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">Time</span><span class="o">-</span><span class="n">table</span><span class="o">-</span><span class="n">assist</span><span class="o">-</span><span class="n">tool</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Open the <em>prob1.py</em> file.</p>
+<blockquote>
+<div><p>Open the <em>prob1.py</em> file in any text editor of your choice</p>
+<p>For Sublime Editor:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">subl</span> <span class="n">prob1</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>For Atom Editor:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">atom</span> <span class="n">prob1</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>For Visual Studio Code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">code</span> <span class="n">prob1</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>There are Three broad section for the GUI#2</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>DropDown Function</p></li>
+<li><p>ConstraintCheck Function</p></li>
+<li><p>Display GUI</p></li>
+<li><p>DialogBOX</p></li>
+</ul>
+</div></blockquote>
+<p>SECTION 1:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">DropDown</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">lists</span><span class="p">,</span><span class="n">v</span>
+    <span class="n">v</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">&quot;Select File&quot;</span><span class="p">)</span>
+    <span class="n">w</span> <span class="o">=</span> <span class="n">OptionMenu</span><span class="p">(</span><span class="n">frame1</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="o">*</span><span class="n">lists</span><span class="p">)</span>
+    <span class="n">w</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">columnspan</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">sticky</span><span class="o">=</span><span class="n">W</span><span class="o">+</span><span class="n">E</span><span class="o">+</span><span class="n">N</span><span class="o">+</span><span class="n">S</span><span class="p">)</span>
+    <span class="n">w</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+    <span class="n">v</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">DisplayGUI</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>SECTION 2:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ConstraintCheck</span><span class="p">(</span><span class="n">var</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">focus</span><span class="p">,</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">file_path</span>
+    <span class="n">wb</span> <span class="o">=</span> <span class="n">openpyxl</span><span class="o">.</span><span class="n">load_workbook</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">get</span><span class="p">())))</span>
+    <span class="n">ws</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">active</span>
+    <span class="n">j</span><span class="o">=</span><span class="mi">0</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">ws</span><span class="o">.</span><span class="n">max_row</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">c1</span><span class="o">=</span><span class="n">ws</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="n">j</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="k">if</span> <span class="n">c1</span><span class="o">.</span><span class="n">value</span><span class="o">==</span><span class="n">var</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+            <span class="n">messagebox</span><span class="o">.</span><span class="n">showerror</span><span class="p">(</span><span class="s2">&quot;Err...</span>
+</pre></div>
+</div>
+<p>SECTION 3:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">DisplayGUI</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">file_path</span>
+    <span class="k">for</span> <span class="n">widget</span> <span class="ow">in</span> <span class="n">frame2</span><span class="o">.</span><span class="n">winfo_children</span><span class="p">():</span>
+        <span class="n">widget</span><span class="o">.</span><span class="n">destroy</span><span class="p">()</span>
+    <span class="n">wb</span> <span class="o">=</span> <span class="n">openpyxl</span><span class="o">.</span><span class="n">load_workbook</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">get</span><span class="p">())))</span>
+    <span class="n">ws</span> <span class="o">=</span> <span class="n">wb</span><span class="o">.</span><span class="n">active</span>
+    <span class="n">slots</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Slot A&#39;</span><span class="p">,</span><span class="s1">&#39;Slot B&#39;</span><span class="p">,</span><span class="s1">&#39;Slot C&#39;</span><span class="p">,</span><span class="s1">&#39;Slo...</span>
+</pre></div>
+</div>
+<p>SECTION 4:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">DialogBox</span><span class="p">():</span>
+   <span class="k">global</span> <span class="n">file_path</span>
+   <span class="n">file_path</span><span class="o">=</span><span class="n">filedialog</span><span class="o">.</span><span class="n">askdirectory</span><span class="p">()</span>
+   <span class="k">global</span> <span class="n">lists</span><span class="p">,</span> <span class="n">v</span>
+   <span class="n">a</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s2">&quot;track.xlsx&quot;</span><span class="p">))</span>
+   <span class="n">wb</span> <span class="o">=</span> <span class="n">openpyxl</span><span class="o">.</span><span class="n">load_workb</span><span class="o">....</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Include the required packages in the top of the file</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Include your packages here</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">messagebox</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">openpyxl</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">filedialog</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="core-developers">
+<h2><em>Core Developers</em><a class="headerlink" href="#core-developers" title="Permalink to this headline">¶</a></h2>
+<p>The core developers of the application have write access to the main repository. They can commit changes, accept/reject pull requests, and manage items on the issue tracker.</p>
+<p>You do not need to be a core developer or have write access to be involved in the development of the application. You can submit patches or create pull requests from forked repositories and have a core developer add the changes for you.</p>
+<p>The following are some general guidelines for core developers:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Questionable or extensive changes should be submitted as a pull request instead of being committed directly to the main repository. The pull request should be reviewed by another core developer before it is merged.</p></li>
+<li><p>Trivial changes can be committed directly but be sure to keep the repository in a good working state and that all tests pass before pushing your changes.</p></li>
+<li><p>When committing code written by someone else, please attribute the original author in the commit message and any relevant CHANGES entry.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="brach-model">
+<h2><em>Brach Model</em><a class="headerlink" href="#brach-model" title="Permalink to this headline">¶</a></h2>
+<p>The branch are made when a new major portion is added into the application. Only minor changes and bug removal in the branch would be appretiated.</p>
+<div class="section" id="conventions">
+<h3>Conventions<a class="headerlink" href="#conventions" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="master">
+<h4>master:<a class="headerlink" href="#master" title="Permalink to this headline">¶</a></h4>
+<p>The is the most recent branch and the one which is currently deployed for the consumer.</p>
+</div>
+<div class="section" id="x-y">
+<h4>X.Y:<a class="headerlink" href="#x-y" title="Permalink to this headline">¶</a></h4>
+<p>Where X.Y stands for the MAJOR.MINOR release.</p>
+</div>
+<div class="section" id="x-y-z">
+<h4>X.Y.Z:<a class="headerlink" href="#x-y-z" title="Permalink to this headline">¶</a></h4>
+<p>Where X.Y.Z stands for MAJOR.MINOR.PATCH release.</p>
+</div>
 </div>
 </div>
 </div>
@@ -172,9 +325,16 @@
 <li class="toctree-l1"><a class="reference internal" href="user_manual.html"><strong>User Manual</strong></a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>Developer Manual</strong></a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#software-requirements"><em>Software Requirements</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#working-on-the-project"><em>Working on the Project</em></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bug-reports-and-feature-requests"><em>Bug Reports and Feature Requests</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contributing-on-the-project"><em>Contributing on the Project</em></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#clone-the-repository">Clone the Repository</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#working-on-gui-1">Working on GUI#1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#working-on-gui-2">Working on GUI#2</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#core-developers"><em>Core Developers</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#brach-model"><em>Brach Model</em></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#conventions">Conventions</a></li>
 </ul>
 </li>
 </ul>

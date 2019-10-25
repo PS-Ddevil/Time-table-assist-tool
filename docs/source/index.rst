@@ -16,5 +16,6 @@ Installation
    user_manual
    developer
    contributors
+   change
    help
    license
