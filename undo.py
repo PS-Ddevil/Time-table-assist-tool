@@ -2,7 +2,7 @@ import xlrd
 def undo_in_excel_sheet(cr_vars):
     # Give the location of the file
     filename = ("src/slot.xlsx")
-    print("hey i am in undo")
+    # print("hey i am in undo")
     # To open Workbook
     wb = xlrd.open_workbook(filename)
     sheet = wb.sheet_by_index(0)

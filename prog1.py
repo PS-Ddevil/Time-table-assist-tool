@@ -29,6 +29,8 @@ Course_Dict = {'A': 4, 'B': 4, 'C': 4, 'D': 4, 'E': 4, 'F': 4, 'G': 4, 'H': 4}
 # THIS SECTION DEFINES THE ALGORITHM TO UPDATE THE OPTIONS IN THE GUI
 def update_options(var, row_val):
 	cr = cr_vars[var].get()
+	if cr=='SLOT':
+		return
 	if(old_var[var] == cr):
 		return 0
 	if match[row_val][ord(cr)-65] == True:
