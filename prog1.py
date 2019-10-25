@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 import save as s
-import redo as r
+import undo as u
 import initialize_excel_files
 initialize_excel_files.slot()
 master = Tk()
@@ -65,7 +65,7 @@ for i in range(1,6):
         z = z + 1
 
 Label(master, text='\n').grid(row=7)
-button = Button(master, text='Undo',activeforeground='blue',activebackground='red', command=lambda: r.redo_in_excel_sheet(cr_vars))
+button = Button(master, text='Undo',activeforeground='blue',activebackground='red', command=lambda: u.undo_in_excel_sheet(cr_vars))
 button.grid(row=8,column=3)
 button = Button(master, text='Save',activeforeground='blue',activebackground='red', command=lambda: s.save_in_excel_sheet(old_var))
 button.grid(row=8,column=5)

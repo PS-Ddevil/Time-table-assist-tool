@@ -1,5 +1,5 @@
 import xlrd
-def redo_in_excel_sheet(cr_vars):
+def undo_in_excel_sheet(cr_vars):
     # Give the location of the file
     filename = ("Excel files/slot.xlsx")
     # To open Workbook
@@ -8,6 +8,7 @@ def redo_in_excel_sheet(cr_vars):
     count=0
     for i in range(1,6):
         for j in  range(1,10):
-            if(j!=5):
+            # print(sheet.cell_value(i,j)," == ",len(sheet.cell_value(i,j)))
+            if(j!=5 and len(sheet.cell_value(i,j))==1):
                 cr_vars[count].set(sheet.cell_value(i,j))
             count=count+1
