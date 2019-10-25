@@ -26,6 +26,7 @@ def ConstraintCheck(var,i,name,focus,*args):
     global file_path
     wb = openpyxl.load_workbook(str(os.path.join(file_path, v.get())))
     ws = wb.active
+    print(ws.cell(i+1,5).value,ws.cell(i,5).value,i)
     j=0
     for j in range(2,ws.max_row+1):
         c1=ws.cell(j,5)
@@ -34,9 +35,10 @@ def ConstraintCheck(var,i,name,focus,*args):
         if c1.value==var.get():
             messagebox.showerror("Error", var.get() + " is twice time and it will not be saved so please change ") 
             var.set(ws.cell(i,5).value)
-            break
+            return
     wb.save(str(os.path.join(file_path, v.get())))
     prof=ws.cell(i,4).value
+    slot=ws.cell(i,5).value
     for file in lists:
         if(file==v.get()):
             continue
@@ -47,7 +49,8 @@ def ConstraintCheck(var,i,name,focus,*args):
                 
                 messagebox.showerror("Error", prof + " has same slot in "+ file)
                 wb.save(file)
-                var.set(ws.cell(i,5).value)
+                var.set(slot)
+                
                 return
         wb.save(file)
        

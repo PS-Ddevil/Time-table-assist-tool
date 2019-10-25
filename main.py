@@ -223,6 +223,7 @@ def Basket():
 
 master = Tk()
 master.title("Time Table Assist Tool")
+<<<<<<< HEAD
 frame=Frame(master,bd=10,height=500,padx=10,pady=10,width=1500)
 frame.pack()
 B = Button(frame, text ="Time Table", command = TimeTable)
@@ -232,3 +233,7 @@ B = Button(frame, text ="BaSket", command = Basket)
 B.grid(row=1,column=0,columnspan=3,sticky=W+E+N+S)
 B.config(width=45)
 mainloop()
+=======
+
+mainloop()
+>>>>>>> upstream/master

@@ -1,20 +1,14 @@
 from tkinter import *
 from tkinter import messagebox
-import sqlite3
-
-db=sqlite3.connect('Time table')
-cursor=db.cursor()
-cursor.execute('create table if not exists subject(subject_code text primary key,subject_name text,slot_id text,FOREIGN KEY(slot_id) REFERENCES slot(slot_id))')
-db.commit()
-cursor.execute('create table if not exists slot(slot_id text primary key,faculty_id integer,FOREIGN KEY(faculty_id) REFERENCES faculty(facluty_id) )')
-db.commit()
-cursor.execute('create table if not exists faculty(faculty_id integer primary key,faculty_name text)')
-db.commit()
-print('All table created')
-master = Tk() 
+import save as s
+import redo as r
+import initialize_excel_files
+initialize_excel_files.slot()
+master = Tk()
 master.title("Time table assist tool")
 
 # DEFINING THE GUI ELEMENTS
+<<<<<<< HEAD
 Label(master,width=20,height=2, text='').grid(row=0) 
 Label(master,width=20,height=2, text='8:00 - 8:50',borderwidth=2, relief="solid",bg='red').grid(row=0,column=1) 
 Label(master,width=20,height=2, text='9:00 - 9:50',borderwidth=2, relief="solid",bg='pink').grid(row=0,column=2) 
@@ -30,8 +24,25 @@ Label(master,width=20,height=2, text='Tuesday',borderwidth=2, relief="solid",bg=
 Label(master,width=20,height=2, text='Wednesday',borderwidth=2, relief="solid",bg='green').grid(row=3) 
 Label(master,width=20,height=2, text='Thrusday',borderwidth=2, relief="solid",bg='yellow').grid(row=4) 
 Label(master,width=20,height=2, text='Friday',borderwidth=2, relief="solid",bg='pink').grid(row=5) 
+=======
+Label(master, text='').grid(row=0)
+Label(master, text='8:00 - 8:50',borderwidth=2, relief="solid",bg='red').grid(row=0,column=1)
+Label(master, text='9:00 - 9:50',borderwidth=2, relief="solid",bg='pink').grid(row=0,column=2)
+Label(master, text='10:00 - 10:50',borderwidth=2, relief="solid",bg='yellow').grid(row=0,column=3)
+Label(master, text='11:00 - 11:50',borderwidth=2, relief="solid",bg='orange').grid(row=0,column=4)
+Label(master, text='LUNCH BREAK',borderwidth=2, relief="solid").grid(row=0,column=5, rowspan=5)
+Label(master, text='1:00 - 1:50',borderwidth=2, relief="solid",bg='blue').grid(row=0,column=6)
+Label(master, text='2:00 - 2:50',borderwidth=2, relief="solid",bg='pink').grid(row=0,column=7)
+Label(master, text='3:00 - 3:50',borderwidth=2, relief="solid",bg='green').grid(row=0,column=8)
+Label(master, text='4:00 - 4:50',borderwidth=2, relief="solid",bg='red').grid(row=0,column=9)
+Label(master, text='Monday',borderwidth=2, relief="solid",bg='red').grid(row=1)
+Label(master, text='Tuesday',borderwidth=2, relief="solid",bg='blue').grid(row=2)
+Label(master, text='Wednesday',borderwidth=2, relief="solid",bg='green').grid(row=3)
+Label(master, text='Thrusday',borderwidth=2, relief="solid",bg='yellow').grid(row=4)
+Label(master, text='Friday',borderwidth=2, relief="solid",bg='pink').grid(row=5)
+>>>>>>> upstream/master
 
-Course_Dict = {'A': 4, 'B': 4, 'C': 4, 'D': 4, 'E': 4, 'F': 4, 'G': 4, 'H': 4} 
+Course_Dict = {'A': 4, 'B': 4, 'C': 4, 'D': 4, 'E': 4, 'F': 4, 'G': 4, 'H': 4}
 
 # THIS SECTION DEFINES THE ALGORITHM TO UPDATE THE OPTIONS IN THE GUI
 def update_options(var, row_val):
@@ -71,4 +82,13 @@ for i in range(1,6):
         	w.grid(row=i,column=j)
         cr_vars[z].trace("w", lambda *_, var=z, row_val=i: update_options(var, row_val))
         z = z + 1
-mainloop() 
+
+Label(master, text='\n').grid(row=7)
+button = Button(master, text='Redo',activeforeground='blue',activebackground='red', command=lambda: r.redo_in_excel_sheet(cr_vars))
+button.grid(row=8,column=3)
+button = Button(master, text='Save',activeforeground='blue',activebackground='red', command=lambda: s.save_in_excel_sheet(old_var))
+button.grid(row=8,column=5)
+# print(len(cr_vars))
+# print(old_var)
+
+mainloop()
