@@ -15,7 +15,7 @@ Go to the folder and run below command : -
     pip3 install openpyxl
 
 # Want to contibute
-* Fork the repository into ur account.
+* Fork the repository into your account.
 * Either work according to the given issues or raise new issue
 * Make changes and commit them to user local repository.
 * Make a pull request with the details about the changes.
