@@ -21,19 +21,15 @@ for i,row in enumerate(sheet.rows()):
             wb = openpyxl.Workbook()
             wb.save(str(p) + ".xlsx")
             # print(df_dict)
-            book = xlsxwriter.Workbook(str(p) + ".xlsx")
-            sheet = book.add_worksheet()
             ws = wb.worksheets[0]
             headers = df_dict.keys()
             k=0
-            rows = ws.max_row
+            rows = ws.max_row + 1
             # print("file name ----",str(p),"   ",rows)
-            for(idx,header) in enumerate(headers):
+            for(idx,header) in enumerate(headers,start=1):
                 # print("----------",idx,header,"-----------")
-                sheet.write(rows,idx,header)
-                # print(headers)
-            book.close()
-            break
+                ws.cell(row=rows,column= idx,value=header)
+            wb.save(str(p) + ".xlsx")
 
 
 
