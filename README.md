@@ -13,6 +13,8 @@ Go to the folder and run below command : -
     pip3 install xlsxwriter
     pip3 install xlrd
     pip3 install openpyxl
+    pip3 install ezodf
+    pip3 install pandas
 
 # Want to contibute
 * Fork the repository into your account.
