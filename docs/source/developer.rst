@@ -18,7 +18,14 @@ The following softwares are needed to be installed:
 
     sudo apt-get install python3
     sudo apt-get install python3-tk
-    pip install openepyxl
+    pip3 install pyexcel
+    pip3 install xlwt
+    pip3 install xlsxwriter
+    pip3 install xlrd
+    pip3 install openpyxl
+    pip3 install ezodf
+    pip3 install python-docx
+    pip3 install pyexcel-ods
 
 Sphinx installation in needed in case you want to work on the documentation
 
@@ -111,6 +118,269 @@ where <git-username> refers to the Username of your Github profile
 11. Submit a pull request from your branch to the respective branch (master or X.Y).
 
 12. Wait for a core developer to review your changes.
+
+Tree Structure
+---------------
+.. code-block:: text
+
+    .
+    ├── docs
+    │   ├── build
+    │   │   ├── doctrees
+    │   │   │   ├── change.doctree
+    │   │   │   ├── contributors.doctree
+    │   │   │   ├── developer.doctree
+    │   │   │   ├── environment.pickle
+    │   │   │   ├── help.doctree
+    │   │   │   ├── index.doctree
+    │   │   │   ├── license.doctree
+    │   │   │   └── user_manual.doctree
+    │   │   ├── html
+    │   │   │   ├── change.html
+    │   │   │   ├── contributors.html
+    │   │   │   ├── developer.html
+    │   │   │   ├── genindex.html
+    │   │   │   ├── help.html
+    │   │   │   ├── _images
+    │   │   │   │   ├── dev_GUI1_1.png
+    │   │   │   │   ├── dev_GUI1_2.png
+    │   │   │   │   ├── dev_GUI1_3.png
+    │   │   │   │   ├── dev_GUI2_1.png
+    │   │   │   │   ├── dev_GUI2_2.png
+    │   │   │   │   ├── dev_GUI2_3.png
+    │   │   │   │   ├── dev_GUI2_4.png
+    │   │   │   │   ├── dev_GUI2_5.png
+    │   │   │   │   ├── Fork1.png
+    │   │   │   │   ├── GUI1_1_1.png
+    │   │   │   │   ├── GUI1_1_2.png
+    │   │   │   │   ├── GUI1_2_1.png
+    │   │   │   │   ├── GUI1_2_2.png
+    │   │   │   │   ├── GUI1_main_1.png
+    │   │   │   │   ├── GUI1_main.png
+    │   │   │   │   ├── GUI2_1_1.png
+    │   │   │   │   ├── GUI2_1_2.png
+    │   │   │   │   ├── GUI2_2_1.png
+    │   │   │   │   ├── GUI2_main_1.png
+    │   │   │   │   ├── GUI2_main_2.png
+    │   │   │   │   ├── GUI2_main_3.png
+    │   │   │   │   ├── GUI2_main_4.png
+    │   │   │   │   ├── GUI2_main_5.png
+    │   │   │   │   ├── GUI2_main_6.png
+    │   │   │   │   ├── GUI2_main_7.png
+    │   │   │   │   └── GUI2_main.png
+    │   │   │   ├── index.html
+    │   │   │   ├── license.html
+    │   │   │   ├── objects.inv
+    │   │   │   ├── search.html
+    │   │   │   ├── searchindex.js
+    │   │   │   ├── _sources
+    │   │   │   │   ├── change.rst.txt
+    │   │   │   │   ├── contributors.rst.txt
+    │   │   │   │   ├── developer.rst.txt
+    │   │   │   │   ├── help.rst.txt
+    │   │   │   │   ├── index.rst.txt
+    │   │   │   │   ├── license.rst.txt
+    │   │   │   │   └── user_manual.rst.txt
+    │   │   │   ├── _static
+    │   │   │   │   ├── alabaster.css
+    │   │   │   │   ├── basic.css
+    │   │   │   │   ├── custom.css
+    │   │   │   │   ├── doctools.js
+    │   │   │   │   ├── documentation_options.js
+    │   │   │   │   ├── file.png
+    │   │   │   │   ├── jquery-3.4.1.js
+    │   │   │   │   ├── jquery.js
+    │   │   │   │   ├── language_data.js
+    │   │   │   │   ├── minus.png
+    │   │   │   │   ├── plus.png
+    │   │   │   │   ├── pygments.css
+    │   │   │   │   ├── searchtools.js
+    │   │   │   │   ├── underscore-1.3.1.js
+    │   │   │   │   └── underscore.js
+    │   │   │   └── user_manual.html
+    │   │   └── latex
+    │   │       ├── dev_GUI1_1.png
+    │   │       ├── dev_GUI1_2.png
+    │   │       ├── dev_GUI1_3.png
+    │   │       ├── dev_GUI2_1.png
+    │   │       ├── dev_GUI2_2.png
+    │   │       ├── dev_GUI2_3.png
+    │   │       ├── dev_GUI2_4.png
+    │   │       ├── dev_GUI2_5.png
+    │   │       ├── footnotehyper-sphinx.sty
+    │   │       ├── Fork1.png
+    │   │       ├── GUI1_1_1.png
+    │   │       ├── GUI1_1_2.png
+    │   │       ├── GUI1_2_1.png
+    │   │       ├── GUI1_2_2.png
+    │   │       ├── GUI1_main_1.png
+    │   │       ├── GUI1_main.png
+    │   │       ├── GUI2_1_1.png
+    │   │       ├── GUI2_1_2.png
+    │   │       ├── GUI2_2_1.png
+    │   │       ├── GUI2_main_1.png
+    │   │       ├── GUI2_main_2.png
+    │   │       ├── GUI2_main_3.png
+    │   │       ├── GUI2_main_4.png
+    │   │       ├── GUI2_main_5.png
+    │   │       ├── GUI2_main_6.png
+    │   │       ├── GUI2_main_7.png
+    │   │       ├── GUI2_main.png
+    │   │       ├── latexmkjarc
+    │   │       ├── latexmkrc
+    │   │       ├── LatinRules.xdy
+    │   │       ├── LICRcyr2utf8.xdy
+    │   │       ├── LICRlatin2utf8.xdy
+    │   │       ├── make.bat
+    │   │       ├── Makefile
+    │   │       ├── python.ist
+    │   │       ├── sphinxcyrillic.sty
+    │   │       ├── sphinxhighlight.sty
+    │   │       ├── sphinxhowto.cls
+    │   │       ├── sphinxmanual.cls
+    │   │       ├── sphinxmessages.sty
+    │   │       ├── sphinxmulticell.sty
+    │   │       ├── sphinx.sty
+    │   │       ├── sphinx.xdy
+    │   │       ├── time-table-assist-tool.aux
+    │   │       ├── time-table-assist-tool.idx
+    │   │       ├── time-table-assist-tool.log
+    │   │       ├── time-table-assist-tool.out
+    │   │       ├── time-table-assist-tool.pdf
+    │   │       ├── time-table-assist-tool.synctex.gz
+    │   │       ├── time-table-assist-tool.tex
+    │   │       └── time-table-assist-tool.toc
+    │   ├── make.bat
+    │   ├── Makefile
+    │   └── source
+    │       ├── change.rst
+    │       ├── conf.py
+    │       ├── contributors.rst
+    │       ├── developer.rst
+    │       ├── git-log.txt
+    │       ├── help.rst
+    │       ├── img
+    │       │   ├── dev_GUI1_1.png
+    │       │   ├── dev_GUI1_2.png
+    │       │   ├── dev_GUI1_3.png
+    │       │   ├── dev_GUI2_1.png
+    │       │   ├── dev_GUI2_2.png
+    │       │   ├── dev_GUI2_3.png
+    │       │   ├── dev_GUI2_4.png
+    │       │   ├── dev_GUI2_5.png
+    │       │   ├── Fork1.png
+    │       │   ├── GUI1_1_1.png
+    │       │   ├── GUI1_1_2.png
+    │       │   ├── GUI1_2_1.png
+    │       │   ├── GUI1_2_2.png
+    │       │   ├── GUI1_main_1.png
+    │       │   ├── GUI1_main.png
+    │       │   ├── GUI2_1_1.png
+    │       │   ├── GUI2_1_2.png
+    │       │   ├── GUI2_2_1.png
+    │       │   ├── GUI2_2_2.png
+    │       │   ├── GUI2_main_1.png
+    │       │   ├── GUI2_main_2.png
+    │       │   ├── GUI2_main_3.png
+    │       │   ├── GUI2_main_4.png
+    │       │   ├── GUI2_main_5.png
+    │       │   ├── GUI2_main_6.png
+    │       │   ├── GUI2_main_7.png
+    │       │   └── GUI2_main.png
+    │       ├── index.rst
+    │       ├── license.rst
+    │       ├── _static
+    │       ├── _templates
+    │       └── user_manual.rst
+    ├── main.py
+    ├── progs
+    │   ├── CourselistAug-Dec2019_2Sep.ods
+    │   ├── func
+    │   │   ├── checktheory.py
+    │   │   ├── extract_docxs.py
+    │   │   ├── extract_ods.py
+    │   │   ├── initialize_excel_files.py
+    │   │   ├── __init__.py
+    │   │   ├── __pycache__
+    │   │   │   ├── __init__.cpython-36.pyc
+    │   │   │   ├── initialize_excel_files.cpython-36.pyc
+    │   │   │   ├── save.cpython-36.pyc
+    │   │   │   └── undo.cpython-36.pyc
+    │   │   ├── read_create.py
+    │   │   ├── save.py
+    │   │   ├── tlist.py
+    │   │   └── undo.py
+    │   ├── __init__.py
+    │   ├── prog1.py
+    │   ├── prog2.py
+    │   ├── prog3.py
+    │   └── __pycache__
+    │       ├── __init__.cpython-36.pyc
+    │       ├── prog1.cpython-36.pyc
+    │       └── prog2.cpython-36.pyc
+    ├── README.md
+    ├── Reports
+    │   ├── DD_v1.0.odt
+    │   ├── README_v1.0.md
+    │   └── SRS_v1.0.odt
+    ├── Reports_v1.0.zip
+    ├── src
+    │   ├── data
+    │   │   ├── basket_elective_docxs
+    │   │   │   └── ExampleElectiveCoursesGrouping.docx
+    │   │   ├── ClassroomSeatingCapacity.docx
+    │   │   ├── Courselist.ods
+    │   │   └── ExampleElectiveCoursesGrouping.docx
+    │   └── tmp
+    │       ├── baskets
+    │       │   ├── 10.xlsx
+    │       │   ├── 11.xlsx
+    │       │   ├── 12.xlsx
+    │       │   ├── 13.xlsx
+    │       │   ├── 14.xlsx
+    │       │   ├── 15.xlsx
+    │       │   ├── 16.xlsx
+    │       │   ├── 17.xlsx
+    │       │   ├── 18.xlsx
+    │       │   ├── 19.xlsx
+    │       │   ├── 20.xlsx
+    │       │   ├── 21.xlsx
+    │       │   ├── 22.xlsx
+    │       │   ├── 23.xlsx
+    │       │   ├── 24.xlsx
+    │       │   ├── 25.xlsx
+    │       │   ├── 27.xlsx
+    │       │   ├── 28.xlsx
+    │       │   ├── 29.xlsx
+    │       │   ├── 30.xlsx
+    │       │   ├── 31.xlsx
+    │       │   ├── 32.xlsx
+    │       │   ├── 33.xlsx
+    │       │   ├── 34.xlsx
+    │       │   ├── 35.xlsx
+    │       │   ├── 36.xlsx
+    │       │   ├── 37.xlsx
+    │       │   ├── 39.xlsx
+    │       │   ├── 40.xlsx
+    │       │   ├── 41.xlsx
+    │       │   ├── 42.xlsx
+    │       │   ├── 6.xlsx
+    │       │   ├── 7.xlsx
+    │       │   ├── 8.xlsx
+    │       │   ├── 9.xlsx
+    │       │   ├── course_faculty_main.xlsx
+    │       │   ├── course_faculty_optional.xlsx
+    │       │   ├── Group-1_(3rd_4th_Year::Microelectronics,_VLSI_and_Embedded_Systems_Track).xlsx
+    │       │   ├── Group-2_(3rd_4th_Year::Signal_Processing_Track).xlsx
+    │       │   ├── Group-3_(3rd_4th_Year::Communication_Track).xlsx
+    │       │   └── Group-4_(3rd_4th_Year::Power_Electronics_and_Power_Systems_Track).xlsx
+    │       ├── course_faculty_main.xlsx
+    │       ├── course_faculty_optional.xlsx
+    │       └── slot.xlsx
+    └── tree.txt
+
+    22 directories, 232 files
+
 
 Working on GUI#1
 -----------------

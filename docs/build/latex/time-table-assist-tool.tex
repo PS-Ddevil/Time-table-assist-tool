@@ -72,7 +72,7 @@
 
 
 \title{time-table-assist-tool}
-\date{Oct 26, 2019}
+\date{Oct 30, 2019}
 \release{0.0.1}
 \author{Purushottam Sinha}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -89,21 +89,13 @@
 
 
 
-\chapter{Installation}
-\label{\detokenize{index:installation}}
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{n}{sudo} \PYG{n}{apt}\PYG{o}{\PYGZhy{}}\PYG{n}{get} \PYG{n}{install} \PYG{n}{python3}\PYG{o}{\PYGZhy{}}\PYG{n}{tk}
-\PYG{n}{python3} \PYG{n}{main}\PYG{o}{.}\PYG{n}{py}
-\end{sphinxVerbatim}
-
-
-\section{\sphinxstylestrong{User Manual}}
+\chapter{\sphinxstylestrong{User Manual}}
 \label{\detokenize{user_manual:user-manual}}\label{\detokenize{user_manual::doc}}
 
-\subsection{\sphinxstylestrong{Working in GUI \#1}}
+\section{\sphinxstylestrong{Working in GUI \#1}}
 \label{\detokenize{user_manual:working-in-gui-1}}
 
-\subsubsection{\sphinxstyleemphasis{Steps}}
+\subsection{\sphinxstyleemphasis{Steps}}
 \label{\detokenize{user_manual:steps}}
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{GUI1_main}.png}\hspace*{\fill}}
 \begin{enumerate}
@@ -139,10 +131,10 @@ Mouse over the desired block and click on it to view the slots
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{GUI1_main_1}.png}\hspace*{\fill}}
 
 
-\subsubsection{\sphinxstyleemphasis{Anamolies Management}}
+\subsection{\sphinxstyleemphasis{Anamolies Management}}
 \label{\detokenize{user_manual:anamolies-management}}
 
-\paragraph{Case 1}
+\subsubsection{Case 1}
 \label{\detokenize{user_manual:case-1}}\begin{itemize}
 \item {} 
 Selecting of more than four slots
@@ -159,7 +151,7 @@ Error notice view
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{GUI1_1_2}.png}\hspace*{\fill}}
 
 
-\paragraph{Case 2}
+\subsubsection{Case 2}
 \label{\detokenize{user_manual:case-2}}\begin{itemize}
 \item {} 
 Selecting more than one occasions for one slot in a day
@@ -176,10 +168,10 @@ Error notice view
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{GUI1_2_2}.png}\hspace*{\fill}}
 
 
-\subsection{\sphinxstylestrong{Working in GUI \#2}}
+\section{\sphinxstylestrong{Working in GUI \#2}}
 \label{\detokenize{user_manual:working-in-gui-2}}
 
-\subsubsection{\sphinxstyleemphasis{Steps}}
+\subsection{\sphinxstyleemphasis{Steps}}
 \label{\detokenize{user_manual:id1}}
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{GUI2_main}.png}\hspace*{\fill}}
 \begin{enumerate}
@@ -257,10 +249,10 @@ The selected slot will be saved in the appropriate locations
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{GUI2_main_7}.png}\hspace*{\fill}}
 
 
-\subsubsection{\sphinxstyleemphasis{Anamolies Management}}
+\subsection{\sphinxstyleemphasis{Anamolies Management}}
 \label{\detokenize{user_manual:id2}}
 
-\paragraph{Case 1}
+\subsubsection{Case 1}
 \label{\detokenize{user_manual:id3}}\begin{itemize}
 \item {} 
 Selecting same slots for two courses in the same basket
@@ -277,7 +269,7 @@ Error notice view
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{GUI2_1_2}.png}\hspace*{\fill}}
 
 
-\paragraph{Case 2}
+\subsubsection{Case 2}
 \label{\detokenize{user_manual:id4}}\begin{itemize}
 \item {} 
 Selecting same slots for a prof in two basket
@@ -294,10 +286,10 @@ Error notice view
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{GUI1_2_2}.png}\hspace*{\fill}}
 
 
-\section{\sphinxstylestrong{Developer Manual}}
+\chapter{\sphinxstylestrong{Developer Manual}}
 \label{\detokenize{developer:developer-manual}}\label{\detokenize{developer::doc}}
 
-\subsection{\sphinxstyleemphasis{Software Requirements}}
+\section{\sphinxstyleemphasis{Software Requirements}}
 \label{\detokenize{developer:software-requirements}}
 The following softwares are needed to be installed:
 \begin{itemize}
@@ -322,7 +314,14 @@ Sphinx
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{n}{sudo} \PYG{n}{apt}\PYG{o}{\PYGZhy{}}\PYG{n}{get} \PYG{n}{install} \PYG{n}{python3}
 \PYG{n}{sudo} \PYG{n}{apt}\PYG{o}{\PYGZhy{}}\PYG{n}{get} \PYG{n}{install} \PYG{n}{python3}\PYG{o}{\PYGZhy{}}\PYG{n}{tk}
-\PYG{n}{pip} \PYG{n}{install} \PYG{n}{openepyxl}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{pyexcel}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{xlwt}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{xlsxwriter}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{xlrd}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{openpyxl}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{ezodf}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{python}\PYG{o}{\PYGZhy{}}\PYG{n}{docx}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{pyexcel}\PYG{o}{\PYGZhy{}}\PYG{n}{ods}
 \end{sphinxVerbatim}
 
 Sphinx installation in needed in case you want to work on the documentation
@@ -344,14 +343,14 @@ For more information on working with sphinx you can refer:
 \sphinxurl{https://www.sphinx-doc.org/en/master/index.html}
 
 
-\subsection{\sphinxstyleemphasis{Bug Reports and Feature Requests}}
+\section{\sphinxstyleemphasis{Bug Reports and Feature Requests}}
 \label{\detokenize{developer:bug-reports-and-feature-requests}}
 If you have encontered a problem with the application or have an idea for a new feature, please submit it as an issue tracker on Github.
 
 After getting approval from a moderator, you may make a pull requests to the repository.
 
 
-\subsection{\sphinxstyleemphasis{Contributing on the Project}}
+\section{\sphinxstyleemphasis{Contributing on the Project}}
 \label{\detokenize{developer:contributing-on-the-project}}
 The recommended way for new contributors to submit code to Sphinx is to fork the repository on GitHub and then submit a pull request after committing the changes. The pull request will then need to be approved by one of the core developers before it is merged into the main repository.
 \begin{enumerate}
@@ -376,7 +375,7 @@ Documentation
 \end{itemize}
 
 
-\subsubsection{Getting Started}
+\subsection{Getting Started}
 \label{\detokenize{developer:getting-started}}
 These are the basic steps needed to start developing on the application.
 \begin{enumerate}
@@ -471,7 +470,270 @@ Wait for a core developer to review your changes.
 \end{enumerate}
 
 
-\subsubsection{Working on GUI\#1}
+\subsection{Tree Structure}
+\label{\detokenize{developer:tree-structure}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+.
+├── docs
+│   ├── build
+│   │   ├── doctrees
+│   │   │   ├── change.doctree
+│   │   │   ├── contributors.doctree
+│   │   │   ├── developer.doctree
+│   │   │   ├── environment.pickle
+│   │   │   ├── help.doctree
+│   │   │   ├── index.doctree
+│   │   │   ├── license.doctree
+│   │   │   └── user\PYGZus{}manual.doctree
+│   │   ├── html
+│   │   │   ├── change.html
+│   │   │   ├── contributors.html
+│   │   │   ├── developer.html
+│   │   │   ├── genindex.html
+│   │   │   ├── help.html
+│   │   │   ├── \PYGZus{}images
+│   │   │   │   ├── dev\PYGZus{}GUI1\PYGZus{}1.png
+│   │   │   │   ├── dev\PYGZus{}GUI1\PYGZus{}2.png
+│   │   │   │   ├── dev\PYGZus{}GUI1\PYGZus{}3.png
+│   │   │   │   ├── dev\PYGZus{}GUI2\PYGZus{}1.png
+│   │   │   │   ├── dev\PYGZus{}GUI2\PYGZus{}2.png
+│   │   │   │   ├── dev\PYGZus{}GUI2\PYGZus{}3.png
+│   │   │   │   ├── dev\PYGZus{}GUI2\PYGZus{}4.png
+│   │   │   │   ├── dev\PYGZus{}GUI2\PYGZus{}5.png
+│   │   │   │   ├── Fork1.png
+│   │   │   │   ├── GUI1\PYGZus{}1\PYGZus{}1.png
+│   │   │   │   ├── GUI1\PYGZus{}1\PYGZus{}2.png
+│   │   │   │   ├── GUI1\PYGZus{}2\PYGZus{}1.png
+│   │   │   │   ├── GUI1\PYGZus{}2\PYGZus{}2.png
+│   │   │   │   ├── GUI1\PYGZus{}main\PYGZus{}1.png
+│   │   │   │   ├── GUI1\PYGZus{}main.png
+│   │   │   │   ├── GUI2\PYGZus{}1\PYGZus{}1.png
+│   │   │   │   ├── GUI2\PYGZus{}1\PYGZus{}2.png
+│   │   │   │   ├── GUI2\PYGZus{}2\PYGZus{}1.png
+│   │   │   │   ├── GUI2\PYGZus{}main\PYGZus{}1.png
+│   │   │   │   ├── GUI2\PYGZus{}main\PYGZus{}2.png
+│   │   │   │   ├── GUI2\PYGZus{}main\PYGZus{}3.png
+│   │   │   │   ├── GUI2\PYGZus{}main\PYGZus{}4.png
+│   │   │   │   ├── GUI2\PYGZus{}main\PYGZus{}5.png
+│   │   │   │   ├── GUI2\PYGZus{}main\PYGZus{}6.png
+│   │   │   │   ├── GUI2\PYGZus{}main\PYGZus{}7.png
+│   │   │   │   └── GUI2\PYGZus{}main.png
+│   │   │   ├── index.html
+│   │   │   ├── license.html
+│   │   │   ├── objects.inv
+│   │   │   ├── search.html
+│   │   │   ├── searchindex.js
+│   │   │   ├── \PYGZus{}sources
+│   │   │   │   ├── change.rst.txt
+│   │   │   │   ├── contributors.rst.txt
+│   │   │   │   ├── developer.rst.txt
+│   │   │   │   ├── help.rst.txt
+│   │   │   │   ├── index.rst.txt
+│   │   │   │   ├── license.rst.txt
+│   │   │   │   └── user\PYGZus{}manual.rst.txt
+│   │   │   ├── \PYGZus{}static
+│   │   │   │   ├── alabaster.css
+│   │   │   │   ├── basic.css
+│   │   │   │   ├── custom.css
+│   │   │   │   ├── doctools.js
+│   │   │   │   ├── documentation\PYGZus{}options.js
+│   │   │   │   ├── file.png
+│   │   │   │   ├── jquery\PYGZhy{}3.4.1.js
+│   │   │   │   ├── jquery.js
+│   │   │   │   ├── language\PYGZus{}data.js
+│   │   │   │   ├── minus.png
+│   │   │   │   ├── plus.png
+│   │   │   │   ├── pygments.css
+│   │   │   │   ├── searchtools.js
+│   │   │   │   ├── underscore\PYGZhy{}1.3.1.js
+│   │   │   │   └── underscore.js
+│   │   │   └── user\PYGZus{}manual.html
+│   │   └── latex
+│   │       ├── dev\PYGZus{}GUI1\PYGZus{}1.png
+│   │       ├── dev\PYGZus{}GUI1\PYGZus{}2.png
+│   │       ├── dev\PYGZus{}GUI1\PYGZus{}3.png
+│   │       ├── dev\PYGZus{}GUI2\PYGZus{}1.png
+│   │       ├── dev\PYGZus{}GUI2\PYGZus{}2.png
+│   │       ├── dev\PYGZus{}GUI2\PYGZus{}3.png
+│   │       ├── dev\PYGZus{}GUI2\PYGZus{}4.png
+│   │       ├── dev\PYGZus{}GUI2\PYGZus{}5.png
+│   │       ├── footnotehyper\PYGZhy{}sphinx.sty
+│   │       ├── Fork1.png
+│   │       ├── GUI1\PYGZus{}1\PYGZus{}1.png
+│   │       ├── GUI1\PYGZus{}1\PYGZus{}2.png
+│   │       ├── GUI1\PYGZus{}2\PYGZus{}1.png
+│   │       ├── GUI1\PYGZus{}2\PYGZus{}2.png
+│   │       ├── GUI1\PYGZus{}main\PYGZus{}1.png
+│   │       ├── GUI1\PYGZus{}main.png
+│   │       ├── GUI2\PYGZus{}1\PYGZus{}1.png
+│   │       ├── GUI2\PYGZus{}1\PYGZus{}2.png
+│   │       ├── GUI2\PYGZus{}2\PYGZus{}1.png
+│   │       ├── GUI2\PYGZus{}main\PYGZus{}1.png
+│   │       ├── GUI2\PYGZus{}main\PYGZus{}2.png
+│   │       ├── GUI2\PYGZus{}main\PYGZus{}3.png
+│   │       ├── GUI2\PYGZus{}main\PYGZus{}4.png
+│   │       ├── GUI2\PYGZus{}main\PYGZus{}5.png
+│   │       ├── GUI2\PYGZus{}main\PYGZus{}6.png
+│   │       ├── GUI2\PYGZus{}main\PYGZus{}7.png
+│   │       ├── GUI2\PYGZus{}main.png
+│   │       ├── latexmkjarc
+│   │       ├── latexmkrc
+│   │       ├── LatinRules.xdy
+│   │       ├── LICRcyr2utf8.xdy
+│   │       ├── LICRlatin2utf8.xdy
+│   │       ├── make.bat
+│   │       ├── Makefile
+│   │       ├── python.ist
+│   │       ├── sphinxcyrillic.sty
+│   │       ├── sphinxhighlight.sty
+│   │       ├── sphinxhowto.cls
+│   │       ├── sphinxmanual.cls
+│   │       ├── sphinxmessages.sty
+│   │       ├── sphinxmulticell.sty
+│   │       ├── sphinx.sty
+│   │       ├── sphinx.xdy
+│   │       ├── time\PYGZhy{}table\PYGZhy{}assist\PYGZhy{}tool.aux
+│   │       ├── time\PYGZhy{}table\PYGZhy{}assist\PYGZhy{}tool.idx
+│   │       ├── time\PYGZhy{}table\PYGZhy{}assist\PYGZhy{}tool.log
+│   │       ├── time\PYGZhy{}table\PYGZhy{}assist\PYGZhy{}tool.out
+│   │       ├── time\PYGZhy{}table\PYGZhy{}assist\PYGZhy{}tool.pdf
+│   │       ├── time\PYGZhy{}table\PYGZhy{}assist\PYGZhy{}tool.synctex.gz
+│   │       ├── time\PYGZhy{}table\PYGZhy{}assist\PYGZhy{}tool.tex
+│   │       └── time\PYGZhy{}table\PYGZhy{}assist\PYGZhy{}tool.toc
+│   ├── make.bat
+│   ├── Makefile
+│   └── source
+│       ├── change.rst
+│       ├── conf.py
+│       ├── contributors.rst
+│       ├── developer.rst
+│       ├── git\PYGZhy{}log.txt
+│       ├── help.rst
+│       ├── img
+│       │   ├── dev\PYGZus{}GUI1\PYGZus{}1.png
+│       │   ├── dev\PYGZus{}GUI1\PYGZus{}2.png
+│       │   ├── dev\PYGZus{}GUI1\PYGZus{}3.png
+│       │   ├── dev\PYGZus{}GUI2\PYGZus{}1.png
+│       │   ├── dev\PYGZus{}GUI2\PYGZus{}2.png
+│       │   ├── dev\PYGZus{}GUI2\PYGZus{}3.png
+│       │   ├── dev\PYGZus{}GUI2\PYGZus{}4.png
+│       │   ├── dev\PYGZus{}GUI2\PYGZus{}5.png
+│       │   ├── Fork1.png
+│       │   ├── GUI1\PYGZus{}1\PYGZus{}1.png
+│       │   ├── GUI1\PYGZus{}1\PYGZus{}2.png
+│       │   ├── GUI1\PYGZus{}2\PYGZus{}1.png
+│       │   ├── GUI1\PYGZus{}2\PYGZus{}2.png
+│       │   ├── GUI1\PYGZus{}main\PYGZus{}1.png
+│       │   ├── GUI1\PYGZus{}main.png
+│       │   ├── GUI2\PYGZus{}1\PYGZus{}1.png
+│       │   ├── GUI2\PYGZus{}1\PYGZus{}2.png
+│       │   ├── GUI2\PYGZus{}2\PYGZus{}1.png
+│       │   ├── GUI2\PYGZus{}2\PYGZus{}2.png
+│       │   ├── GUI2\PYGZus{}main\PYGZus{}1.png
+│       │   ├── GUI2\PYGZus{}main\PYGZus{}2.png
+│       │   ├── GUI2\PYGZus{}main\PYGZus{}3.png
+│       │   ├── GUI2\PYGZus{}main\PYGZus{}4.png
+│       │   ├── GUI2\PYGZus{}main\PYGZus{}5.png
+│       │   ├── GUI2\PYGZus{}main\PYGZus{}6.png
+│       │   ├── GUI2\PYGZus{}main\PYGZus{}7.png
+│       │   └── GUI2\PYGZus{}main.png
+│       ├── index.rst
+│       ├── license.rst
+│       ├── \PYGZus{}static
+│       ├── \PYGZus{}templates
+│       └── user\PYGZus{}manual.rst
+├── main.py
+├── progs
+│   ├── CourselistAug\PYGZhy{}Dec2019\PYGZus{}2Sep.ods
+│   ├── func
+│   │   ├── checktheory.py
+│   │   ├── extract\PYGZus{}docxs.py
+│   │   ├── extract\PYGZus{}ods.py
+│   │   ├── initialize\PYGZus{}excel\PYGZus{}files.py
+│   │   ├── \PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}.py
+│   │   ├── \PYGZus{}\PYGZus{}pycache\PYGZus{}\PYGZus{}
+│   │   │   ├── \PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}.cpython\PYGZhy{}36.pyc
+│   │   │   ├── initialize\PYGZus{}excel\PYGZus{}files.cpython\PYGZhy{}36.pyc
+│   │   │   ├── save.cpython\PYGZhy{}36.pyc
+│   │   │   └── undo.cpython\PYGZhy{}36.pyc
+│   │   ├── read\PYGZus{}create.py
+│   │   ├── save.py
+│   │   ├── tlist.py
+│   │   └── undo.py
+│   ├── \PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}.py
+│   ├── prog1.py
+│   ├── prog2.py
+│   ├── prog3.py
+│   └── \PYGZus{}\PYGZus{}pycache\PYGZus{}\PYGZus{}
+│       ├── \PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}.cpython\PYGZhy{}36.pyc
+│       ├── prog1.cpython\PYGZhy{}36.pyc
+│       └── prog2.cpython\PYGZhy{}36.pyc
+├── README.md
+├── Reports
+│   ├── DD\PYGZus{}v1.0.odt
+│   ├── README\PYGZus{}v1.0.md
+│   └── SRS\PYGZus{}v1.0.odt
+├── Reports\PYGZus{}v1.0.zip
+├── src
+│   ├── data
+│   │   ├── basket\PYGZus{}elective\PYGZus{}docxs
+│   │   │   └── ExampleElectiveCoursesGrouping.docx
+│   │   ├── ClassroomSeatingCapacity.docx
+│   │   ├── Courselist.ods
+│   │   └── ExampleElectiveCoursesGrouping.docx
+│   └── tmp
+│       ├── baskets
+│       │   ├── 10.xlsx
+│       │   ├── 11.xlsx
+│       │   ├── 12.xlsx
+│       │   ├── 13.xlsx
+│       │   ├── 14.xlsx
+│       │   ├── 15.xlsx
+│       │   ├── 16.xlsx
+│       │   ├── 17.xlsx
+│       │   ├── 18.xlsx
+│       │   ├── 19.xlsx
+│       │   ├── 20.xlsx
+│       │   ├── 21.xlsx
+│       │   ├── 22.xlsx
+│       │   ├── 23.xlsx
+│       │   ├── 24.xlsx
+│       │   ├── 25.xlsx
+│       │   ├── 27.xlsx
+│       │   ├── 28.xlsx
+│       │   ├── 29.xlsx
+│       │   ├── 30.xlsx
+│       │   ├── 31.xlsx
+│       │   ├── 32.xlsx
+│       │   ├── 33.xlsx
+│       │   ├── 34.xlsx
+│       │   ├── 35.xlsx
+│       │   ├── 36.xlsx
+│       │   ├── 37.xlsx
+│       │   ├── 39.xlsx
+│       │   ├── 40.xlsx
+│       │   ├── 41.xlsx
+│       │   ├── 42.xlsx
+│       │   ├── 6.xlsx
+│       │   ├── 7.xlsx
+│       │   ├── 8.xlsx
+│       │   ├── 9.xlsx
+│       │   ├── course\PYGZus{}faculty\PYGZus{}main.xlsx
+│       │   ├── course\PYGZus{}faculty\PYGZus{}optional.xlsx
+│       │   ├── Group\PYGZhy{}1\PYGZus{}(3rd\PYGZus{}4th\PYGZus{}Year::Microelectronics,\PYGZus{}VLSI\PYGZus{}and\PYGZus{}Embedded\PYGZus{}Systems\PYGZus{}Track).xlsx
+│       │   ├── Group\PYGZhy{}2\PYGZus{}(3rd\PYGZus{}4th\PYGZus{}Year::Signal\PYGZus{}Processing\PYGZus{}Track).xlsx
+│       │   ├── Group\PYGZhy{}3\PYGZus{}(3rd\PYGZus{}4th\PYGZus{}Year::Communication\PYGZus{}Track).xlsx
+│       │   └── Group\PYGZhy{}4\PYGZus{}(3rd\PYGZus{}4th\PYGZus{}Year::Power\PYGZus{}Electronics\PYGZus{}and\PYGZus{}Power\PYGZus{}Systems\PYGZus{}Track).xlsx
+│       ├── course\PYGZus{}faculty\PYGZus{}main.xlsx
+│       ├── course\PYGZus{}faculty\PYGZus{}optional.xlsx
+│       └── slot.xlsx
+└── tree.txt
+
+22 directories, 232 files
+\end{sphinxVerbatim}
+
+
+\subsection{Working on GUI\#1}
 \label{\detokenize{developer:working-on-gui-1}}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
@@ -566,7 +828,7 @@ Modify the code accordingly and commit changes when necessary.
 \end{enumerate}
 
 
-\subsubsection{Working on GUI\#2}
+\subsection{Working on GUI\#2}
 \label{\detokenize{developer:working-on-gui-2}}\begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
@@ -690,7 +952,7 @@ Include the required packages in the top of the file
 \end{sphinxVerbatim}
 
 
-\subsection{\sphinxstyleemphasis{Core Developers}}
+\section{\sphinxstyleemphasis{Core Developers}}
 \label{\detokenize{developer:core-developers}}
 The core developers of the application have write access to the main repository. They can commit changes, accept/reject pull requests, and manage items on the issue tracker.
 
@@ -710,30 +972,30 @@ When committing code written by someone else, please attribute the original auth
 \end{itemize}
 
 
-\subsection{\sphinxstyleemphasis{Branch Model}}
+\section{\sphinxstyleemphasis{Branch Model}}
 \label{\detokenize{developer:branch-model}}
 The branch are made when a new major portion is added into the application. Only minor changes and bug removal in the branch would be appretiated.
 
 
-\subsubsection{Conventions}
+\subsection{Conventions}
 \label{\detokenize{developer:conventions}}
 
-\paragraph{master:}
+\subsubsection{master:}
 \label{\detokenize{developer:master}}
 The is the most recent branch and the one which is currently deployed for the consumer.
 
 
-\paragraph{X.Y:}
+\subsubsection{X.Y:}
 \label{\detokenize{developer:x-y}}
 Where X.Y stands for the MAJOR.MINOR release.
 
 
-\paragraph{X.Y.Z:}
+\subsubsection{X.Y.Z:}
 \label{\detokenize{developer:x-y-z}}
 Where X.Y.Z stands for MAJOR.MINOR.PATCH release.
 
 
-\section{Contributors}
+\chapter{Contributors}
 \label{\detokenize{contributors:contributors}}\label{\detokenize{contributors::doc}}
 Purushottam Sinha (\sphinxhref{mailto:B17053@students.iitmandi.ac.in}{B17053@students.iitmandi.ac.in})
 
@@ -744,7 +1006,7 @@ Vinay Kumar (\sphinxhref{mailto:B17070@students.iitmandi.ac.in}{B17070@students.
 Roshan Sharma (\sphinxhref{mailto:B17054@students.iitmandi.ac.in}{B17054@students.iitmandi.ac.in})
 
 
-\section{Change Log}
+\chapter{Change Log}
 \label{\detokenize{change:change-log}}\label{\detokenize{change::doc}}
 commit 032c4397eb5f217cd2167f55a2781a8c74552510
 Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
@@ -1245,12 +1507,12 @@ Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmai
 Date:   Wed Oct 9 14:02:48 2019 +0530
 
 
-\section{Need Help}
+\chapter{Need Help}
 \label{\detokenize{help:need-help}}\label{\detokenize{help::doc}}
 If you’re having trouble please email \sphinxhref{mailto:b17053@students.iitmandi.ac.in}{b17053@students.iitmandi.ac.in}
 
 
-\section{License}
+\chapter{License}
 \label{\detokenize{license:license}}\label{\detokenize{license::doc}}
 The MIT License (MIT)
 
@@ -1263,7 +1525,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-\section{Contact}
+\chapter{Contact}
 \label{\detokenize{license:contact}}
 Question? Please contact \sphinxhref{mailto:b17053@students.iitmandi.ac.in}{b17053@students.iitmandi.ac.in}
 
