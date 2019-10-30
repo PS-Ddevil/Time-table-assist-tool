@@ -7,8 +7,6 @@ Go to the folder and run below command : -
 
     sudo apt-get install python3-tk
     python3 main.py
-    sudo apt-get install sqlite3
-    sudo apt-get install sqlitebrowser
     pip3 install xlwt
     pip3 install xlsxwriter
     pip3 install xlrd
