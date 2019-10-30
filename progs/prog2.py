@@ -4,6 +4,7 @@ from tkinter import messagebox
 import os
 import openpyxl
 from tkinter import filedialog
+import tkinter.ttk as ttk
 
 file_path = "src/tmp/baskets"
 master2 = Tk()
@@ -17,7 +18,7 @@ lists=[]
 def DropDown():
     global lists,v
     v.set("Select File")
-    w = OptionMenu(frame1, v, *lists)
+    w = ttk.Combobox(frame1, textvariable=v, value=lists)
     w.grid(row=1,column=0,columnspan=3,sticky=W+E+N+S)
     w.config(width=45)
     v.trace("w", DisplayGUI)
@@ -27,7 +28,7 @@ def ConstraintCheck(var,i,name,focus,*args):
     global file_path
     wb = openpyxl.load_workbook(str(os.path.join(file_path, v.get())))
     ws = wb.active
-    print(ws.cell(i+1,8).value,ws.cell(i,8).value,i)
+    print(ws.cell(i+1,8).value,ws.cell(i,8).value,i,v.get(),file_path)
     j=0
     for j in range(2,ws.max_row+1):
         c1=ws.cell(j,8)
@@ -134,7 +135,7 @@ def DialogBox():
                                 break
                wb.save(a)
        DropDown()
-B = Button(frame1, text ="Choose Directory", command = DialogBox)
+B = Button(frame1, text ="Start", command = DialogBox)
 B.grid(row=0,column=0,columnspan=3,sticky=W+E+N+S)
 B.config(width=45)
 
