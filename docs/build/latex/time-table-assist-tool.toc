@@ -23,9 +23,9 @@
 \contentsline {subsubsection}{Conventions}{20}{subsubsection*.14}
 \contentsline {paragraph}{master:}{20}{paragraph*.15}
 \contentsline {paragraph}{X.Y:}{20}{paragraph*.16}
-\contentsline {paragraph}{X.Y.Z:}{20}{paragraph*.17}
-\contentsline {section}{\numberline {1.3}Contributors}{20}{section.1.3}
+\contentsline {paragraph}{X.Y.Z:}{21}{paragraph*.17}
+\contentsline {section}{\numberline {1.3}Contributors}{21}{section.1.3}
 \contentsline {section}{\numberline {1.4}Change Log}{21}{section.1.4}
-\contentsline {section}{\numberline {1.5}Need Help}{24}{section.1.5}
-\contentsline {section}{\numberline {1.6}License}{24}{section.1.6}
-\contentsline {section}{\numberline {1.7}Contact}{24}{section.1.7}
+\contentsline {section}{\numberline {1.5}Need Help}{26}{section.1.5}
+\contentsline {section}{\numberline {1.6}License}{26}{section.1.6}
+\contentsline {section}{\numberline {1.7}Contact}{26}{section.1.7}

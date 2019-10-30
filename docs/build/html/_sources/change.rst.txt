@@ -1,6 +1,104 @@
 Change Log
 ===========
 
+commit 032c4397eb5f217cd2167f55a2781a8c74552510
+Author: PS-Ddevil <sinhapurushottam911@gmail.com>
+Date:   Sat Oct 26 01:08:55 2019 +0530
+
+    Added the demo files by faculty
+
+commit bb7415badc84a0fda1e34830d1727b344a73fec4
+Author: PS-Ddevil <sinhapurushottam911@gmail.com>
+Date:   Sat Oct 26 00:37:21 2019 +0530
+
+    Fully Modulised the code
+
+commit 40a52c4689de6a4822a0256fd5827570bb88bd73
+Merge: b6ae0f5 a87b054
+Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
+Date:   Fri Oct 25 22:11:54 2019 +0530
+
+    Merge pull request #13 from roshan21097/master
+    
+    3rd GUI
+
+commit a87b0542d196afca4d435c68aae536c25360d0f4
+Merge: e0a13e4 b6ae0f5
+Author: Roshan Sharma <rsharma21097@gmail.com>
+Date:   Fri Oct 25 16:52:21 2019 -0400
+
+    Working on 3rd GUI(For Class)#2
+
+commit e0a13e4dc79f32f401bbf116c536dac62634699e
+Merge: e015247 6a394f1
+Author: Roshan Sharma <rsharma21097@gmail.com>
+Date:   Fri Oct 25 16:50:52 2019 -0400
+
+    Working on 3rd GUI(For Class)
+
+commit b6ae0f5f9029f311672b027faa963f17a3d59b51
+Author: PS-Ddevil <sinhapurushottam911@gmail.com>
+Date:   Fri Oct 25 16:16:46 2019 +0530
+
+    Updated Documentation
+
+commit 9587ec51ee7f4fabe5c3b04dcfa37059b0a79bb2
+Merge: 6a394f1 952fae8
+Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
+Date:   Fri Oct 25 16:04:18 2019 +0530
+
+    Merge pull request #12 from deepakjnv880/master
+    
+    Updated
+
+commit 952fae86c7f9976e1946307c4075be89315ca50c
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Fri Oct 25 14:59:47 2019 +0530
+
+    updated
+
+commit cacc01e6db1b6e36fc6189c81edf90e90547e7b0
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Fri Oct 25 14:21:21 2019 +0530
+
+    updated
+
+commit 430af0dbcacfb9e5c5f6886bac4fe4f3ed7c9c5d
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Fri Oct 25 12:47:22 2019 +0530
+
+    Excel files folder delted
+
+commit 2d708c66f9e58e31f156533bfc5569802eb7d643
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Fri Oct 25 12:46:54 2019 +0530
+
+    unwanted file deleted
+
+commit 87cbac89ec94d67892e3313e0d3931fa2df2d04c
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Fri Oct 25 12:44:20 2019 +0530
+
+    git ignore added
+
+commit 77be7d5f605056264f9e3cdb422ea71d89ec3834
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Fri Oct 25 12:39:28 2019 +0530
+
+    All error fixed
+
+commit 4c3dda1a05d421072e7453039a11266df7b316cb
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Fri Oct 25 10:53:09 2019 +0530
+
+    undo and Save added
+
+commit 6ef099f6dcf5d784ad60de75bc20c1605f2cf30b
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Fri Oct 25 10:42:52 2019 +0530
+
+    Redo name change to undo
+
 commit 6a394f12548cdef11c5d183a1e34d1f3e86e71d1
 Merge: 9bcaddb 5d2f2b3
 Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
@@ -21,6 +119,25 @@ Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
 Date:   Thu Oct 24 22:13:03 2019 +0530
 
     sqlite code deleted
+
+commit e015247973f0871858f477cc8fbb6a5d886560f7
+Author: Roshan Sharma <rsharma21097@gmail.com>
+Date:   Wed Oct 23 14:43:15 2019 -0400
+
+    GUI for Class
+
+commit f1915718e717a5a8c3680dc62e004abe2c5d0f36
+Merge: 92bec1c 9bcaddb
+Author: Roshan Sharma <rsharma21097@gmail.com>
+Date:   Tue Oct 22 22:25:00 2019 -0400
+
+    Remove excel sheet
+
+commit 92bec1cdedf7378b604fff7740cc0e1c0eb454a5
+Author: Roshan Sharma <rsharma21097@gmail.com>
+Date:   Tue Oct 22 22:23:46 2019 -0400
+
+    Done some changes
 
 commit 9bcaddb51dd09f6eac833923c9bb809c94e566fb
 Author: PS-Ddevil <sinhapurushottam911@gmail.com>
@@ -266,4 +383,3 @@ commit 56775b6cf44bdba5f32090333d1641b73adbf5eb
 Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
 Date:   Wed Oct 9 14:02:48 2019 +0530
 
-    Initial commit

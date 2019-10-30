@@ -72,7 +72,7 @@
 
 
 \title{time-table-assist-tool}
-\date{Oct 25, 2019}
+\date{Oct 26, 2019}
 \release{0.0.1}
 \author{Purushottam Sinha}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -415,6 +415,60 @@ Run the command
 \end{sphinxVerbatim}
 
 where \textless{}git-username\textgreater{} refers to the Username of your Github profile
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{6}
+\item {} 
+Check out the branch to work on. By default the master branch in selected.
+
+\end{enumerate}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{git} \PYG{n}{checkout} \PYG{n}{v2}\PYG{o}{.}\PYG{l+m+mi}{0}
+\end{sphinxVerbatim}
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{7}
+\item {} 
+To create a new branch to work on.
+
+\end{enumerate}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{git} \PYG{n}{checkout} \PYG{o}{\PYGZhy{}}\PYG{n}{b} \PYG{n}{branch}\PYG{o}{\PYGZhy{}}\PYG{n}{name}
+\end{sphinxVerbatim}
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{8}
+\item {} 
+Incase you fix some issue you can commit the changes.
+
+\end{enumerate}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{git} \PYG{n}{commit} \PYG{o}{\PYGZhy{}}\PYG{n}{m} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Some XYZ changes}\PYG{l+s+s2}{\PYGZdq{}}
+\end{sphinxVerbatim}
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{9}
+\item {} 
+Push changes in the branch to your forked reposiory on the Github.
+
+\end{enumerate}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{git} \PYG{n}{push} \PYG{n}{origin} \PYG{n}{branch}\PYG{o}{\PYGZhy{}}\PYG{n}{name}
+\end{sphinxVerbatim}
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{10}
+\item {} 
+Submit a pull request from your branch to the respective branch (master or X.Y).
+
+\item {} 
+Wait for a core developer to review your changes.
+
+\end{enumerate}
 
 
 \subsubsection{Working on GUI\#1}
@@ -692,6 +746,134 @@ Roshan Sharma (\sphinxhref{mailto:B17054@students.iitmandi.ac.in}{B17054@student
 
 \section{Change Log}
 \label{\detokenize{change:change-log}}\label{\detokenize{change::doc}}
+commit 032c4397eb5f217cd2167f55a2781a8c74552510
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Sat Oct 26 01:08:55 2019 +0530
+\begin{quote}
+
+Added the demo files by faculty
+\end{quote}
+
+commit bb7415badc84a0fda1e34830d1727b344a73fec4
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Sat Oct 26 00:37:21 2019 +0530
+\begin{quote}
+
+Fully Modulised the code
+\end{quote}
+
+commit 40a52c4689de6a4822a0256fd5827570bb88bd73
+Merge: b6ae0f5 a87b054
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Fri Oct 25 22:11:54 2019 +0530
+\begin{quote}
+
+Merge pull request \#13 from roshan21097/master
+
+3rd GUI
+\end{quote}
+
+commit a87b0542d196afca4d435c68aae536c25360d0f4
+Merge: e0a13e4 b6ae0f5
+Author: Roshan Sharma \textless{}\sphinxhref{mailto:rsharma21097@gmail.com}{rsharma21097@gmail.com}\textgreater{}
+Date:   Fri Oct 25 16:52:21 2019 -0400
+\begin{quote}
+
+Working on 3rd GUI(For Class)\#2
+\end{quote}
+
+commit e0a13e4dc79f32f401bbf116c536dac62634699e
+Merge: e015247 6a394f1
+Author: Roshan Sharma \textless{}\sphinxhref{mailto:rsharma21097@gmail.com}{rsharma21097@gmail.com}\textgreater{}
+Date:   Fri Oct 25 16:50:52 2019 -0400
+\begin{quote}
+
+Working on 3rd GUI(For Class)
+\end{quote}
+
+commit b6ae0f5f9029f311672b027faa963f17a3d59b51
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Fri Oct 25 16:16:46 2019 +0530
+\begin{quote}
+
+Updated Documentation
+\end{quote}
+
+commit 9587ec51ee7f4fabe5c3b04dcfa37059b0a79bb2
+Merge: 6a394f1 952fae8
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Fri Oct 25 16:04:18 2019 +0530
+\begin{quote}
+
+Merge pull request \#12 from deepakjnv880/master
+
+Updated
+\end{quote}
+
+commit 952fae86c7f9976e1946307c4075be89315ca50c
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Fri Oct 25 14:59:47 2019 +0530
+\begin{quote}
+
+updated
+\end{quote}
+
+commit cacc01e6db1b6e36fc6189c81edf90e90547e7b0
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Fri Oct 25 14:21:21 2019 +0530
+\begin{quote}
+
+updated
+\end{quote}
+
+commit 430af0dbcacfb9e5c5f6886bac4fe4f3ed7c9c5d
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Fri Oct 25 12:47:22 2019 +0530
+\begin{quote}
+
+Excel files folder delted
+\end{quote}
+
+commit 2d708c66f9e58e31f156533bfc5569802eb7d643
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Fri Oct 25 12:46:54 2019 +0530
+\begin{quote}
+
+unwanted file deleted
+\end{quote}
+
+commit 87cbac89ec94d67892e3313e0d3931fa2df2d04c
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Fri Oct 25 12:44:20 2019 +0530
+\begin{quote}
+
+git ignore added
+\end{quote}
+
+commit 77be7d5f605056264f9e3cdb422ea71d89ec3834
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Fri Oct 25 12:39:28 2019 +0530
+\begin{quote}
+
+All error fixed
+\end{quote}
+
+commit 4c3dda1a05d421072e7453039a11266df7b316cb
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Fri Oct 25 10:53:09 2019 +0530
+\begin{quote}
+
+undo and Save added
+\end{quote}
+
+commit 6ef099f6dcf5d784ad60de75bc20c1605f2cf30b
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Fri Oct 25 10:42:52 2019 +0530
+\begin{quote}
+
+Redo name change to undo
+\end{quote}
+
 commit 6a394f12548cdef11c5d183a1e34d1f3e86e71d1
 Merge: 9bcaddb 5d2f2b3
 Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
@@ -717,6 +899,31 @@ Date:   Thu Oct 24 22:13:03 2019 +0530
 \begin{quote}
 
 sqlite code deleted
+\end{quote}
+
+commit e015247973f0871858f477cc8fbb6a5d886560f7
+Author: Roshan Sharma \textless{}\sphinxhref{mailto:rsharma21097@gmail.com}{rsharma21097@gmail.com}\textgreater{}
+Date:   Wed Oct 23 14:43:15 2019 -0400
+\begin{quote}
+
+GUI for Class
+\end{quote}
+
+commit f1915718e717a5a8c3680dc62e004abe2c5d0f36
+Merge: 92bec1c 9bcaddb
+Author: Roshan Sharma \textless{}\sphinxhref{mailto:rsharma21097@gmail.com}{rsharma21097@gmail.com}\textgreater{}
+Date:   Tue Oct 22 22:25:00 2019 -0400
+\begin{quote}
+
+Remove excel sheet
+\end{quote}
+
+commit 92bec1cdedf7378b604fff7740cc0e1c0eb454a5
+Author: Roshan Sharma \textless{}\sphinxhref{mailto:rsharma21097@gmail.com}{rsharma21097@gmail.com}\textgreater{}
+Date:   Tue Oct 22 22:23:46 2019 -0400
+\begin{quote}
+
+Done some changes
 \end{quote}
 
 commit 9bcaddb51dd09f6eac833923c9bb809c94e566fb
@@ -1036,10 +1243,6 @@ Update README.md
 commit 56775b6cf44bdba5f32090333d1641b73adbf5eb
 Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
 Date:   Wed Oct 9 14:02:48 2019 +0530
-\begin{quote}
-
-Initial commit
-\end{quote}
 
 
 \section{Need Help}

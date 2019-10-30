@@ -8,12 +8,12 @@ import openpyxl
 import os
 def extract():
     # pass
-    fname1='src/course_faculty_main.xlsx'
+    fname1='./../src/tmp/course_faculty_main.xlsx'
     print(str(os.path.isfile(fname1)))
     if str(os.path.isfile(fname1))=='False':
         print(os.path.isfile(fname1))
         workbook1=xlwt.Workbook(fname1)
-        ws1 = workbook.add_sheet('Tested')
+        ws1 = workbook1.add_sheet('Tested')
         workbook1.save(fname1)
         print(fname1,' is created')
 
@@ -24,7 +24,7 @@ def extract():
     sheet1.cell(row = 1, column = 1).value='Course code'
     sheet1.cell(row = 1, column = 2).value='Faculty name'
     ##################################################################
-    fname2='src/course_faculty_optional.xlsx'
+    fname2='./../src/tmp/course_faculty_optional.xlsx'
     print(str(os.path.isfile(fname2)))
     if str(os.path.isfile(fname2))=='False':
         print(os.path.isfile(fname2))
@@ -43,7 +43,7 @@ def extract():
     count1=2
     count2=2
 
-    doc = ezodf.opendoc('src/CourselistAug-Dec2019_2Sep.ods')
+    doc = ezodf.opendoc('./../src/data/Courselist.ods')
 
     sheet = doc.sheets[0]
     print(sheet)
@@ -72,3 +72,5 @@ def extract():
     # df = pd.DataFrame(df_dict)
     wb1.save(fname1)
     wb2.save(fname2)
+
+extract()

@@ -6,7 +6,7 @@ import openpyxl
 import os
 
 def parse_all_docxs_table():
-    path = 'src/basket_elective_docxs/'
+    path = './../src/data/basket_elective_docxs/'
     for filename in os.listdir(path):
         # print(filename)
         document = Document(path+filename)
@@ -30,7 +30,7 @@ def parse_all_docxs_table():
                     fname=tuple(text)[0]+'.xlsx'
                     fname=fname.replace(" ", "_")
                     fname=fname.replace("/", "_")
-                    fname='src/basket_elective_excels/'+fname
+                    fname='./../src/tmp/baskets/'+fname
                     if str(os.path.isfile(fname))==False:
                         print(os.path.isfile(fname))
                         workbook=xlwt.Workbook(fname)
@@ -56,4 +56,4 @@ def parse_all_docxs_table():
                 count=count+1
             wb.save(fname)
 
-# parse_all_docxs_table()
+parse_all_docxs_table()
