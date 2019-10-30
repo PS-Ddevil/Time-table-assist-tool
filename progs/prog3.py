@@ -28,9 +28,9 @@ def ConstraintCheck(var,i,name,slot,*args):
     for j in range(len(slot)):
         if(i==j):
             continue
-        elif(var.get()!="No Classroom" or var.get()==slot[j][1]):
+        elif(var.get()!="No Classroom" and var.get()==slot[j][1]):
             messagebox.showerror("Error", var.get() + " is twice time and it will not be saved so please change ") 
-            var.set(slot[j][1])
+            var.set(slot[i][1])
             return
     slot[i][1]=var.get()
 def Save():
@@ -72,7 +72,7 @@ def Save():
                 for j in range(len(slotH)):
                     if(slotH[j][0]==ws.cell(i,1).value):
                         ws.cell(i,9).value=slotH[j][1] 
-        ws.save(os.path.join(file_path, file))   
+        wb.save(os.path.join(file_path, file))   
 
 def call(slot):
     w = Label(frame2, text="Course")
@@ -201,7 +201,7 @@ def DialogBox():
                lists.append(file)
        DropDown()
 
-B = Button(frame1, text ="Choose Directory", command = DialogBox)
+B = Button(frame1, text ="Start", command = DialogBox)
 B.grid(row=0,column=0,columnspan=3,sticky=W+E+N+S)
 B.config(width=45)
 
