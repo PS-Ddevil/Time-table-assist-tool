@@ -1,6 +1,126 @@
 Change Log
 ===========
 
+commit 1493e4307eaa027ca98a43c2e5a36741b075533b
+Author: PS-Ddevil <sinhapurushottam911@gmail.com>
+Date:   Sat Nov 2 14:18:05 2019 +0530
+
+    Added tree
+
+commit 1a7729dd6c96b973f15f83a405f84cd564248673
+Merge: bff63d4 d9a2740
+Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
+Date:   Wed Oct 30 14:39:51 2019 +0530
+
+    Merge pull request #17 from roshan21097/master
+    
+    Fully  integrated
+
+commit d9a27409cd7c02d76d74168044721246a9254991
+Author: Roshan Sharma <rsharma21097@gmail.com>
+Date:   Wed Oct 30 14:35:32 2019 -0400
+
+    Fully  integrated
+
+commit f9b2c74ef8d29720198a03f51c9e8b8a3a0afb81
+Author: Roshan Sharma <rsharma21097@gmail.com>
+Date:   Wed Oct 30 13:38:04 2019 -0400
+
+    Classroom partially integrated
+
+commit bff63d44ca461b6cf0cbad6d73d2eb170fdfc9a9
+Author: PS-Ddevil <sinhapurushottam911@gmail.com>
+Date:   Wed Oct 30 14:38:42 2019 +0530
+
+    Changed some documentation
+
+commit 338d4960b027aa858105b77d303e879b34a5fd82
+Merge: 280f4b1 f9b2c74
+Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
+Date:   Wed Oct 30 13:43:14 2019 +0530
+
+    Merge pull request #16 from roshan21097/master
+    
+    Classroom partially integrated
+
+commit 280f4b112f39e41ebf4e99e89a57adcf1681e3ec
+Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
+Date:   Wed Oct 30 11:33:44 2019 +0530
+
+    Update README.md
+
+commit ecb1a61e505a89726b84e56f764cc3e2715e48d6
+Author: PS-Ddevil <sinhapurushottam911@gmail.com>
+Date:   Wed Oct 30 11:28:24 2019 +0530
+
+    Made appropriate data distribution
+
+commit 5ee92a07c56c666d38281936beebc62ec11b8d13
+Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
+Date:   Tue Oct 29 23:11:58 2019 +0530
+
+    Update README.md
+
+commit 537186ff7fea7792e4b9e7700dad39d5838fd8cb
+Merge: 895488d 02d471c
+Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
+Date:   Tue Oct 29 21:32:34 2019 +0530
+
+    Merge pull request #15 from deepakjnv880/master
+    
+    updated
+
+commit 02d471c520e5a1f7d3b637bfcb3f3d1b573248ae
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Tue Oct 29 13:27:31 2019 +0530
+
+    updated
+
+commit 81993b75a82942d062072dc454b06201a844bc6d
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Tue Oct 29 13:24:32 2019 +0530
+
+    extract_ods.py added
+
+commit 7bb9dfa7cb4bf62bd174c57ee6e2f569f3ae5ef6
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Sun Oct 27 14:08:39 2019 +0530
+
+    updated
+
+commit 895488d9797fbb5549ef27db889482d788d484bc
+Merge: 032c439 ff12e8f
+Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
+Date:   Mon Oct 28 21:56:37 2019 +0530
+
+    Merge pull request #14 from vinayskywalker/master
+    
+    dividing the core courses into different basket
+
+commit ff12e8f4b15a9f9887f955a6e70fac4a646cb54b
+Author: Vinay Kumar <45215239+vinayskywalker@users.noreply.github.com>
+Date:   Mon Oct 28 21:43:17 2019 +0530
+
+    Update README.md
+
+commit 79188dae099792892643e03caae96e31af73df1f
+Author: vinayskywalker <vinaykumar.dakshana17@gmail.com>
+Date:   Mon Oct 28 21:10:41 2019 +0530
+
+    extracting into core basket
+
+commit 2974bb70f49e6d3a07d30ada120add83a23d3f7a
+Author: vinayskywalker <vinaykumar.dakshana17@gmail.com>
+Date:   Mon Oct 28 17:31:46 2019 +0530
+
+    extract core course
+
+commit fb4b297fa61435fdd19def913aca7698f83b74f8
+Author: vinayskywalker <vinaykumar.dakshana17@gmail.com>
+Date:   Mon Oct 28 15:32:42 2019 +0530
+
+    dividing the Core course
+
 commit 032c4397eb5f217cd2167f55a2781a8c74552510
 Author: PS-Ddevil <sinhapurushottam911@gmail.com>
 Date:   Sat Oct 26 01:08:55 2019 +0530
@@ -383,3 +503,4 @@ commit 56775b6cf44bdba5f32090333d1641b73adbf5eb
 Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
 Date:   Wed Oct 9 14:02:48 2019 +0530
 
+    Initial commit

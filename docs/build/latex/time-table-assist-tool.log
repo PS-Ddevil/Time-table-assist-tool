@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.6)  30 OCT 2019 14:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.6)  2 NOV 2019 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1161,7 +1161,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <12> not available
 (Font)              Font shape `T1/phv/b/it' tried instead on input line 98.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 98.
-<GUI1_main.png, id=140, 844.15375pt x 239.89626pt>
+<GUI1_main.png, id=160, 844.15375pt x 239.89626pt>
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 100.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1180,7 +1180,7 @@ File: GUI1_main.png Graphic file (type png)
 <use GUI1_main.png>
 Package pdftex.def Info: GUI1_main.png  used on input line 124.
 (pdftex.def)             Requested size: 469.76031pt x 133.49905pt.
-<GUI1_main_1.png, id=142, 848.16875pt x 277.035pt>
+<GUI1_main_1.png, id=162, 848.16875pt x 277.035pt>
 File: GUI1_main_1.png Graphic file (type png)
 <use GUI1_main_1.png>
 Package pdftex.def Info: GUI1_main_1.png  used on input line 131.
@@ -1188,28 +1188,28 @@ Package pdftex.def Info: GUI1_main_1.png  used on input line 131.
  [1
 
  <./GUI1_main.png>]
-<GUI1_1_1.png, id=152, 846.16125pt x 414.54875pt>
+<GUI1_1_1.png, id=173, 846.16125pt x 414.54875pt>
 File: GUI1_1_1.png Graphic file (type png)
 <use GUI1_1_1.png>
 Package pdftex.def Info: GUI1_1_1.png  used on input line 144.
 (pdftex.def)             Requested size: 469.75417pt x 230.14053pt.
-<GUI1_1_2.png, id=153, 854.19125pt x 228.855pt>
+<GUI1_1_2.png, id=174, 854.19125pt x 228.855pt>
 File: GUI1_1_2.png Graphic file (type png)
 <use GUI1_1_2.png>
 Package pdftex.def Info: GUI1_1_2.png  used on input line 151.
 (pdftex.def)             Requested size: 469.75452pt x 125.85666pt.
  [2 <./GUI1_main_1.png> <./GUI1_1_1.png> <./GUI1_1_2.png>]
-<GUI1_2_1.png, id=162, 848.16875pt x 283.0575pt>
+<GUI1_2_1.png, id=183, 848.16875pt x 283.0575pt>
 File: GUI1_2_1.png Graphic file (type png)
 <use GUI1_2_1.png>
 Package pdftex.def Info: GUI1_2_1.png  used on input line 161.
 (pdftex.def)             Requested size: 469.75563pt x 156.77483pt.
-<GUI1_2_2.png, id=163, 847.165pt x 233.87375pt>
+<GUI1_2_2.png, id=184, 847.165pt x 233.87375pt>
 File: GUI1_2_2.png Graphic file (type png)
 <use GUI1_2_2.png>
 Package pdftex.def Info: GUI1_2_2.png  used on input line 168.
 (pdftex.def)             Requested size: 469.75555pt x 129.69083pt.
-<GUI2_main.png, id=164, 522.95375pt x 547.04375pt>
+<GUI2_main.png, id=185, 522.95375pt x 547.04375pt>
 File: GUI2_main.png Graphic file (type png)
 <use GUI2_main.png>
 Package pdftex.def Info: GUI2_main.png  used on input line 176.
@@ -1220,61 +1220,61 @@ File: GUI2_main.png Graphic file (type png)
 Package pdftex.def Info: GUI2_main.png  used on input line 200.
 (pdftex.def)             Requested size: 313.77466pt x 328.22878pt.
  [4 <./GUI2_main.png>]
-<GUI2_main_1.png, id=181, 616.3025pt x 565.11125pt>
+<GUI2_main_1.png, id=201, 616.3025pt x 565.11125pt>
 File: GUI2_main_1.png Graphic file (type png)
 <use GUI2_main_1.png>
 Package pdftex.def Info: GUI2_main_1.png  used on input line 207.
 (pdftex.def)             Requested size: 369.78435pt x 339.06937pt.
  [5]
-<GUI2_main_2.png, id=186, 611.28375pt x 552.0625pt>
+<GUI2_main_2.png, id=206, 611.28375pt x 552.0625pt>
 File: GUI2_main_2.png Graphic file (type png)
 <use GUI2_main_2.png>
 Package pdftex.def Info: GUI2_main_2.png  used on input line 214.
 (pdftex.def)             Requested size: 366.77307pt x 331.24005pt.
  [6 <./GUI2_main_1.png>]
-<GUI2_main_3.png, id=192, 516.93124pt x 554.07pt>
+<GUI2_main_3.png, id=212, 516.93124pt x 554.07pt>
 File: GUI2_main_3.png Graphic file (type png)
 <use GUI2_main_3.png>
 Package pdftex.def Info: GUI2_main_3.png  used on input line 221.
 (pdftex.def)             Requested size: 310.16113pt x 332.44456pt.
  [7 <./GUI2_main_2.png>]
-<GUI2_main_4.png, id=198, 570.13pt x 547.04375pt>
+<GUI2_main_4.png, id=218, 570.13pt x 547.04375pt>
 File: GUI2_main_4.png Graphic file (type png)
 <use GUI2_main_4.png>
 Package pdftex.def Info: GUI2_main_4.png  used on input line 228.
 (pdftex.def)             Requested size: 342.08064pt x 328.22878pt.
  [8 <./GUI2_main_3.png>]
-<GUI2_main_5.png, id=204, 524.96124pt x 543.02875pt>
+<GUI2_main_5.png, id=224, 524.96124pt x 543.02875pt>
 File: GUI2_main_5.png Graphic file (type png)
 <use GUI2_main_5.png>
 Package pdftex.def Info: GUI2_main_5.png  used on input line 235.
 (pdftex.def)             Requested size: 314.97917pt x 325.81975pt.
  [9 <./GUI2_main_4.png>]
-<GUI2_main_6.png, id=211, 516.93124pt x 549.05125pt>
+<GUI2_main_6.png, id=231, 516.93124pt x 549.05125pt>
 File: GUI2_main_6.png Graphic file (type png)
 <use GUI2_main_6.png>
 Package pdftex.def Info: GUI2_main_6.png  used on input line 242.
 (pdftex.def)             Requested size: 310.16113pt x 329.43329pt.
  [10 <./GUI2_main_5.png>]
-<GUI2_main_7.png, id=217, 518.93875pt x 548.0475pt>
+<GUI2_main_7.png, id=237, 518.93875pt x 548.0475pt>
 File: GUI2_main_7.png Graphic file (type png)
 <use GUI2_main_7.png>
 Package pdftex.def Info: GUI2_main_7.png  used on input line 249.
 (pdftex.def)             Requested size: 311.36565pt x 328.83104pt.
  [11 <./GUI2_main_6.png>]
-<GUI2_1_1.png, id=223, 510.90875pt x 552.0625pt>
+<GUI2_1_1.png, id=243, 510.90875pt x 552.0625pt>
 File: GUI2_1_1.png Graphic file (type png)
 <use GUI2_1_1.png>
 Package pdftex.def Info: GUI2_1_1.png  used on input line 262.
 (pdftex.def)             Requested size: 306.5476pt x 331.24005pt.
  [12 <./GUI2_main_7.png>]
-<GUI2_1_2.png, id=230, 514.92375pt x 554.07pt>
+<GUI2_1_2.png, id=250, 514.92375pt x 554.07pt>
 File: GUI2_1_2.png Graphic file (type png)
 <use GUI2_1_2.png>
 Package pdftex.def Info: GUI2_1_2.png  used on input line 269.
 (pdftex.def)             Requested size: 308.95662pt x 332.44456pt.
  [13 <./GUI2_1_1.png>]
-<GUI2_2_1.png, id=236, 523.9575pt x 550.055pt>
+<GUI2_2_1.png, id=256, 523.9575pt x 550.055pt>
 File: GUI2_2_1.png Graphic file (type png)
 <use GUI2_2_1.png>
 Package pdftex.def Info: GUI2_2_1.png  used on input line 279.
@@ -1293,122 +1293,127 @@ LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <14.4> not available
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 292.
 [17]
-<Fork1.png, id=259, 1927.2pt x 1084.05pt>
+<Fork1.png, id=279, 1927.2pt x 1084.05pt>
 File: Fork1.png Graphic file (type png)
 <use Fork1.png>
 Package pdftex.def Info: Fork1.png  used on input line 397.
 (pdftex.def)             Requested size: 375.80544pt x 211.38063pt.
  [18 <./Fork1.png>] [19]
-Underfull \vbox (badness 10000) detected at line 733
- []
-
-
-Overfull \vbox (2.68169pt too high) detected at line 733
- []
-
-[20]
-Underfull \vbox (badness 10000) detected at line 733
- []
-
-
-Overfull \vbox (2.68169pt too high) detected at line 733
- []
-
-[21]
-Underfull \vbox (badness 10000) detected at line 733
- []
-
-
-Overfull \vbox (2.68169pt too high) detected at line 733
- []
-
-[22] [23]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 792.
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 793.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 593.
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 594.
+ [20] [21]
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 701.
 
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 )
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 802.
 LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <9> not available
-(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 814.
- [24]
-[25] [26] [27] [28
-
-]
+(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 724.
+ [22] [23] [24]
+[25] [26] [27] [28]
 Chapter 3.
-[29] [30
+[29
+
+] [30
 
 ]
 Chapter 4.
-[31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 1235--1238
+
+Underfull \hbox (badness 10000) in paragraph at lines 1272--1275
+[]\T1/ptm/m/n/10 commit 280f4b112f39e41ebf4e99e89a57adcf1681e3ec Au-thor: Pu-ru
+shot-tam Sinha <[][]sin-hapu-rushot-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1288--1291
+[]\T1/ptm/m/n/10 commit 5ee92a07c56c666d38281936beebc62ec11b8d13 Au-thor: Pu-ru
+shot-tam Sinha <[][]sin-hapu-rushot-
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 1342--1345
+[]\T1/ptm/m/n/10 commit ff12e8f4b15a9f9887f955a6e70fac4a646cb54b Au-thor: Vinay
+ Ku-mar <[][]45215239+vinaysky-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1353
+[]\T1/ptm/m/n/10 commit 79188dae099792892643e03caae96e31af73df1f Au-thor: vinay
+sky-walker <[][]vinayku-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1358--1361
+[]\T1/ptm/m/n/10 commit 2974bb70f49e6d3a07d30ada120add83a23d3f7a Au-thor: vinay
+sky-walker <[][]vinayku-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1366--1369
+[]\T1/ptm/m/n/10 commit fb4b297fa61435fdd19def913aca7698f83b74f8 Au-thor: vinay
+sky-walker <[][]vinayku-
+ []
+
+[32] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1601
 []\T1/ptm/m/n/10 commit 36292135e2bae55907bbb9f24ccca3bf88356502 Au-thor: vinay
 sky-walker <[][]vinayku-
  []
 
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 1333--1336
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 1696--1699
 []\T1/ptm/m/n/10 commit 81be0bf8f837d9996427833743a6ed5d095b4a7a Au-thor: Pu-ru
 shot-tam Sinha <[][]sin-hapu-rushot-
  []
 
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 1433--1436
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 1796--1799
 []\T1/ptm/m/n/10 commit 93c728a33e0b8cbd5b17c3c813debbaa6b0d057a Au-thor: Pu-ru
 shot-tam Sinha <[][]sin-hapu-rushot-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1505--1508
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 1868--1871
 []\T1/ptm/m/n/10 commit 56775b6cf44bdba5f32090333d1641b73adbf5eb Au-thor: Pu-ru
 shot-tam Sinha <[][]sin-hapu-rushot-
  []
 
-[35] [36
-
-]
-Chapter 5.
 [37] [38
 
 ]
-Chapter 6.
+Chapter 5.
 [39] [40
+
+]
+Chapter 6.
+[41] [42
 
 ]
 Chapter 7.
 No file time-table-assist-tool.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1536.
-[41]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1536.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1903.
+[43]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1903.
  (./time-table-assist-tool.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1536.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1536.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1903.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1903.
 
+Package rerunfilecheck Info: File `time-table-assist-tool.out' has not changed.
 
-
-Package rerunfilecheck Warning: File `time-table-assist-tool.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `time-table-assist-tool.out':
-(rerunfilecheck)             Before: 09EC2F7141419249DC57D422704D8D96;2878
-(rerunfilecheck)             After:  0AE480FDB0B9F2AF99FD2866693CD2D7;3013.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1536.
+(rerunfilecheck)             Checksum: 62420629A16B43F58B8A452B70635D0F;3462.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1903.
  ) 
 Here is how much of TeX's memory you used:
- 13883 strings out of 494880
- 192496 string characters out of 6179602
- 640755 words of memory out of 5000000
- 16765 multiletter control sequences out of 15000+600000
+ 13917 strings out of 494880
+ 193085 string characters out of 6179602
+ 353095 words of memory out of 5000000
+ 16778 multiletter control sequences out of 15000+600000
  59044 words of font info for 78 fonts, out of 8000000 for 9000
  37 hyphenation exceptions out of 8191
- 37i,12n,49p,591b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,49p,591b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/f
@@ -1419,10 +1424,10 @@ sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on time-table-assist-tool.pdf (45 pages, 775469 bytes).
+Output written on time-table-assist-tool.pdf (47 pages, 783350 bytes).
 PDF statistics:
- 533 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 500000)
- 287 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 610 PDF objects out of 1000 (max. 8388607)
+ 504 compressed objects within 6 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 319 words of extra memory for PDF output out of 10000 (max. 10000000)
 

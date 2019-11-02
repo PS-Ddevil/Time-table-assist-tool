@@ -127,129 +127,8 @@ Tree Structure
     ├── docs
     │   ├── build
     │   │   ├── doctrees
-    │   │   │   ├── change.doctree
-    │   │   │   ├── contributors.doctree
-    │   │   │   ├── developer.doctree
-    │   │   │   ├── environment.pickle
-    │   │   │   ├── help.doctree
-    │   │   │   ├── index.doctree
-    │   │   │   ├── license.doctree
-    │   │   │   └── user_manual.doctree
     │   │   ├── html
-    │   │   │   ├── change.html
-    │   │   │   ├── contributors.html
-    │   │   │   ├── developer.html
-    │   │   │   ├── genindex.html
-    │   │   │   ├── help.html
-    │   │   │   ├── _images
-    │   │   │   │   ├── dev_GUI1_1.png
-    │   │   │   │   ├── dev_GUI1_2.png
-    │   │   │   │   ├── dev_GUI1_3.png
-    │   │   │   │   ├── dev_GUI2_1.png
-    │   │   │   │   ├── dev_GUI2_2.png
-    │   │   │   │   ├── dev_GUI2_3.png
-    │   │   │   │   ├── dev_GUI2_4.png
-    │   │   │   │   ├── dev_GUI2_5.png
-    │   │   │   │   ├── Fork1.png
-    │   │   │   │   ├── GUI1_1_1.png
-    │   │   │   │   ├── GUI1_1_2.png
-    │   │   │   │   ├── GUI1_2_1.png
-    │   │   │   │   ├── GUI1_2_2.png
-    │   │   │   │   ├── GUI1_main_1.png
-    │   │   │   │   ├── GUI1_main.png
-    │   │   │   │   ├── GUI2_1_1.png
-    │   │   │   │   ├── GUI2_1_2.png
-    │   │   │   │   ├── GUI2_2_1.png
-    │   │   │   │   ├── GUI2_main_1.png
-    │   │   │   │   ├── GUI2_main_2.png
-    │   │   │   │   ├── GUI2_main_3.png
-    │   │   │   │   ├── GUI2_main_4.png
-    │   │   │   │   ├── GUI2_main_5.png
-    │   │   │   │   ├── GUI2_main_6.png
-    │   │   │   │   ├── GUI2_main_7.png
-    │   │   │   │   └── GUI2_main.png
-    │   │   │   ├── index.html
-    │   │   │   ├── license.html
-    │   │   │   ├── objects.inv
-    │   │   │   ├── search.html
-    │   │   │   ├── searchindex.js
-    │   │   │   ├── _sources
-    │   │   │   │   ├── change.rst.txt
-    │   │   │   │   ├── contributors.rst.txt
-    │   │   │   │   ├── developer.rst.txt
-    │   │   │   │   ├── help.rst.txt
-    │   │   │   │   ├── index.rst.txt
-    │   │   │   │   ├── license.rst.txt
-    │   │   │   │   └── user_manual.rst.txt
-    │   │   │   ├── _static
-    │   │   │   │   ├── alabaster.css
-    │   │   │   │   ├── basic.css
-    │   │   │   │   ├── custom.css
-    │   │   │   │   ├── doctools.js
-    │   │   │   │   ├── documentation_options.js
-    │   │   │   │   ├── file.png
-    │   │   │   │   ├── jquery-3.4.1.js
-    │   │   │   │   ├── jquery.js
-    │   │   │   │   ├── language_data.js
-    │   │   │   │   ├── minus.png
-    │   │   │   │   ├── plus.png
-    │   │   │   │   ├── pygments.css
-    │   │   │   │   ├── searchtools.js
-    │   │   │   │   ├── underscore-1.3.1.js
-    │   │   │   │   └── underscore.js
-    │   │   │   └── user_manual.html
     │   │   └── latex
-    │   │       ├── dev_GUI1_1.png
-    │   │       ├── dev_GUI1_2.png
-    │   │       ├── dev_GUI1_3.png
-    │   │       ├── dev_GUI2_1.png
-    │   │       ├── dev_GUI2_2.png
-    │   │       ├── dev_GUI2_3.png
-    │   │       ├── dev_GUI2_4.png
-    │   │       ├── dev_GUI2_5.png
-    │   │       ├── footnotehyper-sphinx.sty
-    │   │       ├── Fork1.png
-    │   │       ├── GUI1_1_1.png
-    │   │       ├── GUI1_1_2.png
-    │   │       ├── GUI1_2_1.png
-    │   │       ├── GUI1_2_2.png
-    │   │       ├── GUI1_main_1.png
-    │   │       ├── GUI1_main.png
-    │   │       ├── GUI2_1_1.png
-    │   │       ├── GUI2_1_2.png
-    │   │       ├── GUI2_2_1.png
-    │   │       ├── GUI2_main_1.png
-    │   │       ├── GUI2_main_2.png
-    │   │       ├── GUI2_main_3.png
-    │   │       ├── GUI2_main_4.png
-    │   │       ├── GUI2_main_5.png
-    │   │       ├── GUI2_main_6.png
-    │   │       ├── GUI2_main_7.png
-    │   │       ├── GUI2_main.png
-    │   │       ├── latexmkjarc
-    │   │       ├── latexmkrc
-    │   │       ├── LatinRules.xdy
-    │   │       ├── LICRcyr2utf8.xdy
-    │   │       ├── LICRlatin2utf8.xdy
-    │   │       ├── make.bat
-    │   │       ├── Makefile
-    │   │       ├── python.ist
-    │   │       ├── sphinxcyrillic.sty
-    │   │       ├── sphinxhighlight.sty
-    │   │       ├── sphinxhowto.cls
-    │   │       ├── sphinxmanual.cls
-    │   │       ├── sphinxmessages.sty
-    │   │       ├── sphinxmulticell.sty
-    │   │       ├── sphinx.sty
-    │   │       ├── sphinx.xdy
-    │   │       ├── time-table-assist-tool.aux
-    │   │       ├── time-table-assist-tool.idx
-    │   │       ├── time-table-assist-tool.log
-    │   │       ├── time-table-assist-tool.out
-    │   │       ├── time-table-assist-tool.pdf
-    │   │       ├── time-table-assist-tool.synctex.gz
-    │   │       ├── time-table-assist-tool.tex
-    │   │       └── time-table-assist-tool.toc
     │   ├── make.bat
     │   ├── Makefile
     │   └── source
@@ -260,33 +139,6 @@ Tree Structure
     │       ├── git-log.txt
     │       ├── help.rst
     │       ├── img
-    │       │   ├── dev_GUI1_1.png
-    │       │   ├── dev_GUI1_2.png
-    │       │   ├── dev_GUI1_3.png
-    │       │   ├── dev_GUI2_1.png
-    │       │   ├── dev_GUI2_2.png
-    │       │   ├── dev_GUI2_3.png
-    │       │   ├── dev_GUI2_4.png
-    │       │   ├── dev_GUI2_5.png
-    │       │   ├── Fork1.png
-    │       │   ├── GUI1_1_1.png
-    │       │   ├── GUI1_1_2.png
-    │       │   ├── GUI1_2_1.png
-    │       │   ├── GUI1_2_2.png
-    │       │   ├── GUI1_main_1.png
-    │       │   ├── GUI1_main.png
-    │       │   ├── GUI2_1_1.png
-    │       │   ├── GUI2_1_2.png
-    │       │   ├── GUI2_2_1.png
-    │       │   ├── GUI2_2_2.png
-    │       │   ├── GUI2_main_1.png
-    │       │   ├── GUI2_main_2.png
-    │       │   ├── GUI2_main_3.png
-    │       │   ├── GUI2_main_4.png
-    │       │   ├── GUI2_main_5.png
-    │       │   ├── GUI2_main_6.png
-    │       │   ├── GUI2_main_7.png
-    │       │   └── GUI2_main.png
     │       ├── index.rst
     │       ├── license.rst
     │       ├── _static
@@ -302,10 +154,6 @@ Tree Structure
     │   │   ├── initialize_excel_files.py
     │   │   ├── __init__.py
     │   │   ├── __pycache__
-    │   │   │   ├── __init__.cpython-36.pyc
-    │   │   │   ├── initialize_excel_files.cpython-36.pyc
-    │   │   │   ├── save.cpython-36.pyc
-    │   │   │   └── undo.cpython-36.pyc
     │   │   ├── read_create.py
     │   │   ├── save.py
     │   │   ├── tlist.py
@@ -327,60 +175,98 @@ Tree Structure
     ├── src
     │   ├── data
     │   │   ├── basket_elective_docxs
-    │   │   │   └── ExampleElectiveCoursesGrouping.docx
     │   │   ├── ClassroomSeatingCapacity.docx
     │   │   ├── Courselist.ods
     │   │   └── ExampleElectiveCoursesGrouping.docx
     │   └── tmp
     │       ├── baskets
-    │       │   ├── 10.xlsx
-    │       │   ├── 11.xlsx
-    │       │   ├── 12.xlsx
-    │       │   ├── 13.xlsx
-    │       │   ├── 14.xlsx
-    │       │   ├── 15.xlsx
-    │       │   ├── 16.xlsx
-    │       │   ├── 17.xlsx
-    │       │   ├── 18.xlsx
-    │       │   ├── 19.xlsx
-    │       │   ├── 20.xlsx
-    │       │   ├── 21.xlsx
-    │       │   ├── 22.xlsx
-    │       │   ├── 23.xlsx
-    │       │   ├── 24.xlsx
-    │       │   ├── 25.xlsx
-    │       │   ├── 27.xlsx
-    │       │   ├── 28.xlsx
-    │       │   ├── 29.xlsx
-    │       │   ├── 30.xlsx
-    │       │   ├── 31.xlsx
-    │       │   ├── 32.xlsx
-    │       │   ├── 33.xlsx
-    │       │   ├── 34.xlsx
-    │       │   ├── 35.xlsx
-    │       │   ├── 36.xlsx
-    │       │   ├── 37.xlsx
-    │       │   ├── 39.xlsx
-    │       │   ├── 40.xlsx
-    │       │   ├── 41.xlsx
-    │       │   ├── 42.xlsx
-    │       │   ├── 6.xlsx
-    │       │   ├── 7.xlsx
-    │       │   ├── 8.xlsx
-    │       │   ├── 9.xlsx
-    │       │   ├── course_faculty_main.xlsx
-    │       │   ├── course_faculty_optional.xlsx
-    │       │   ├── Group-1_(3rd_4th_Year::Microelectronics,_VLSI_and_Embedded_Systems_Track).xlsx
-    │       │   ├── Group-2_(3rd_4th_Year::Signal_Processing_Track).xlsx
-    │       │   ├── Group-3_(3rd_4th_Year::Communication_Track).xlsx
-    │       │   └── Group-4_(3rd_4th_Year::Power_Electronics_and_Power_Systems_Track).xlsx
-    │       ├── course_faculty_main.xlsx
-    │       ├── course_faculty_optional.xlsx
     │       └── slot.xlsx
     └── tree.txt
 
-    22 directories, 232 files
+    19 directories, 39 files
 
+Working with Landing GUI
+-------------------------
+1. Move to the cloned the folder
+
+    .. code-block:: python
+
+        cd Time-table-assist-tool
+
+2. Open the *main.py* file.
+
+    Open the *main.py* file in any text editor of your choice
+
+    For Sublime Editor:
+
+    .. code-block:: python
+        
+        subl main.py
+
+    For Atom Editor:
+
+    .. code-block:: python
+        
+        atom main.py
+
+    For Visual Studio Code:
+
+    .. code-block:: python
+        
+        code main.py
+
+3. There are three broad sections in the code 
+
+ * Fuction for different GUI
+ * GUI Development 
+
+SECTION 1:
+
+.. code-block:: python
+
+    # Including the files for different GUIs
+    def TimeTable():
+        os.system("python3 progs/prog1.py")
+        print(os.getcwd())
+    def SlotSlection():
+        os.system("python3 progs/prog2.py")
+        print(os.getcwd())
+    def ClassSelection():
+        os.system("python3 progs/prog3.py")
+    def Initialise():
+        os.system("python3 progs/func/extract_docxs.py")
+        os.system("python3 progs/func/extract_ods.py")
+        os.system("python3 progs/func/read_create.py")
+
+SECTION 2:
+
+.. code-block:: python
+
+    master = Tk()
+    master.title("Time Table Assist Tool")
+    frame=Frame(master,bd=10,height=500,padx=10,pady=10,width=1500)
+    frame.pack()
+    B = Button(frame, text ="Initialise", command = Initialise)
+    B.grid(row=0,column=0,columnspan=3,sticky=W+E+N+S)
+    B.config(width=45)
+    B = Button(frame, text ="Slot Selection", command = SlotSlection)
+    B.grid(row=1,column=0,columnspan=3,sticky=W+E+N+S)
+    B.config(width=45)
+    B = Button(frame, text ="Class Selection", command = ClassSelection)
+    B.grid(row=2,column=0,columnspan=3,sticky=W+E+N+S)
+    B.config(width=45)
+    B = Button(frame, text ="Time Table", command = TimeTable)
+    B.grid(row=3,column=0,columnspan=3,sticky=W+E+N+S)
+    B.config(width=45)
+
+    mainloop()
+
+4. To add a new GUI include it into the Function in continuation inside section 1 in the given format.
+
+.. code-block:: python
+
+    def Function():
+    os.system("python3 progs/progx.py")
 
 Working on GUI#1
 -----------------
@@ -388,7 +274,7 @@ Working on GUI#1
 
     .. code-block:: python
 
-        cd Time-table-assist-tool
+        cd Time-table-assist-tool/progs
 
 2. Open the *prob1.py* file.
 
@@ -434,11 +320,14 @@ SECTION 2:
     # THIS SECTION DEFINES THE ALGORITHM TO UPDATE THE OPTIONS IN THE GUI
     def update_options(var, row_val):
         cr = cr_vars[var].get()
+        if cr=='SLOT':
+            return
         if(old_var[var] == cr):
             return 0
         if match[row_val][ord(cr)-65] == True:
             cr_vars[var].set("SLOT")
-            messagebox.showerror("Erro....
+            messagebox.showerror("Err......
+
 
 SECTION 3:
 
@@ -460,7 +349,7 @@ Working on GUI#2
 
     .. code-block:: python
 
-        cd Time-table-assist-tool
+        cd Time-table-assist-tool/progs
 
 2. Open the *prob1.py* file.
 
@@ -552,6 +441,269 @@ SECTION 4:
     import os
     import openpyxl
     from tkinter import filedialog
+
+Working on GUI#3
+-----------------
+
+1. Move to the cloned the folder
+
+    .. code-block:: python
+
+        cd Time-table-assist-tool/progs
+
+2. Open the *prob3.py* file.
+
+    Open the *prob3.py* file in any text editor of your choice
+
+    For Sublime Editor:
+
+    .. code-block:: python
+        
+        subl prob3.py
+
+    For Atom Editor:
+
+    .. code-block:: python
+        
+        atom prob3.py
+
+    For Visual Studio Code:
+
+    .. code-block:: python
+        
+        code prob3.py
+
+3. The following are function defintions
+
+ *ConstraintCheck* 
+
+ Checks for the errors and display the required warning.
+
+ .. code-block:: python
+
+        def ConstraintCheck(var,i,name,slot,*args):
+            for j in range(len(slot)):
+                if(i==j):
+                    continue
+                elif(var.get()!="No Classroom" and var.get()==slot[j][1]):
+                    messagebox.showerror("Error", var.get() + " is twice time and it will not be saved so please change ") 
+                    var.set(slot[i][1])
+                    return
+            slot[i][1]=var.get()
+ 
+ *Save*
+
+ Saves the changes in the slot information
+
+ .. code-block:: python
+
+    def Save():
+        for file in lists:
+            a=str(os.path.join(file_path, file))
+            wb = openpyxl.load_workbook(a)
+            ws = wb.active
+            ws.cell(1,9).value="Classroom"
+            for i in range(2,ws.max_row+1):
+                if(ws.cell(i,8).value=="Slot A"):
+                    for j in range(len(slotA)):
+                        if(slotA[j][0]==ws.cel...
+ 
+ *Call*
+
+ Code to display the various courses in a slot and the classroom to select from
+
+ .. code-block:: python
+    
+    def call(slot):
+        w = Label(frame2, text="Course")
+        w.grid(row=0,column=0,columnspan=1,sticky=W+E+N+S)
+        w.config(width=15)
+        w = Label(frame2, text="Classroom")
+        w.grid(row=0,column=0,columnsp...
+
+ *DisplayGUI*
+
+ Calls the display function with different slots as argument
+ 
+ .. code-block:: python
+    
+    def DisplayGUI(*args):
+        global file_path
+        for widget in frame2.winfo_children():
+            widget.destroy()
+        if(v.get()=="Slot A"):
+            call(slotA)
+        elif(v.get()=="Sl...
+
+ *DropDown*
+
+ Go through the various baskets and collect the course information related to different slots.
+
+ .. code-block:: python
+
+    def DropDown():
+        global lists,v,slotA,slotB,slotC,slotD,slotE,slotF,slotG
+        v.set("Select Slot")
+        for file in lists:
+            a=str(os.path.join(file_path, file))
+            wb = openpyxl.load_workbook(a)
+            ws = wb.active
+            for i in range(2,ws.max_row+1):
+                if(ws.cell(i,8).value=="Slot A"):
+                    if(ws.cell(i,9).value is None):
+                        slotA.append([ws.cell(i,1).val...
+
+ *DialogBox*
+
+ Calls for the various baskets in the selected folder by selected all the excel sheets.
+
+ .. code-block:: python
+    
+    def DialogBox():
+        global file_path
+        
+        for file in os.listdir(file_path):
+            if file.endswith('.xlsx') and file!="course_faculty_main.xlsx"  and file!='course_faculty_optional.xlsx':
+                a=str(os.path.join(file_path, file))
+                lists.append(file)
+        DropDown()
+
+Functions
+----------
+
+1. All functions are defined in the *progs/func*.
+
+2. The following functions are being defined:
+
+ * extract_docxs
+ * extract_ods
+ * initialize_excel_files
+ * read_create
+ * save
+ * undo
+
+3. The Defintion and the role of the function are:
+
+PARSE_ALL_DOCXS_TABLE
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Location: *progs/func/extract_docxs.py*
+
+Extract data from the docxs files into respective baskets.
+
+.. code-block:: python
+
+    def parse_all_docxs_table():
+        path = 'src/data/basket_elective_docxs/'
+        for filename in os.listdir(path):
+            document = Document(path+filename)
+            # Read from docs file
+            for j in range(len(document.tables)):
+                table = document.tables[j]
+                data = []
+                keys = None
+                fname=""
+                for i, row in enume...
+
+EXTRACT (FACULTY)
+^^^^^^^^^^^^^^^^^^
+
+Location: *progs/func/extract_ods.py*
+
+Extract data from the ods file for the course and faculty.
+
+.. code-block:: python
+
+    def extract():
+    # pass
+    fname1='src/tmp/baskets/course_faculty_main.xlsx'
+    print(str(os.path.isfile(fname1)))
+    if str(os.path.isfile(fname1))=='False':
+        print(os.path.isfile(fname1))
+        workbook1=xlwt.Work...
+
+INITIALISE_EXCEL_FILES
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Location: *progs/func/initialize_excel_files.py*
+
+Makes the time table to work with the GUI#1 if in case it do not exists.
+
+.. code-block:: python
+
+    def slot():
+        fname='src/tmp/slot.xlsx'
+        if os.path.isfile(fname):
+            print('slot.xlsx is already there')
+        else:
+            print('slot.xlsx is created')
+            workbook=xlwt.Workbook(fname)
+            ws = workbook.add_sheet('Tested')
+            workbook.save(fname)
+            wb = openpyxl.Workb...
+
+READ_CREATE
+^^^^^^^^^^^^
+
+Location: *progs/func/read_create.py*
+
+Read thriugh the institute spreadsheet for the courses and then seperate the core courses into baskets.
+
+.. code-block:: python
+
+    def read_create():
+        file_name = "src/data/Courselist.ods"
+
+        sheet =pyexcel.get_sheet(file_name=file_name)
+        i=0
+        for row in sheet:
+        
+            lists=str(row[3])
+            lists=lists.split('-')
+            if(lists[0]!="0" ):
+                for p in range(len(row)):
+                    if(row[p]=='C'):    
+                        if(os.path.exists("src/tmp/ba...
+
+SAVE_IN_EXCEL_SHEET
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Location: *progs/func/save.py*
+
+Save the current time table state into the excel sheet.
+
+.. code-block:: python
+
+    def save_in_excel_sheet(array):
+        fname='src/tmp/slot.xlsx'
+        workbook=load_workbook(fname)
+        sheet = workbook.active
+        for i in range(len(array)):
+            if (i%9)+2!=6:
+                sheet.cell(row = int(i/9)+2, column = (i%9)+2).value=array[i]
+        workbook.save("src/tmp/slot.xlsx")
+
+UNDO_IN_EXCEL_SHEET
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Location: *progs/func/undo.py*
+
+Extract the current save time table state into the GUI.
+
+.. code-block:: python
+
+    def undo_in_excel_sheet(cr_vars):
+        # Give the location of the file
+        filename = ("src/tmp/slot.xlsx")
+        wb = xlrd.open_workbook(filename)
+        sheet = wb.sheet_by_index(0)
+        count=0
+        for i in range(1,6):
+            for j in  range(1,10):
+                if(j!=5):
+                    cr_vars[count].set(sheet.cell_value(i,j))
+                count=count+1
+
 
 *Core Developers*
 ==================
