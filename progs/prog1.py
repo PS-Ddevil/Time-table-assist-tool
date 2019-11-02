@@ -1,42 +1,74 @@
 from tkinter import *
 from tkinter import messagebox
 import os
-from func.save import save_in_excel_sheet 
+from func.save import save_in_excel_sheet
 from func.undo import undo_in_excel_sheet
 from func.initialize_excel_files import slot
-	
+from time import sleep
+from tkinter import *
+from PIL import ImageTk, Image
+# import os
+
+
+
 master = Tk()
 master.title("Time table assist tool")
 
 # DEFINING THE GUI ELEMENTS
-Label(master,width=20,height=2, text='').grid(row=0) 
-Label(master,width=20,height=2, text='8:00 - 8:50',borderwidth=2, relief="solid",bg='red').grid(row=0,column=1) 
-Label(master,width=20,height=2, text='9:00 - 9:50',borderwidth=2, relief="solid",bg='pink').grid(row=0,column=2) 
-Label(master,width=20,height=2, text='10:00 - 10:50',borderwidth=2, relief="solid",bg='yellow').grid(row=0,column=3) 
-Label(master,width=20,height=2, text='11:00 - 11:50',borderwidth=2, relief="solid",bg='orange').grid(row=0,column=4) 
-Label(master,width=20,height=2, text='LUNCH BREAK',borderwidth=2, relief="solid").grid(row=0,column=5, rowspan=5)
-Label(master,width=20,height=2, text='1:00 - 1:50',borderwidth=2, relief="solid",bg='blue').grid(row=0,column=6) 
-Label(master,width=20,height=2, text='2:00 - 2:50',borderwidth=2, relief="solid",bg='pink').grid(row=0,column=7) 
-Label(master,width=20,height=2, text='3:00 - 3:50',borderwidth=2, relief="solid",bg='green').grid(row=0,column=8) 
-Label(master,width=20,height=2, text='4:00 - 4:50',borderwidth=2, relief="solid",bg='red').grid(row=0,column=9) 
-Label(master,width=20,height=2, text='Monday',borderwidth=2, relief="solid",bg='red').grid(row=1) 
-Label(master,width=20,height=2, text='Tuesday',borderwidth=2, relief="solid",bg='blue').grid(row=2) 
-Label(master,width=20,height=2, text='Wednesday',borderwidth=2, relief="solid",bg='green').grid(row=3) 
-Label(master,width=20,height=2, text='Thrusday',borderwidth=2, relief="solid",bg='yellow').grid(row=4) 
-Label(master,width=20,height=2, text='Friday',borderwidth=2, relief="solid",bg='pink').grid(row=5) 
+# size = 128, 128
+img=Image.open("../src/logo/iitmandilogo.jpg")
+# img=img.thumbnail(size, Image.ANTIALIAS)
+img = ImageTk.PhotoImage(img)
+label = Label(image=img)
+# label.image = img # keep a reference!
+label.grid(row=0,column=0)
+# Label(master,image=img,width=14,height=2, text='').grid(row=0)
+Label(master,width=14,height=2, text='8:00 - 8:50', relief="solid",bg='red').grid(row=0,column=1)
+Label(master,width=14,height=2, text='9:00 - 9:51', relief="solid",bg='pink').grid(row=0,column=2)
+Label(master,width=14,height=2, text='10:00 - 10:50', relief="solid",bg='yellow').grid(row=0,column=3)
+Label(master,width=14,height=2, text='11:00 - 11:50', relief="solid",bg='orange').grid(row=0,column=4)
+Label(master,width=14,height=2, text='LUNCH BREAK', relief="solid").grid(row=0,column=5, rowspan=5)
+Label(master,width=14,height=2, text='1:00 - 1:50', relief="solid",bg='blue').grid(row=0,column=6)
+Label(master,width=14,height=2, text='2:00 - 2:50', relief="solid",bg='pink').grid(row=0,column=7)
+Label(master,width=14,height=2, text='3:00 - 3:50', relief="solid",bg='green').grid(row=0,column=8)
+Label(master,width=14,height=2, text='4:00 - 4:50', relief="solid",bg='red').grid(row=0,column=9)
+Label(master,width=14,height=2, text='Monday', relief="solid",bg='red').grid(row=1)
+Label(master,width=14,height=2, text='Tuesday', relief="solid",bg='blue').grid(row=2)
+Label(master,width=14,height=2, text='Wednesday', relief="solid",bg='green').grid(row=3)
+Label(master,width=14,height=2, text='Thrusday', relief="solid",bg='yellow').grid(row=4)
+Label(master,width=14,height=2, text='Friday', relief="solid",bg='pink').grid(row=5)
 
 Course_Dict = {'A': 4, 'B': 4, 'C': 4, 'D': 4, 'E': 4, 'F': 4, 'G': 4, 'H': 4}
-
+left_course = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
 	# THIS SECTION DEFINES THE ALGORITHM TO UPDATE THE OPTIONS IN THE GUI
 def update_options(var, row_val):
+	# print(var)
+	# row=int(var/9)+1
 	cr = cr_vars[var].get()
 	if cr=='SLOT':
 		return
 	if(old_var[var] == cr):
 		return 0
 	if match[row_val][ord(cr)-65] == True:
-		cr_vars[var].set("SLOT")
+
+		# Label(master,width=14,height=2,bg='red').grid(row=row_val,column=(var%9)+1)
+
+		for i in range(((row_val-1)*9),((row_val-1)*9)+9):
+			if cr_vars[i].get()==cr_vars[var].get():
+				# print(i," == ",cr_vars[i].get())
+				w = OptionMenu(master, cr_vars[i], *left_course)
+				w.config(width=10,height=2,bg='red')
+				w.grid(row=row_val,column=(i%9)+1)
 		messagebox.showerror("Error", "More than one occurance of a slot on same day")
+		cr_vars[var].set("SLOT")
+		for i in range(((row_val-1)*9),((row_val-1)*9)+9):
+			if i!=((row_val-1)*9)+4:
+				# print(i," == ",cr_vars[i].get())
+				w = OptionMenu(master, cr_vars[i], *left_course)
+				w.config(width=10,height=2,bg='lightgray')
+				w.grid(row=row_val,column=(i%9)+1)
+
+
 		return 0
 	match[row_val][ord(cr)-65] = True
 	Course_Dict[cr] -= 1
@@ -45,34 +77,60 @@ def update_options(var, row_val):
 		match[row_val][ord(old_var[var])-65] = False
 	old_var[var] = cr
 	if(Course_Dict[cr] < 0):
-		cr_vars[var].set("SLOT")
-		Course_Dict[cr] += 1
+		for i in range(0,45):
+			if cr_vars[var].get()==cr_vars[i].get():
+				# print(i," == ",cr_vars[i].get())
+				w = OptionMenu(master, cr_vars[i], *left_course)
+				w.config(width=10,height=2,bg='red')
+				w.grid(row=int(i/9)+1,column=(i%9)+1)
+
+		# for i in range(0,45):
+		# 	if cr_vars[var].get()==cr_vars[i].get():
+		# 		# print(i," == ",cr_vars[i].get())
+		# 		w = OptionMenu(master, cr_vars[i], *left_course)
+		# 		w.config(width=10,height=2,bg='lightgray')
+		# 		w.grid(row=int(i/9)+1,column=(i%9)+1)
+		# sleep(1)
 		messagebox.showerror("Error", "More than required slots")
+		cr_vars[var].set("SLOT")
+
+		for i in range(0,45):
+			if (i%9)!=4:
+			# print(i," == ",cr_vars[i].get(),"\n")
+				w = OptionMenu(master, cr_vars[i], *left_course)
+				w.config(width=10,height=2,bg='lightgray')
+				w.grid(row=int(i/9)+1,column=(i%9)+1)
+
+		Course_Dict[cr] += 1
 
 cr_vars = []
 old_var = []
 z = 0
 match = [[False for i in range(8)] for j in range(6)]
-
+# print(match)
 	# THIS SECTION DEFINES THE RENDERING OF THE SLOTS IN THE GUI'S TIMETABLE MATRIX
 for i in range(1,6):
 	for j in range(1,10):
+		# print(cr_vars)
 		cr_vars.append(StringVar(master))
+		# print(cr_vars)
 		cr_vars[z].set("SLOT")
+		# print(cr_vars)
 		old_var.append("SLOT")
-		left_course = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
 		w = OptionMenu(master, cr_vars[z], *left_course)
-		w.config(width=15,height=2)
+		w.config(width=10,height=2)
 		if(j != 5):
 			w.grid(row=i,column=j)
 		cr_vars[z].trace("w", lambda *_, var=z, row_val=i: update_options(var, row_val))
+		# print(cr_vars[z])
+		# print("###########\n\n\n\n")
 		z = z + 1
 
 Label(master, text='\n').grid(row=7)
 button = Button(master, text='Undo',activeforeground='blue',activebackground='red', command=lambda: undo_in_excel_sheet(cr_vars))
 button.grid(row=8,column=3)
-button = Button(master, text='Save',activeforeground='blue',activebackground='red', command=lambda: save_in_excel_sheet(old_var))
+button = Button(master, text='Save',activeforeground='blue',activebackground='red', command=lambda: save_in_excel_sheet(cr_vars))
 button.grid(row=8,column=5)
-
+slot()
 mainloop()
-print(os.getcwd())
+# print(os.getcwd())

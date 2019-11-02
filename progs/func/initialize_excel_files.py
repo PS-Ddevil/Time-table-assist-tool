@@ -4,7 +4,7 @@ import os.path
 import openpyxl
 
 def slot():
-    fname='src/tmp/slot.xlsx'
+    fname='../src/data/slot.xlsx'
     if os.path.isfile(fname):
         print('slot.xlsx is already there')
     else:
@@ -30,4 +30,4 @@ def slot():
         sheet.cell(row = 4, column = 1).value='Wednesday'
         sheet.cell(row = 5, column = 1).value='Thrusday'
         sheet.cell(row = 6, column = 1).value='Friday'
-        wb.save("src/tmp/slot.xlsx")
+        wb.save("../src/data/slot.xlsx")
