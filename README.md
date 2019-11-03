@@ -13,6 +13,7 @@ Go to the folder and run below command : -
     pip3 install openpyxl
     pip3 install ezodf
     pip3 install python-docx
+    pip3 install tkscrolledframe
 
 # Want to contibute
 * Fork the repository into your account.
