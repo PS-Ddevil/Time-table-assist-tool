@@ -3,6 +3,8 @@ from tkinter import messagebox
 import os
 import openpyxl
 from tkinter import filedialog
+from tkscrolledframe import ScrolledFrame
+
 
 
 file_path = "src/tmp/baskets"
@@ -21,8 +23,16 @@ slotE=[]
 slotF=[]
 slotG=[]
 slotH=[]
-frame2=Frame(master2,bd=10,height=500,padx=10,pady=10,width=1500)
-frame2.pack()
+sf = ScrolledFrame(master2, width=640, height=480)
+sf.pack(side="top", expand=1, fill="both")
+
+# Bind the arrow keys and scroll wheel
+sf.bind_arrow_keys(master2)
+sf.bind_scroll_wheel(master2)
+
+# Create a frame within the ScrolledFrame
+frame2 = sf.display_widget(Frame)
+
 classes=['No Classroom','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15']
 def ConstraintCheck(var,i,name,slot,*args):
     for j in range(len(slot)):

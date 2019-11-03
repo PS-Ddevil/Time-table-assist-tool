@@ -5,6 +5,7 @@ import os
 import openpyxl
 from tkinter import filedialog
 import tkinter.ttk as ttk
+from tkscrolledframe import ScrolledFrame
 
 file_path = "src/tmp/baskets"
 master2 = Tk()
@@ -51,17 +52,17 @@ def ConstraintCheck(var,i,name,focus,*args):
             if ws.cell(k,7).value==prof and ws.cell(k,8).value==var.get() and ws.cell(k,1).value!=course:
                 
                 messagebox.showerror("Error", prof + " has same slot in "+ file)
-                wb.save(file)
+                wb.save(str(os.path.join(file_path, file)))
                 var.set(slot)
                 
                 return
-        wb.save(file)
+        wb.save(str(os.path.join(file_path, file)))
        
     wb = openpyxl.load_workbook(str(os.path.join(file_path, v.get())))
     ws = wb.active
-    if j==ws.max_row :
-        c1=ws.cell(i,8)
-        c1.value=var.get()
+    
+    c1=ws.cell(i,8)
+    c1.value=var.get()
     
         
     wb.save(str(os.path.join(file_path, v.get())))

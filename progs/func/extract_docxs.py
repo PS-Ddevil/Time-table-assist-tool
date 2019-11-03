@@ -50,7 +50,7 @@ def parse_all_docxs_table():
             sheet.cell(row = 1, column = 3).value='L-T-P-C'
             count=2
             for i in range(len(data)):
-                sheet.cell(row = count, column = 1).value=data[i]['Course code']
+                sheet.cell(row = count, column = 1).value=data[i]['Course code'][:2]+" "+data[i]['Course code'][2:]
                 sheet.cell(row = count, column = 2).value=data[i]['Course name']
                 sheet.cell(row = count, column = 3).value=data[i]['L-T-P-C']
                 count=count+1
