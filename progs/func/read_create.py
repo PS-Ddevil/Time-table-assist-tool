@@ -10,26 +10,32 @@ def read_create():
 
     sheet =pyexcel.get_sheet(file_name=file_name)
     i=0
+    name=[]
     for row in sheet:
-    
+        if(i==1):
+            name=row
+            print(name)
+        i+=1
         lists=str(row[3])
         lists=lists.split('-')
         if(lists[0]!="0" ):
             for p in range(len(row)):
                 if(row[p]=='C'):    
-                    if(os.path.exists("src/tmp/baskets/"+str(p) + ".xlsx")  ):
-                        wb = openpyxl.load_workbook("src/tmp/baskets/"+str(p) + ".xlsx")
+                    name[p-1] =name[p-1].replace("/", "-")
+                    if(os.path.exists("src/tmp/baskets/"+str(name[p-1]) + ".xlsx")  ):
+                        wb = openpyxl.load_workbook("src/tmp/baskets/"+str(name[p-1]) + ".xlsx")
                         pass
                     else:
                         wb = openpyxl.Workbook()
-                        wb.save("src/tmp/baskets/"+str(p) + ".xlsx")
-                        wb = openpyxl.load_workbook("src/tmp/baskets/"+str(p) + ".xlsx")
+                        wb.save("src/tmp/baskets/"+str(name[p-1]) + ".xlsx")
+                        wb = openpyxl.load_workbook("src/tmp/baskets/"+str(name[p-1]) + ".xlsx")
                     ws = wb.worksheets[0]
                     rows = ws.max_row+1
                     for l in range(1,6):
                         ws.cell(rows,l).value=row[l]
-                        wb.save("src/tmp/baskets/"+str(p) + ".xlsx")
+                        wb.save("src/tmp/baskets/"+str(name[p-1]) + ".xlsx")
                     ws.cell(rows,6).value=row[p]
-                    wb.save("src/tmp/baskets/"+str(p) + ".xlsx")
+                    wb.save("src/tmp/baskets/"+str(name[p-1]) + ".xlsx")
+    
 
 read_create()

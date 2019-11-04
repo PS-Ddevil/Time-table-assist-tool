@@ -19,6 +19,7 @@ def Initialise():
     os.system("python3 progs/func/read_create.py")
 
 master = Tk()
+# master.attributes("-zoomed",True)
 master.title("Time Table Assist Tool")
 frame=Frame(master,bd=10,height=500,padx=10,pady=10,width=1500)
 frame.pack()

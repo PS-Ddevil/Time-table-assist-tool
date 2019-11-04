@@ -87,21 +87,21 @@ def Save():
 def call(slot):
     w = Label(frame2, text="Course")
     w.grid(row=0,column=0,columnspan=1,sticky=W+E+N+S)
-    w.config(width=15)
+    w.config(width=30)
     w = Label(frame2, text="Classroom")
-    w.grid(row=0,column=0,columnspan=1,sticky=W+E+N+S)
-    w.config(width=15)
+    w.grid(row=0,column=1,columnspan=1,sticky=W+E+N+S)
+    w.config(width=30)
     i=0
     for i in range(len(slot)):
         print(slot[i],"      fdfddfvfdv")
         w = Label(frame2, text=slot[i][0])
         w.grid(row=i+1,column=0,columnspan=1,sticky=W+E+N+S)
-        w.config(width=15)
+        w.config(width=30)
         var=StringVar()
         var.set(slot[i][1])
         w = OptionMenu(frame2,var,*classes)
         w.grid(row=i+1,column=1,sticky=W+E+N+S)
-        w.config(width=15)
+        w.config(width=30)
         var.trace("w", lambda name1,name2,op,i=i,var=var,name=v.get(),slot=slot:ConstraintCheck(var,i,name,slot,name1,name2,op))
         
     w = Button(frame2, text="Save",command=Save)
@@ -206,7 +206,7 @@ def DialogBox():
        global file_path
        
        for file in os.listdir(file_path):
-           if file.endswith('.xlsx') and file!="course_faculty_main.xlsx"  and file!='course_faculty_optional.xlsx':
+           if file.endswith('.xlsx') and file!=".xlsx"  and file!="course_faculty_main.xlsx"  and file!='course_faculty_optional.xlsx':
                a=str(os.path.join(file_path, file))
                lists.append(file)
        DropDown()
