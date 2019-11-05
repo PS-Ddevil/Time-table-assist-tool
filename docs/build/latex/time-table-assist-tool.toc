@@ -1,40 +1,45 @@
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}\sphinxstylestrong {User Manual}}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}\sphinxstylestrong {Working in GUI \#1}}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}\sphinxstyleemphasis {Steps}}{1}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}\sphinxstyleemphasis {Anamolies Management}}{2}{subsection.1.1.2}
-\contentsline {subsubsection}{Case 1}{2}{subsubsection*.3}
+\contentsline {section}{\numberline {1.2}\sphinxstylestrong {Working in GUI \#1}}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}\sphinxstyleemphasis {Steps}}{2}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}\sphinxstyleemphasis {Anamolies Management}}{3}{subsection.1.2.2}
+\contentsline {subsubsection}{Case 1}{3}{subsubsection*.3}
 \contentsline {subsubsection}{Case 2}{3}{subsubsection*.4}
-\contentsline {section}{\numberline {1.2}\sphinxstylestrong {Working in GUI \#2}}{4}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}\sphinxstyleemphasis {Steps}}{4}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}\sphinxstyleemphasis {Anamolies Management}}{12}{subsection.1.2.2}
-\contentsline {subsubsection}{Case 1}{12}{subsubsection*.5}
-\contentsline {subsubsection}{Case 2}{14}{subsubsection*.6}
-\contentsline {chapter}{\numberline {2}\sphinxstylestrong {Developer Manual}}{17}{chapter.2}
-\contentsline {section}{\numberline {2.1}\sphinxstyleemphasis {Software Requirements}}{17}{section.2.1}
-\contentsline {section}{\numberline {2.2}\sphinxstyleemphasis {Bug Reports and Feature Requests}}{17}{section.2.2}
-\contentsline {section}{\numberline {2.3}\sphinxstyleemphasis {Contributing on the Project}}{18}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Getting Started}{18}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Tree Structure}{19}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Working with Landing GUI}{20}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Working on GUI\#1}{21}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Working on GUI\#2}{22}{subsection.2.3.5}
-\contentsline {subsection}{\numberline {2.3.6}Working on GUI\#3}{24}{subsection.2.3.6}
-\contentsline {subsection}{\numberline {2.3.7}Functions}{26}{subsection.2.3.7}
-\contentsline {subsubsection}{PARSE\_ALL\_DOCXS\_TABLE}{26}{subsubsection*.7}
-\contentsline {subsubsection}{EXTRACT (FACULTY)}{26}{subsubsection*.8}
-\contentsline {subsubsection}{INITIALISE\_EXCEL\_FILES}{26}{subsubsection*.9}
-\contentsline {subsubsection}{READ\_CREATE}{27}{subsubsection*.10}
-\contentsline {subsubsection}{SAVE\_IN\_EXCEL\_SHEET}{27}{subsubsection*.11}
-\contentsline {subsubsection}{UNDO\_IN\_EXCEL\_SHEET}{27}{subsubsection*.12}
-\contentsline {section}{\numberline {2.4}\sphinxstyleemphasis {Core Developers}}{28}{section.2.4}
-\contentsline {section}{\numberline {2.5}\sphinxstyleemphasis {Branch Model}}{28}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Conventions}{28}{subsection.2.5.1}
-\contentsline {subsubsection}{master:}{28}{subsubsection*.13}
-\contentsline {subsubsection}{X.Y:}{28}{subsubsection*.14}
-\contentsline {subsubsection}{X.Y.Z:}{28}{subsubsection*.15}
-\contentsline {chapter}{\numberline {3}Contributors}{29}{chapter.3}
-\contentsline {chapter}{\numberline {4}Change Log}{31}{chapter.4}
-\contentsline {chapter}{\numberline {5}Need Help}{39}{chapter.5}
-\contentsline {chapter}{\numberline {6}License}{41}{chapter.6}
-\contentsline {chapter}{\numberline {7}Contact}{43}{chapter.7}
+\contentsline {section}{\numberline {1.3}\sphinxstylestrong {Working in GUI \#2}}{5}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}\sphinxstyleemphasis {Steps}}{5}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}\sphinxstyleemphasis {Anamolies Management}}{11}{subsection.1.3.2}
+\contentsline {subsubsection}{Case 1}{11}{subsubsection*.5}
+\contentsline {subsubsection}{Case 2}{13}{subsubsection*.6}
+\contentsline {section}{\numberline {1.4}\sphinxstylestrong {Working in GUI \#3}}{16}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}\sphinxstyleemphasis {Steps}}{16}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}\sphinxstyleemphasis {Anamolies Management}}{22}{subsection.1.4.2}
+\contentsline {subsubsection}{Case 1}{22}{subsubsection*.7}
+\contentsline {chapter}{\numberline {2}\sphinxstylestrong {Developer Manual}}{25}{chapter.2}
+\contentsline {section}{\numberline {2.1}\sphinxstyleemphasis {Software Requirements}}{25}{section.2.1}
+\contentsline {section}{\numberline {2.2}\sphinxstyleemphasis {Bug Reports and Feature Requests}}{25}{section.2.2}
+\contentsline {section}{\numberline {2.3}\sphinxstyleemphasis {Contributing on the Project}}{26}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Getting Started}{26}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Tree Structure}{27}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Working with Landing GUI}{28}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Working on GUI\#1}{29}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Working on GUI\#2}{30}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Working on GUI\#3}{32}{subsection.2.3.6}
+\contentsline {subsection}{\numberline {2.3.7}Functions}{34}{subsection.2.3.7}
+\contentsline {subsubsection}{PARSE\_ALL\_DOCXS\_TABLE}{34}{subsubsection*.8}
+\contentsline {subsubsection}{EXTRACT (FACULTY)}{34}{subsubsection*.9}
+\contentsline {subsubsection}{INITIALISE\_EXCEL\_FILES}{35}{subsubsection*.10}
+\contentsline {subsubsection}{READ\_CREATE}{35}{subsubsection*.11}
+\contentsline {subsubsection}{SAVE\_IN\_EXCEL\_SHEET}{35}{subsubsection*.12}
+\contentsline {subsubsection}{UNDO\_IN\_EXCEL\_SHEET}{35}{subsubsection*.13}
+\contentsline {section}{\numberline {2.4}\sphinxstyleemphasis {Core Developers}}{36}{section.2.4}
+\contentsline {section}{\numberline {2.5}\sphinxstyleemphasis {Branch Model}}{36}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Conventions}{36}{subsection.2.5.1}
+\contentsline {subsubsection}{master:}{36}{subsubsection*.14}
+\contentsline {subsubsection}{X.Y:}{36}{subsubsection*.15}
+\contentsline {subsubsection}{X.Y.Z:}{36}{subsubsection*.16}
+\contentsline {chapter}{\numberline {3}Contributors}{37}{chapter.3}
+\contentsline {chapter}{\numberline {4}Change Log}{39}{chapter.4}
+\contentsline {chapter}{\numberline {5}Need Help}{47}{chapter.5}
+\contentsline {chapter}{\numberline {6}License}{49}{chapter.6}
+\contentsline {chapter}{\numberline {7}Contact}{51}{chapter.7}

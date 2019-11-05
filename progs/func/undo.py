@@ -1,7 +1,7 @@
 import xlrd
 def undo_in_excel_sheet(cr_vars):
     # Give the location of the file
-    filename = ("/home/vinay/Documents/Learn/Time-table-assist-tool/src/data/slot.xlsx")
+    filename = ("./src/tmp/slot.xlsx")
     wb = xlrd.open_workbook(filename)
     sheet = wb.sheet_by_index(0)
     count=0

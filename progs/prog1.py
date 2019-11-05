@@ -12,7 +12,7 @@ master = Tk()
 master.title("Time table assist tool")
 
 # DEFINING THE GUI ELEMENTS
-img=Image.open("/home/vinay/Documents/Learn/Time-table-assist-tool/src/logo/iitmandilogo.jpg")
+img=Image.open("./src/logo/iitmandilogo.jpg")
 img = ImageTk.PhotoImage(img)
 label = Label(image=img)
 label.grid(row=0,column=0)

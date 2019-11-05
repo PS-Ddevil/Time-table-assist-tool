@@ -136,7 +136,6 @@ Tree Structure
     │       ├── conf.py
     │       ├── contributors.rst
     │       ├── developer.rst
-    │       ├── git-log.txt
     │       ├── help.rst
     │       ├── img
     │       ├── index.rst
@@ -177,13 +176,17 @@ Tree Structure
     │   │   ├── basket_elective_docxs
     │   │   ├── ClassroomSeatingCapacity.docx
     │   │   ├── Courselist.ods
-    │   │   └── ExampleElectiveCoursesGrouping.docx
+    │   │   ├── ExampleElectiveCoursesGrouping.docx
+    │   │   └── slot.xlsx
+    │   ├── logo
+    │   │   └── iitmandilogo.jpg
     │   └── tmp
     │       ├── baskets
     │       └── slot.xlsx
     └── tree.txt
 
-    19 directories, 39 files
+
+    20 directories, 39 files
 
 Working with Landing GUI
 -------------------------

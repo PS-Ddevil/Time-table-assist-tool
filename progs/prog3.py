@@ -33,7 +33,7 @@ sf.bind_scroll_wheel(master2)
 # Create a frame within the ScrolledFrame
 frame2 = sf.display_widget(Frame)
 
-classes=['No Classroom','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15']
+classes=['No Classroom','A1-3','A1-NKN','A5-1','A5-2','A5-4','A5-5','A9-1','SC-NKN','G-106,107','A10-1a','A10-1b','A10-1c','A10-1d','A10-2a','A10-2b','A10-2c','A10-3a','A10-3b','A10-3c','Hall A','Hall B','Hall C','A13-1A','A13-3A','A13-2A','A13-2B','A13-2C','A13-2D']
 def ConstraintCheck(var,i,name,slot,*args):
     for j in range(len(slot)):
         if(i==j):

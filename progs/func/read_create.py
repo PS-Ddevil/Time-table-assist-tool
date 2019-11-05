@@ -21,21 +21,21 @@ def read_create():
         if(lists[0]!="0" ):
             for p in range(len(row)):
                 if(row[p]=='C'):    
-                    name[p-1] =name[p-1].replace("/", "-")
-                    if(os.path.exists("src/tmp/baskets/"+str(name[p-1]) + ".xlsx")  ):
-                        wb = openpyxl.load_workbook("src/tmp/baskets/"+str(name[p-1]) + ".xlsx")
+                    name[p] =name[p].replace("/", "-")
+                    if(os.path.exists("src/tmp/baskets/"+str(name[p]) + ".xlsx")  ):
+                        wb = openpyxl.load_workbook("src/tmp/baskets/"+str(name[p]) + ".xlsx")
                         pass
                     else:
                         wb = openpyxl.Workbook()
-                        wb.save("src/tmp/baskets/"+str(name[p-1]) + ".xlsx")
-                        wb = openpyxl.load_workbook("src/tmp/baskets/"+str(name[p-1]) + ".xlsx")
+                        wb.save("src/tmp/baskets/"+str(name[p]) + ".xlsx")
+                        wb = openpyxl.load_workbook("src/tmp/baskets/"+str(name[p]) + ".xlsx")
                     ws = wb.worksheets[0]
                     rows = ws.max_row+1
                     for l in range(1,6):
                         ws.cell(rows,l).value=row[l]
-                        wb.save("src/tmp/baskets/"+str(name[p-1]) + ".xlsx")
+                        wb.save("src/tmp/baskets/"+str(name[p]) + ".xlsx")
                     ws.cell(rows,6).value=row[p]
-                    wb.save("src/tmp/baskets/"+str(name[p-1]) + ".xlsx")
+                    wb.save("src/tmp/baskets/"+str(name[p]) + ".xlsx")
     
 
 read_create()

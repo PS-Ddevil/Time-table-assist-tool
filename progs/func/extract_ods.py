@@ -8,7 +8,7 @@ import openpyxl
 import os
 def extract():
     # pass
-    fname1='/home/vinay/Documents/Learn/Time-table-assist-tool/src/tmp/baskets/course_faculty_main.xlsx'
+    fname1='./src/tmp/baskets/course_faculty_main.xlsx'
     print(str(os.path.isfile(fname1)))
     if str(os.path.isfile(fname1))=='False':
         print(os.path.isfile(fname1))
@@ -24,7 +24,7 @@ def extract():
     sheet1.cell(row = 1, column = 1).value='Course code'
     sheet1.cell(row = 1, column = 2).value='Faculty name'
     ##################################################################
-    fname2='/home/vinay/Documents/Learn/Time-table-assist-tool/src/tmp/baskets/course_faculty_optional.xlsx'
+    fname2='./src/tmp/baskets/course_faculty_optional.xlsx'
     print(str(os.path.isfile(fname2)))
     if str(os.path.isfile(fname2))=='False':
         print(os.path.isfile(fname2))
@@ -43,7 +43,7 @@ def extract():
     count1=2
     count2=2
 
-    doc = ezodf.opendoc('/home/vinay/Documents/Learn/Time-table-assist-tool/src/data/Courselist.ods')
+    doc = ezodf.opendoc('./src/data/Courselist.ods')
 
     sheet = doc.sheets[0]
     print(sheet)
