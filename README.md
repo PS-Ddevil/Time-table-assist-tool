@@ -3,7 +3,11 @@ It is group project under CS308 - Large Applications Practicum course under ment
 It support checking of conflict arise due to slot, classroom and faculty while making time table of IIT Mandi.
 
 # Getting Started
-Install the all python dependencies one by one :-
+Either install all python dependencies using requirment.txt :-
+
+    pip3 install -r requirements.txt
+
+OR, Install the all python dependencies one by one :-
 
     sudo apt-get install python3-tk
     python3 main.py
