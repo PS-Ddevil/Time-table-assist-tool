@@ -34,23 +34,51 @@
             
   <div class="section" id="user-manual">
 <h1><strong>User Manual</strong><a class="headerlink" href="#user-manual" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="working-in-gui-1">
-<h2><strong>Working in GUI #1</strong><a class="headerlink" href="#working-in-gui-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="setting-up-the-project">
+<h2><strong>Setting Up the Project</strong><a class="headerlink" href="#setting-up-the-project" title="Permalink to this headline">¶</a></h2>
+<p>Software requirement:</p>
+<p>Either install all python dependencies using requirment.txt :-</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+<p>OR, Install the all python dependencies one by one :-</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">tk</span>
+<span class="n">python3</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="n">xlwt</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="n">xlsxwriter</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="n">xlrd</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="n">openpyxl</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="n">ezodf</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="n">python</span><span class="o">-</span><span class="n">docx</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="n">tkscrolledframe</span>
+</pre></div>
+</div>
+<p>Following document are required for a smooth functioning of the applicaion.</p>
+<ol class="arabic simple">
+<li><p>Elective docs files (need to be save in <em>src/data/basket_elective_docs</em>. Any other location wont be considered.)</p></li>
+<li><p>A file for the courselist i.e all the courses with their respective course code and faculty list being offered in a given semester for the various batches need to be stored (the file has to save in “src/data” in ods format having the name as Courselist.ods, failing to do so will lead to unpredictable malfuntions.)</p></li>
+<li><p>In case of any change in the classroom they need to be saved in the prog3.py file at the location <em>progs/prog3.py</em>. To get detailed steps refer to FAQ in the end of the this page.</p></li>
+<li><p>Follow the step of working with Landing GUI to initialise the required state for working of the application.</p></li>
+</ol>
+</div>
+<div class="section" id="working-in-landing-gui">
+<h2><strong>Working in Landing GUI</strong><a class="headerlink" href="#working-in-landing-gui" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="_images/GUI0_main.png"><img alt="_images/GUI0_main.png" class="align-center" src="_images/GUI0_main.png" style="width: 265.2px; height: 123.0px;" /></a>
 <p>Click on Initialise to make all the required file.</p>
 <a class="reference internal image-reference" href="_images/GUI0_main_1.png"><img alt="_images/GUI0_main_1.png" class="align-center" src="_images/GUI0_main_1.png" style="width: 265.2px; height: 125.39999999999999px;" /></a>
 </div>
-<div class="section" id="id1">
-<h2><strong>Working in GUI #1</strong><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="working-in-gui-1">
+<h2><strong>Working in GUI #1</strong><a class="headerlink" href="#working-in-gui-1" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="steps">
 <h3><em>Steps</em><a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h3>
 <a class="reference internal image-reference" href="_images/GUI1_main.png"><img alt="_images/GUI1_main.png" class="align-center" src="_images/GUI1_main.png" style="width: 746.4px; height: 243.6px;" /></a>
 <ol class="arabic simple">
-<li><p>To open the window explicitly type the following code in cmd (Windows) or terminal (Linux)</p></li>
+<li><p>To open the window run the following code in cmd (Windows) or terminal (Linux)</p></li>
 </ol>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">prog1</span><span class="o">.</span><span class="n">py</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
+<p>and then click on the Time Table Button.</p>
 <ol class="arabic simple" start="2">
 <li><p>Select the slots from drop down</p></li>
 </ol>
@@ -91,15 +119,16 @@
 </div>
 <div class="section" id="working-in-gui-2">
 <h2><strong>Working in GUI #2</strong><a class="headerlink" href="#working-in-gui-2" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id2">
-<h3><em>Steps</em><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3><em>Steps</em><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <a class="reference internal image-reference" href="_images/GUI2_main.png"><img alt="_images/GUI2_main.png" class="align-center" src="_images/GUI2_main.png" style="width: 306.59999999999997px; height: 323.4px;" /></a>
 <ol class="arabic simple">
-<li><p>To open the window explicitly type the following code in cmd (Windows) or terminal (Linux)</p></li>
+<li><p>To open the window run the following code in cmd (Windows) or terminal (Linux)</p></li>
 </ol>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">prog2</span><span class="o">.</span><span class="n">py</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
+<p>and then click on the Slot Selection Button.</p>
 <ol class="arabic simple" start="2">
 <li><p>Select the slots from drop down</p></li>
 </ol>
@@ -128,10 +157,10 @@
 </ul>
 <a class="reference internal image-reference" href="_images/GUI2_main_5.png"><img alt="_images/GUI2_main_5.png" class="align-center" src="_images/GUI2_main_5.png" style="width: 309.0px; height: 325.8px;" /></a>
 </div>
+<div class="section" id="id2">
+<h3><em>Anamolies Management</em><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id3">
-<h3><em>Anamolies Management</em><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id4">
-<h4>Case 1<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<h4>Case 1<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>Selecting same slots for two courses in the same basket</p></li>
 </ul>
@@ -141,8 +170,8 @@
 </ul>
 <a class="reference internal image-reference" href="_images/GUI2_1_2.png"><img alt="_images/GUI2_1_2.png" class="align-center" src="_images/GUI2_1_2.png" style="width: 307.8px; height: 331.2px;" /></a>
 </div>
-<div class="section" id="id5">
-<h4>Case 2<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id4">
+<h4>Case 2<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>Selecting same slots for a prof in two basket</p></li>
 </ul>
@@ -156,15 +185,16 @@
 </div>
 <div class="section" id="working-in-gui-3">
 <h2><strong>Working in GUI #3</strong><a class="headerlink" href="#working-in-gui-3" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id6">
-<h3><em>Steps</em><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h3><em>Steps</em><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <a class="reference internal image-reference" href="_images/GUI3_main.png"><img alt="_images/GUI3_main.png" class="align-center" src="_images/GUI3_main.png" style="width: 312.0px; height: 328.8px;" /></a>
 <ol class="arabic simple">
-<li><p>To open the window explicitly type the following code in cmd (Windows) or terminal (Linux)</p></li>
+<li><p>To open the window run the following code in cmd (Windows) or terminal (Linux)</p></li>
 </ol>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">prog2</span><span class="o">.</span><span class="n">py</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
+<p>and then click on the Class Selection Button.</p>
 <ol class="arabic simple" start="2">
 <li><p>Select the Classrooms</p></li>
 </ol>
@@ -193,10 +223,10 @@
 </ul>
 <a class="reference internal image-reference" href="_images/GUI3_main_5.png"><img alt="_images/GUI3_main_5.png" class="align-center" src="_images/GUI3_main_5.png" style="width: 310.2px; height: 321.0px;" /></a>
 </div>
+<div class="section" id="id6">
+<h3><em>Anamolies Management</em><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id7">
-<h3><em>Anamolies Management</em><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id8">
-<h4>Case 1<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<h4>Case 1<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>Selecting same slots for two courses in the same basket</p></li>
 </ul>
@@ -207,6 +237,24 @@
 <a class="reference internal image-reference" href="_images/GUI3_1_2.png"><img alt="_images/GUI3_1_2.png" class="align-center" src="_images/GUI3_1_2.png" style="width: 310.2px; height: 328.8px;" /></a>
 </div>
 </div>
+</div>
+<div class="section" id="faqs">
+<h2><strong>FAQs</strong><a class="headerlink" href="#faqs" title="Permalink to this headline">¶</a></h2>
+<p><strong>1. How to include new classroom into the application?</strong></p>
+<p>Follow the following steps to include new classrooms into the application:</p>
+<ol class="arabic simple">
+<li><p>Open the file prog3.py from the location <em>progs/prog3.py</em>.</p></li>
+<li><p>Find a list of classes defined by the variable “classes”.</p></li>
+<li><p>Modify the classlist with the new entries while removing the ones not required(if any).</p></li>
+<li><p>Save the changes.</p></li>
+</ol>
+<p><strong>2. What is the flow of work in the application?</strong></p>
+<p>Any client is expected to follow the following workflow while operatiing this application.</p>
+<ol class="arabic simple">
+<li><p>After following the steps defined in the Getting Started section, Move to the main GUI.</p></li>
+<li><p>Folow the steps in main GUI opeations.</p></li>
+<li><p>Operation in the applicaion should be done in the way that all the courses should be allocated slots, before the classrom are given.</p></li>
+</ol>
 </div>
 </div>
 
@@ -230,22 +278,24 @@
 <p class="caption"><span class="caption-text">Content:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#"><strong>User Manual</strong></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#working-in-gui-1"><strong>Working in GUI #1</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1"><strong>Working in GUI #1</strong></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-the-project"><strong>Setting Up the Project</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#working-in-landing-gui"><strong>Working in Landing GUI</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#working-in-gui-1"><strong>Working in GUI #1</strong></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#steps"><em>Steps</em></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#anamolies-management"><em>Anamolies Management</em></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#working-in-gui-2"><strong>Working in GUI #2</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2"><em>Steps</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3"><em>Anamolies Management</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1"><em>Steps</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2"><em>Anamolies Management</em></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#working-in-gui-3"><strong>Working in GUI #3</strong></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id6"><em>Steps</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7"><em>Anamolies Management</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5"><em>Steps</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6"><em>Anamolies Management</em></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#faqs"><strong>FAQs</strong></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="developer.html"><strong>Developer Manual</strong></a></li>

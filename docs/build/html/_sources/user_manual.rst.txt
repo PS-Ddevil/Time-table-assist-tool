@@ -2,8 +2,44 @@
 **User Manual**
 ################
 
-**Working in GUI #1**
-======================
+**Setting Up the Project**
+============================
+
+Software requirement:
+
+Either install all python dependencies using requirment.txt :-
+
+.. code-block:: python
+    
+    pip3 install -r requirements.txt
+
+OR, Install the all python dependencies one by one :-
+
+.. code-block:: python
+    
+    sudo apt-get install python3-tk
+    python3 main.py
+    pip3 install xlwt
+    pip3 install xlsxwriter
+    pip3 install xlrd
+    pip3 install openpyxl
+    pip3 install ezodf
+    pip3 install python-docx
+    pip3 install tkscrolledframe
+
+Following document are required for a smooth functioning of the applicaion. 
+
+1. Elective docs files (need to be save in *src/data/basket_elective_docs*. Any other location wont be considered.)
+
+2. A file for the courselist i.e all the courses with their respective course code and faculty list being offered in a given semester for the various batches need to be stored (the file has to save in "src/data" in ods format having the name as Courselist.ods, failing to do so will lead to unpredictable malfuntions.)
+
+3. In case of any change in the classroom they need to be saved in the prog3.py file at the location *progs/prog3.py*. To get detailed steps refer to FAQ in the end of the this page.
+
+4. Follow the step of working with Landing GUI to initialise the required state for working of the application.
+
+
+**Working in Landing GUI**
+============================
 
 .. image:: img/GUI0_main.png
     :scale: 60%
@@ -27,11 +63,13 @@ Click on Initialise to make all the required file.
     :scale: 60%
     :align: center
 
-1. To open the window explicitly type the following code in cmd (Windows) or terminal (Linux)
+1. To open the window run the following code in cmd (Windows) or terminal (Linux)
 
 .. code-block:: python
 
-    python prog1.py
+    python main.py
+
+and then click on the Time Table Button.
 
 2. Select the slots from drop down
 
@@ -89,11 +127,13 @@ Case 2
     :scale: 60%
     :align: center
 
-1. To open the window explicitly type the following code in cmd (Windows) or terminal (Linux)
+1. To open the window run the following code in cmd (Windows) or terminal (Linux)
 
 .. code-block:: python
 
-    python prog2.py
+    python main.py
+
+and then click on the Slot Selection Button.
 
 2. Select the slots from drop down
 
@@ -176,11 +216,13 @@ Case 2
     :scale: 60%
     :align: center
 
-1. To open the window explicitly type the following code in cmd (Windows) or terminal (Linux)
+1. To open the window run the following code in cmd (Windows) or terminal (Linux)
 
 .. code-block:: python
 
-    python prog2.py
+    python main.py
+
+and then click on the Class Selection Button.
 
 2. Select the Classrooms
 
@@ -236,3 +278,28 @@ Case 1
 .. image:: img/GUI3_1_2.png
     :scale: 60%
     :align: center
+
+**FAQs**
+=========
+
+**1. How to include new classroom into the application?**
+
+Follow the following steps to include new classrooms into the application:
+
+1. Open the file prog3.py from the location *progs/prog3.py*. 
+
+2. Find a list of classes defined by the variable "classes".
+
+3. Modify the classlist with the new entries while removing the ones not required(if any).
+
+4. Save the changes.
+
+**2. What is the flow of work in the application?**
+
+Any client is expected to follow the following workflow while operatiing this application.
+
+1. After following the steps defined in the Getting Started section, Move to the main GUI.
+
+2. Folow the steps in main GUI opeations.
+
+3. Operation in the applicaion should be done in the way that all the courses should be allocated slots, before the classrom are given.  

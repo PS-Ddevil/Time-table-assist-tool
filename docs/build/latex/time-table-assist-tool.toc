@@ -1,20 +1,22 @@
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}\sphinxstylestrong {User Manual}}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}\sphinxstylestrong {Working in GUI \#1}}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}\sphinxstylestrong {Working in GUI \#1}}{2}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}\sphinxstyleemphasis {Steps}}{2}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}\sphinxstyleemphasis {Anamolies Management}}{3}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.1}\sphinxstylestrong {Setting Up the Project}}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}\sphinxstylestrong {Working in Landing GUI}}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}\sphinxstylestrong {Working in GUI \#1}}{2}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}\sphinxstyleemphasis {Steps}}{2}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}\sphinxstyleemphasis {Anamolies Management}}{3}{subsection.1.3.2}
 \contentsline {subsubsection}{Case 1}{3}{subsubsection*.3}
-\contentsline {subsubsection}{Case 2}{3}{subsubsection*.4}
-\contentsline {section}{\numberline {1.3}\sphinxstylestrong {Working in GUI \#2}}{5}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}\sphinxstyleemphasis {Steps}}{5}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}\sphinxstyleemphasis {Anamolies Management}}{11}{subsection.1.3.2}
+\contentsline {subsubsection}{Case 2}{4}{subsubsection*.4}
+\contentsline {section}{\numberline {1.4}\sphinxstylestrong {Working in GUI \#2}}{5}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}\sphinxstyleemphasis {Steps}}{5}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}\sphinxstyleemphasis {Anamolies Management}}{11}{subsection.1.4.2}
 \contentsline {subsubsection}{Case 1}{11}{subsubsection*.5}
 \contentsline {subsubsection}{Case 2}{13}{subsubsection*.6}
-\contentsline {section}{\numberline {1.4}\sphinxstylestrong {Working in GUI \#3}}{16}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}\sphinxstyleemphasis {Steps}}{16}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}\sphinxstyleemphasis {Anamolies Management}}{22}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}\sphinxstylestrong {Working in GUI \#3}}{16}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}\sphinxstyleemphasis {Steps}}{16}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}\sphinxstyleemphasis {Anamolies Management}}{22}{subsection.1.5.2}
 \contentsline {subsubsection}{Case 1}{22}{subsubsection*.7}
+\contentsline {section}{\numberline {1.6}\sphinxstylestrong {FAQs}}{24}{section.1.6}
 \contentsline {chapter}{\numberline {2}\sphinxstylestrong {Developer Manual}}{25}{chapter.2}
 \contentsline {section}{\numberline {2.1}\sphinxstyleemphasis {Software Requirements}}{25}{section.2.1}
 \contentsline {section}{\numberline {2.2}\sphinxstyleemphasis {Bug Reports and Feature Requests}}{25}{section.2.2}
@@ -38,8 +40,9 @@
 \contentsline {subsubsection}{master:}{36}{subsubsection*.14}
 \contentsline {subsubsection}{X.Y:}{36}{subsubsection*.15}
 \contentsline {subsubsection}{X.Y.Z:}{36}{subsubsection*.16}
-\contentsline {chapter}{\numberline {3}Contributors}{37}{chapter.3}
-\contentsline {chapter}{\numberline {4}Change Log}{39}{chapter.4}
-\contentsline {chapter}{\numberline {5}Need Help}{47}{chapter.5}
-\contentsline {chapter}{\numberline {6}License}{49}{chapter.6}
-\contentsline {chapter}{\numberline {7}Contact}{51}{chapter.7}
+\contentsline {section}{\numberline {2.6}\sphinxstyleemphasis {FAQs}}{37}{section.2.6}
+\contentsline {chapter}{\numberline {3}Contributors}{39}{chapter.3}
+\contentsline {chapter}{\numberline {4}Change Log}{41}{chapter.4}
+\contentsline {chapter}{\numberline {5}Need Help}{49}{chapter.5}
+\contentsline {chapter}{\numberline {6}License}{51}{chapter.6}
+\contentsline {chapter}{\numberline {7}Contact}{53}{chapter.7}

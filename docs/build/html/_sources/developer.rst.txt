@@ -746,3 +746,33 @@ X.Y.Z:
 ^^^^^^^
 
 Where X.Y.Z stands for MAJOR.MINOR.PATCH release.
+
+*FAQs*
+========
+
+**1. How to add a new GUI to the project?** 
+
+Following steps are to be followed when adding a new GUI to the project:
+1. Initiate a GUI in the prog folder in the root directory. 
+
+2. The convention for making a GUI in to name it as progx.py, where x is the next serial number for the program.
+
+3. Take reference from the existing GUI to get the information about the import and the writing style for the code.
+
+4. Add appropriate comments in the code sections.
+
+5. Every GUI need to have a opening link from the the main.py in the root directory.
+
+6. Check for the syntax to add in the main.py as defined above in section on working in main.py.
+
+7. After appropriate testing, commit the local changes.
+
+8. Open a new issue on master repo and on getting the approval from the owner/moderator you may push the code with the referce number of the issue.
+
+**2. How to work with the function?**
+
+All the function are defined at the path *progs/func*. You can define the funcion in seperate python files and then import it in the program according to your need.
+
+**3. Where in the data to processed stored in the application?**
+
+All the required files have been stored in *src/data*. You can put the data in the given folder to work upon. In case any new file in generated, they need to be placed in *src/tmp*.
