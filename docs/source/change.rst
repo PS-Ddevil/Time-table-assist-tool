@@ -1,6 +1,103 @@
 Change Log
 ===========
 
+commit 7727e45de7a637aa6bc2c58929d3a854404dd0c3
+Author: PS-Ddevil <sinhapurushottam911@gmail.com>
+Date:   Tue Nov 5 13:30:11 2019 +0530
+
+    Documentation Developer Completed, User Manual Completed
+
+commit 0e2c6ff73c66ae44eaf0a2d5a9154a0068854629
+Merge: 343844c bde5025
+Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
+Date:   Tue Nov 5 12:57:36 2019 +0530
+
+    Merge pull request #21 from vinayskywalker/master
+    
+    error releted to file location resolved
+
+commit bde50257524fff7d35a967120330c96a283608dc
+Author: vinayskywalker <vinaykumar.dakshana17@gmail.com>
+Date:   Tue Nov 5 18:21:48 2019 +0530
+
+    error releted to file location resolved
+
+commit 2c720cc8a9853b58a9d4417d6cb9b7ff352bde89
+Author: vinayskywalker <vinaykumar.dakshana17@gmail.com>
+Date:   Tue Nov 5 00:30:52 2019 +0530
+
+    some error has resolved
+
+commit 343844c66f02d653977a81deefc5702eafa9e4d2
+Merge: 1898ff2 2c720cc
+Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
+Date:   Mon Nov 4 23:11:22 2019 +0530
+
+    Merge pull request #20 from vinayskywalker/master
+    
+    some error has resolved
+
+commit 1898ff256d5221226b107ab49766475ba4abec9a
+Merge: 627c05e 3439a0d
+Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
+Date:   Sun Nov 3 11:03:59 2019 +0530
+
+    Merge pull request #19 from vinayskywalker/master
+    
+    error related files and courses removed
+
+commit 3439a0d15c1fc190a090e00c12f435c44767c1d2
+Author: Vinay Kumar <45215239+vinayskywalker@users.noreply.github.com>
+Date:   Sun Nov 3 09:12:15 2019 +0530
+
+    updated readme
+
+commit 28a4e97ab0eb23ac43c5f3a9d9df56ee1b28ed41
+Author: vinayskywalker <vinaykumar.dakshana17@gmail.com>
+Date:   Sun Nov 3 02:45:48 2019 +0530
+
+    error related files and courses removed
+
+commit 627c05e8635687ab376c5d537ca2d7acb61df446
+Author: PS-Ddevil <sinhapurushottam911@gmail.com>
+Date:   Sun Nov 3 00:43:09 2019 +0530
+
+    cleaned prog1
+
+commit 1950bb03d36a4e95f4b6e5e5c1742d51dc4445d3
+Merge: 5cd0997 84d9370
+Author: PS-Ddevil <sinhapurushottam911@gmail.com>
+Date:   Sun Nov 3 00:36:26 2019 +0530
+
+    Merge branch 'master' of https://github.com/PS-Ddevil/Time-table-assist-tool
+
+commit 5cd09973fb57daffd0b4d8766a2c056000bfd4ac
+Author: PS-Ddevil <sinhapurushottam911@gmail.com>
+Date:   Sun Nov 3 00:34:25 2019 +0530
+
+    Completed Developer manual
+
+commit 84d9370f0b99f16f36bd7bce5f0c7eb6e93b706a
+Merge: 1a7729d 3c2fc16
+Author: Purushottam Sinha <sinhapurushottam911@gmail.com>
+Date:   Sun Nov 3 00:27:03 2019 +0530
+
+    Merge pull request #18 from deepakjnv880/master
+    
+    GUI1 updated and IIT Mandi logo added
+
+commit 3c2fc16aea454de3a310720ce799a68ed526e35a
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Sun Nov 3 00:13:41 2019 +0530
+
+    IIT Mandi logo added
+
+commit b7a62608b309aa7e9b59f91ca44acbcba3b45ce6
+Author: deepakjnv880 <b17039@students.iitmandi.ac.in>
+Date:   Sun Nov 3 00:13:08 2019 +0530
+
+    GUI 1 updated
+
 commit 1493e4307eaa027ca98a43c2e5a36741b075533b
 Author: PS-Ddevil <sinhapurushottam911@gmail.com>
 Date:   Sat Nov 2 14:18:05 2019 +0530
