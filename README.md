@@ -26,7 +26,7 @@ Open the folder Time-table-assist-tool and Run the application :-
 # File Structure
 The file structure of this repo is same as any other good project. There is one main python program named main.py in root directory and all other program are in are prog/ directory, all the data file are in /src directory and all report including dd,srs and readme is in /Reports directory.
 
-# Want to contibute? [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]
+# Want to contibute? [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/PS-Ddevil/Time-table-assist-tool/issues)
 * [Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) the repository into your account.
 * Either work according to the given [issues](https://github.com/PS-Ddevil/Time-table-assist-tool/issues) or raise new [issue](https://github.com/PS-Ddevil/Time-table-assist-tool/issues/new)
 * Make changes and [commit](https://help.github.com/en/desktop/contributing-to-projects/committing-and-reviewing-changes-to-your-project) them to user local repository.
