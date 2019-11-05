@@ -57,6 +57,7 @@ def extract():
                 check=True
             else:
                 faculty_name=str(col_index[4]).split(',')
+                
                 sheet1.cell(row = count1, column = 1).value=col_index[1]
                 sheet1.cell(row = count1, column = 2).value=faculty_name[0]
                 count1=count1+1

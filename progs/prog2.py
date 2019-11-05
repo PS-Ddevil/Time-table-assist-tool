@@ -59,7 +59,17 @@ def ConstraintCheck(var,i,name,focus,*args):
                 
                 return
         wb.save(str(os.path.join(file_path, file)))
-       
+
+    for file in lists:
+        if(file==v.get()):
+            continue
+        wb = openpyxl.load_workbook(str(os.path.join(file_path, file)))
+        ws=wb.active
+        for k in range(2,ws.max_row+1):  
+            if ws.cell(k,1).value==course:
+                ws.cell(k,8).value=var.get()  
+        wb.save(str(os.path.join(file_path, file)))
+
     wb = openpyxl.load_workbook(str(os.path.join(file_path, v.get())))
     ws = wb.active
     
@@ -143,6 +153,7 @@ def DialogBox():
                                 ws.cell(i,7).value=faculty[j]
                                 break
                wb.save(a)
+       lists.sort()
        DropDown()
 B = Button(frame1, text ="Start", command = DialogBox)
 B.grid(row=0,column=0,columnspan=3,sticky=W+E+N+S)

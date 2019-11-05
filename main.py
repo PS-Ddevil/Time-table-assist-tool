@@ -15,8 +15,9 @@ def ClassSelection():
     os.system("python3 progs/prog3.py")
 def Initialise():
     os.system("python3 progs/func/extract_docxs.py")
-    os.system("python3 progs/func/extract_ods.py")
     os.system("python3 progs/func/read_create.py")
+    os.system("python3 progs/func/extract_ods.py")
+    os.system("python3 progs/func/multi_faculty.py")
 
 master = Tk()
 # master.attributes("-zoomed",True)
