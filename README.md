@@ -7,7 +7,7 @@ Fork this repo and then clone it :-
 
     git clone https://github.com/PS-Ddevil/Time-table-assist-tool
     
-Open the folder Time-table-assist-tool :-
+Go to the folder Time-table-assist-tool :-
 
     cd Time-table-assist-tool
 
