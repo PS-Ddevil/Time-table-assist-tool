@@ -139,44 +139,60 @@ def DropDown():
         for i in range(2,ws.max_row+1):
             if(ws.cell(i,8).value=="Slot A"):
                 if(ws.cell(i,9).value is None):
-                    slotA.append([ws.cell(i,1).value,"No Classroom"])
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotA:
+                        slotA.append([ws.cell(i,1).value,"No Classroom"])
                 else:
-                    slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotA:
+                        slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
             elif(ws.cell(i,8).value=="Slot B"):
                 if(ws.cell(i,9).value is None):
-                    slotB.append([ws.cell(i,1).value,"No Classroom"])
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotB:
+                        slotB.append([ws.cell(i,1).value,"No Classroom"])
                 else:
-                    slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotB:
+                        slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
             elif(ws.cell(i,8).value=="Slot C"):
                 if(ws.cell(i,9).value is None):
-                    slotC.append([ws.cell(i,1).value,"No Classroom"])
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotC:
+                        slotC.append([ws.cell(i,1).value,"No Classroom"])
                 else:
-                    slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotC:
+                        slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
             elif(ws.cell(i,8).value=="Slot D"):
                 if(ws.cell(i,9).value is None):
-                    slotD.append([ws.cell(i,1).value,"No Classroom"])
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotD:
+                        slotD.append([ws.cell(i,1).value,"No Classroom"])
                 else:
-                    slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotD:
+                        slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
             elif(ws.cell(i,8).value=="Slot E"):
                 if(ws.cell(i,9).value is None):
-                    slotE.append([ws.cell(i,1).value,"No Classroom"])
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotE:
+                        slotE.append([ws.cell(i,1).value,"No Classroom"])
                 else:
-                    slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotE:
+                        slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
             elif(ws.cell(i,8).value=="Slot F"):
                 if(ws.cell(i,9).value is None):
-                    slotF.append([ws.cell(i,1).value,"No Classroom"])
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotF:
+                        slotF.append([ws.cell(i,1).value,"No Classroom"])
                 else:
-                    slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotF:
+                        slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
             elif(ws.cell(i,8).value=="Slot G"):
                 if(ws.cell(i,9).value is None):
-                        slotG.append([ws.cell(i,1).value,"No Classroom"])
+                        if [ws.cell(i,1).value,"No Classroom"] not in slotG:
+                            slotG.append([ws.cell(i,1).value,"No Classroom"])
                 else:
-                    slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotG:
+                        slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                    
             elif(ws.cell(i,8).value=="Slot H"):
                 if(ws.cell(i,9).value is None):
-                    slotH.append([ws.cell(i,1).value,"No Classroom"])
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotH:
+                        slotH.append([ws.cell(i,1).value,"No Classroom"])
                 else:
-                    slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                        
+                    if [ws.cell(i,1).value,"No Classroom"] not in slotH:
+                        slotA.append([ws.cell(i,1).value,ws.cell(i,9).value])                        
 
 
     slots=['Slot A','Slot B','Slot C','Slot D','Slot E','Slot F','Slot G','Slot H']
