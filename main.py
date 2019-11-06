@@ -5,8 +5,11 @@ import openpyxl
 from tkinter import filedialog
 import sqlite3
 
-def TimeTable():
+def TimeTable1():
     os.system("python3 progs/prog1.py")
+    print(os.getcwd())
+def TimeTable2():
+    os.system("python3 progs/func/final_time_table.py")
     print(os.getcwd())
 def SlotSlection():
     os.system("python3 progs/prog2.py")
@@ -33,8 +36,11 @@ B.config(width=45)
 B = Button(frame, text ="Class Selection", command = ClassSelection)
 B.grid(row=2,column=0,columnspan=3,sticky=W+E+N+S)
 B.config(width=45)
-B = Button(frame, text ="Time Table", command = TimeTable)
+B = Button(frame, text = "Slots Day Time", command = TimeTable1)
 B.grid(row=3,column=0,columnspan=3,sticky=W+E+N+S)
+B.config(width=45)
+B = Button(frame, text = "Courses Slot-wise", command = TimeTable2)
+B.grid(row=4,column=0,columnspan=3,sticky=W+E+N+S)
 B.config(width=45)
 
 mainloop()
