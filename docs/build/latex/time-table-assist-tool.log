@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.6)  6 NOV 2019 01:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.8.6)  6 NOV 2019 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1161,19 +1161,19 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 101.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<GUI0_main.png, id=196, 443.6575pt x 205.76875pt>
+<GUI0_main.png, id=196, 443.6575pt x 237.88875pt>
 File: GUI0_main.png Graphic file (type png)
 <use GUI0_main.png>
 Package pdftex.def Info: GUI0_main.png  used on input line 139.
-(pdftex.def)             Requested size: 266.19655pt x 123.46219pt.
+(pdftex.def)             Requested size: 266.19655pt x 142.73433pt.
  [1
 
 ]
-<GUI0_main_1.png, id=208, 443.6575pt x 209.78375pt>
+<GUI0_main_1.png, id=208, 441.65pt x 241.90375pt>
 File: GUI0_main_1.png Graphic file (type png)
 <use GUI0_main_1.png>
 Package pdftex.def Info: GUI0_main_1.png  used on input line 143.
-(pdftex.def)             Requested size: 266.19655pt x 125.8712pt.
+(pdftex.def)             Requested size: 264.99203pt x 145.14336pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <12> not available
 (Font)              Font shape `T1/phv/b/it' tried instead on input line 149.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
@@ -1183,60 +1183,60 @@ File: GUI1_main.png Graphic file (type png)
 <use GUI1_main.png>
 Package pdftex.def Info: GUI1_main.png  used on input line 151.
 (pdftex.def)             Requested size: 469.75342pt x 153.3118pt.
+ [2 <./GUI0_main.png> <./GUI0_main_1.png> <./GUI1_main.png>]
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 172.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [2 <./GUI0_main.png> <./GUI0_main_1.png> <./GUI1_main.png>]
+)
 File: GUI1_main.png Graphic file (type png)
 <use GUI1_main.png>
 Package pdftex.def Info: GUI1_main.png  used on input line 177.
 (pdftex.def)             Requested size: 469.75342pt x 153.3118pt.
-<GUI1_main_1.png, id=219, 1248.665pt x 404.51125pt>
+<GUI1_main_1.png, id=218, 1248.665pt x 404.51125pt>
 File: GUI1_main_1.png Graphic file (type png)
 <use GUI1_main_1.png>
 Package pdftex.def Info: GUI1_main_1.png  used on input line 184.
 (pdftex.def)             Requested size: 469.75342pt x 152.17896pt.
-<GUI1_1_1.png, id=220, 1254.6875pt x 519.9425pt>
+<GUI1_1_1.png, id=219, 1254.6875pt x 519.9425pt>
 File: GUI1_1_1.png Graphic file (type png)
 <use GUI1_1_1.png>
 Package pdftex.def Info: GUI1_1_1.png  used on input line 197.
 (pdftex.def)             Requested size: 469.76001pt x 194.66061pt.
- [3 <./GUI1_main_1.png> <./GUI1_1_1.png>]
-<GUI1_1_2.png, id=229, 1246.6575pt x 404.51125pt>
+ [3 <./GUI1_main_1.png>]
+<GUI1_1_2.png, id=228, 1246.6575pt x 404.51125pt>
 File: GUI1_1_2.png Graphic file (type png)
 <use GUI1_1_2.png>
 Package pdftex.def Info: GUI1_1_2.png  used on input line 204.
 (pdftex.def)             Requested size: 469.7591pt x 152.42584pt.
-<GUI1_2_1.png, id=230, 1256.695pt x 405.515pt>
+<GUI1_2_1.png, id=229, 1256.695pt x 405.515pt>
 File: GUI1_2_1.png Graphic file (type png)
 <use GUI1_2_1.png>
 Package pdftex.def Info: GUI1_2_1.png  used on input line 214.
 (pdftex.def)             Requested size: 469.7446pt x 151.5851pt.
-<GUI1_2_2.png, id=231, 1256.695pt x 407.5225pt>
+<GUI1_2_2.png, id=230, 1256.695pt x 407.5225pt>
 File: GUI1_2_2.png Graphic file (type png)
 <use GUI1_2_2.png>
 Package pdftex.def Info: GUI1_2_2.png  used on input line 221.
 (pdftex.def)             Requested size: 469.7446pt x 152.32932pt.
-<GUI2_main.png, id=232, 512.91624pt x 541.02126pt>
+ [4 <./GUI1_1_1.png> <./GUI1_1_2.png> <./GUI1_2_1.png>]
+<GUI2_main.png, id=239, 512.91624pt x 541.02126pt>
 File: GUI2_main.png Graphic file (type png)
 <use GUI2_main.png>
 Package pdftex.def Info: GUI2_main.png  used on input line 229.
 (pdftex.def)             Requested size: 307.75212pt x 324.61525pt.
- [4 <./GUI1_1_2.png> <./GUI1_2_1.png> <./GUI1_2_2.png>]
+ [5 <./GUI1_2_2.png> <./GUI2_main.png>]
 File: GUI2_main.png Graphic file (type png)
 <use GUI2_main.png>
 Package pdftex.def Info: GUI2_main.png  used on input line 255.
 (pdftex.def)             Requested size: 307.75212pt x 324.61525pt.
- [5 <./GUI2_main.png>]
 <GUI2_main_1.png, id=248, 518.93875pt x 545.03625pt>
 File: GUI2_main_1.png Graphic file (type png)
 <use GUI2_main_1.png>
 Package pdftex.def Info: GUI2_main_1.png  used on input line 262.
 (pdftex.def)             Requested size: 311.36565pt x 327.02428pt.
-
-[6]
+ [6]
 <GUI2_main_2.png, id=253, 517.935pt x 543.02875pt>
 File: GUI2_main_2.png Graphic file (type png)
 <use GUI2_main_2.png>
@@ -1260,8 +1260,7 @@ File: GUI2_main_5.png Graphic file (type png)
 <use GUI2_main_5.png>
 Package pdftex.def Info: GUI2_main_5.png  used on input line 290.
 (pdftex.def)             Requested size: 310.16113pt x 327.02428pt.
-
-[10 <./GUI2_main_4.png>]
+ [10 <./GUI2_main_4.png>]
 <GUI2_1_1.png, id=278, 510.90875pt x 552.0625pt>
 File: GUI2_1_1.png Graphic file (type png)
 <use GUI2_1_1.png>
@@ -1279,8 +1278,7 @@ File: GUI2_2_1.png Graphic file (type png)
 <use GUI2_2_1.png>
 Package pdftex.def Info: GUI2_2_1.png  used on input line 320.
 (pdftex.def)             Requested size: 314.37692pt x 330.03554pt.
-
-[13 <./GUI2_1_2.png>]
+ [13 <./GUI2_1_2.png>]
 <GUI2_2_2.png, id=298, 516.93124pt x 554.07pt>
 File: GUI2_2_2.png Graphic file (type png)
 <use GUI2_2_2.png>
@@ -1297,7 +1295,8 @@ File: GUI3_main.png Graphic file (type png)
 <use GUI3_main.png>
 Package pdftex.def Info: GUI3_main.png  used on input line 361.
 (pdftex.def)             Requested size: 313.17241pt x 330.03554pt.
- [16 <./GUI3_main.png>]
+
+[16 <./GUI3_main.png>]
 <GUI3_main_1.png, id=318, 525.965pt x 545.03625pt>
 File: GUI3_main_1.png Graphic file (type png)
 <use GUI3_main_1.png>
@@ -1321,7 +1320,8 @@ File: GUI3_main_4.png Graphic file (type png)
 <use GUI3_main_4.png>
 Package pdftex.def Info: GUI3_main_4.png  used on input line 389.
 (pdftex.def)             Requested size: 310.76338pt x 510.1097pt.
- [20 <./GUI3_main_3.png>]
+
+[20 <./GUI3_main_3.png>]
 <GUI3_main_5.png, id=341, 518.93875pt x 537.00626pt>
 File: GUI3_main_5.png Graphic file (type png)
 <use GUI3_main_5.png>
@@ -1339,7 +1339,8 @@ File: GUI3_1_2.png Graphic file (type png)
 <use GUI3_1_2.png>
 Package pdftex.def Info: GUI3_1_2.png  used on input line 416.
 (pdftex.def)             Requested size: 311.36565pt x 330.03554pt.
- [23 <./GUI3_1_1.png>] [24 <./GUI3_1_2.png>]
+
+[23 <./GUI3_1_1.png>] [24 <./GUI3_1_2.png>]
 Chapter 2.
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/it' tried instead on input line 460.
@@ -1506,7 +1507,7 @@ sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on time-table-assist-tool.pdf (57 pages, 1010167 bytes).
+Output written on time-table-assist-tool.pdf (57 pages, 1011828 bytes).
 PDF statistics:
  758 PDF objects out of 1000 (max. 8388607)
  623 compressed objects within 7 object streams
