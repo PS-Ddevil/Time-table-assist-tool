@@ -18,7 +18,6 @@ Either install all python dependencies using requirment.txt :-
 OR, Install the all python dependencies one by one :-
 
     sudo apt-get install python3-tk
-    python3 main.py
     pip3 install xlwt
     pip3 install xlsxwriter
     pip3 install xlrd
