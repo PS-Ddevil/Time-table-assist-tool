@@ -22,7 +22,7 @@ def read_create():
             for p in range(len(row)):
                 if(row[p]=='C'):    
                     name[p] =name[p].replace("/", "-")
-                    if(os.path.exists("src/tmp/baskets/"+str(name[p]) + ".xlsx")  ):
+                    if(os.path.exists("/src/tmp/baskets/"+str(name[p]) + ".xlsx")  ):
                         wb = openpyxl.load_workbook("src/tmp/baskets/"+str(name[p]) + ".xlsx")
                         pass
                     else:
