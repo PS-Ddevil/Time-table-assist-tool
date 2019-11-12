@@ -6,8 +6,6 @@ from tkinter import filedialog
 import sqlite3
 from PIL import ImageTk
 
-
-
 def TimeTable1():
     os.system("python3 progs/prog1.py")
     print(os.getcwd())

@@ -72,7 +72,7 @@
 
 
 \title{time-table-assist-tool}
-\date{Nov 05, 2019}
+\date{Nov 06, 2019}
 \release{0.0.1}
 \author{Purushottam Sinha}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -92,8 +92,50 @@
 \chapter{\sphinxstylestrong{User Manual}}
 \label{\detokenize{user_manual:user-manual}}\label{\detokenize{user_manual::doc}}
 
-\section{\sphinxstylestrong{Working in GUI \#1}}
-\label{\detokenize{user_manual:working-in-gui-1}}
+\section{\sphinxstylestrong{Setting Up the Project}}
+\label{\detokenize{user_manual:setting-up-the-project}}
+Software requirement:
+
+Either install all python dependencies using requirment.txt :-
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{pip3} \PYG{n}{install} \PYG{o}{\PYGZhy{}}\PYG{n}{r} \PYG{n}{requirements}\PYG{o}{.}\PYG{n}{txt}
+\end{sphinxVerbatim}
+
+OR, Install the all python dependencies one by one :-
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{sudo} \PYG{n}{apt}\PYG{o}{\PYGZhy{}}\PYG{n}{get} \PYG{n}{install} \PYG{n}{python3}\PYG{o}{\PYGZhy{}}\PYG{n}{tk}
+\PYG{n}{python3} \PYG{n}{main}\PYG{o}{.}\PYG{n}{py}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{xlwt}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{xlsxwriter}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{xlrd}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{openpyxl}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{ezodf}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{python}\PYG{o}{\PYGZhy{}}\PYG{n}{docx}
+\PYG{n}{pip3} \PYG{n}{install} \PYG{n}{tkscrolledframe}
+\end{sphinxVerbatim}
+
+Following document are required for a smooth functioning of the applicaion.
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+Elective docs files (need to be save in \sphinxstyleemphasis{src/data/basket\_elective\_docs}. Any other location wont be considered.)
+
+\item {} 
+A file for the courselist i.e all the courses with their respective course code and faculty list being offered in a given semester for the various batches need to be stored (the file has to save in “src/data” in ods format having the name as Courselist.ods, failing to do so will lead to unpredictable malfuntions.)
+
+\item {} 
+In case of any change in the classroom they need to be saved in the prog3.py file at the location \sphinxstyleemphasis{progs/prog3.py}. To get detailed steps refer to FAQ in the end of the this page.
+
+\item {} 
+Follow the step of working with Landing GUI to initialise the required state for working of the application.
+
+\end{enumerate}
+
+
+\section{\sphinxstylestrong{Working in Landing GUI}}
+\label{\detokenize{user_manual:working-in-landing-gui}}
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{GUI0_main}.png}\hspace*{\fill}}
 
 Click on Initialise to make all the required file.
@@ -102,7 +144,7 @@ Click on Initialise to make all the required file.
 
 
 \section{\sphinxstylestrong{Working in GUI \#1}}
-\label{\detokenize{user_manual:id1}}
+\label{\detokenize{user_manual:working-in-gui-1}}
 
 \subsection{\sphinxstyleemphasis{Steps}}
 \label{\detokenize{user_manual:steps}}
@@ -110,13 +152,15 @@ Click on Initialise to make all the required file.
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
-To open the window explicitly type the following code in cmd (Windows) or terminal (Linux)
+To open the window run the following code in cmd (Windows) or terminal (Linux)
 
 \end{enumerate}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{n}{python} \PYG{n}{prog1}\PYG{o}{.}\PYG{n}{py}
+\PYG{n}{python} \PYG{n}{main}\PYG{o}{.}\PYG{n}{py}
 \end{sphinxVerbatim}
+
+and then click on the Time Table Button.
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{1}
@@ -181,18 +225,20 @@ Error notice view
 \label{\detokenize{user_manual:working-in-gui-2}}
 
 \subsection{\sphinxstyleemphasis{Steps}}
-\label{\detokenize{user_manual:id2}}
+\label{\detokenize{user_manual:id1}}
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{GUI2_main}.png}\hspace*{\fill}}
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
-To open the window explicitly type the following code in cmd (Windows) or terminal (Linux)
+To open the window run the following code in cmd (Windows) or terminal (Linux)
 
 \end{enumerate}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{n}{python} \PYG{n}{prog2}\PYG{o}{.}\PYG{n}{py}
+\PYG{n}{python} \PYG{n}{main}\PYG{o}{.}\PYG{n}{py}
 \end{sphinxVerbatim}
+
+and then click on the Slot Selection Button.
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{1}
@@ -245,10 +291,10 @@ Select any one of the slots as per the constraint.
 
 
 \subsection{\sphinxstyleemphasis{Anamolies Management}}
-\label{\detokenize{user_manual:id3}}
+\label{\detokenize{user_manual:id2}}
 
 \subsubsection{Case 1}
-\label{\detokenize{user_manual:id4}}\begin{itemize}
+\label{\detokenize{user_manual:id3}}\begin{itemize}
 \item {} 
 Selecting same slots for two courses in the same basket
 
@@ -265,7 +311,7 @@ Error notice view
 
 
 \subsubsection{Case 2}
-\label{\detokenize{user_manual:id5}}\begin{itemize}
+\label{\detokenize{user_manual:id4}}\begin{itemize}
 \item {} 
 Selecting same slots for a prof in two basket
 
@@ -285,18 +331,20 @@ Error notice view
 \label{\detokenize{user_manual:working-in-gui-3}}
 
 \subsection{\sphinxstyleemphasis{Steps}}
-\label{\detokenize{user_manual:id6}}
+\label{\detokenize{user_manual:id5}}
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{GUI3_main}.png}\hspace*{\fill}}
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
-To open the window explicitly type the following code in cmd (Windows) or terminal (Linux)
+To open the window run the following code in cmd (Windows) or terminal (Linux)
 
 \end{enumerate}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{n}{python} \PYG{n}{prog2}\PYG{o}{.}\PYG{n}{py}
+\PYG{n}{python} \PYG{n}{main}\PYG{o}{.}\PYG{n}{py}
 \end{sphinxVerbatim}
+
+and then click on the Class Selection Button.
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \setcounter{enumi}{1}
@@ -349,10 +397,10 @@ Selected Classroom will we registered. Save on all the courses being assigned a 
 
 
 \subsection{\sphinxstyleemphasis{Anamolies Management}}
-\label{\detokenize{user_manual:id7}}
+\label{\detokenize{user_manual:id6}}
 
 \subsubsection{Case 1}
-\label{\detokenize{user_manual:id8}}\begin{itemize}
+\label{\detokenize{user_manual:id7}}\begin{itemize}
 \item {} 
 Selecting same slots for two courses in the same basket
 
@@ -366,6 +414,44 @@ Error notice view
 \end{itemize}
 
 \noindent{\hspace*{\fill}\sphinxincludegraphics[scale=0.6]{{GUI3_1_2}.png}\hspace*{\fill}}
+
+
+\section{\sphinxstylestrong{FAQs}}
+\label{\detokenize{user_manual:faqs}}
+\sphinxstylestrong{1. How to include new classroom into the application?}
+
+Follow the following steps to include new classrooms into the application:
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+Open the file prog3.py from the location \sphinxstyleemphasis{progs/prog3.py}.
+
+\item {} 
+Find a list of classes defined by the variable “classes”.
+
+\item {} 
+Modify the classlist with the new entries while removing the ones not required(if any).
+
+\item {} 
+Save the changes.
+
+\end{enumerate}
+
+\sphinxstylestrong{2. What is the flow of work in the application?}
+
+Any client is expected to follow the following workflow while operatiing this application.
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\item {} 
+After following the steps defined in the Getting Started section, Move to the main GUI.
+
+\item {} 
+Folow the steps in main GUI opeations.
+
+\item {} 
+Operation in the applicaion should be done in the way that all the courses should be allocated slots, before the classrom are given.
+
+\end{enumerate}
 
 
 \chapter{\sphinxstylestrong{Developer Manual}}
@@ -1287,19 +1373,185 @@ Where X.Y stands for the MAJOR.MINOR release.
 Where X.Y.Z stands for MAJOR.MINOR.PATCH release.
 
 
+\section{\sphinxstyleemphasis{FAQs}}
+\label{\detokenize{developer:faqs}}
+\sphinxstylestrong{1. How to add a new GUI to the project?}
+
+Following steps are to be followed when adding a new GUI to the project:
+1. Initiate a GUI in the prog folder in the root directory.
+\begin{enumerate}
+\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
+\setcounter{enumi}{1}
+\item {} 
+The convention for making a GUI in to name it as progx.py, where x is the next serial number for the program.
+
+\item {} 
+Take reference from the existing GUI to get the information about the import and the writing style for the code.
+
+\item {} 
+Add appropriate comments in the code sections.
+
+\item {} 
+Every GUI need to have a opening link from the the main.py in the root directory.
+
+\item {} 
+Check for the syntax to add in the main.py as defined above in section on working in main.py.
+
+\item {} 
+After appropriate testing, commit the local changes.
+
+\item {} 
+Open a new issue on master repo and on getting the approval from the owner/moderator you may push the code with the referce number of the issue.
+
+\end{enumerate}
+
+\sphinxstylestrong{2. How to work with the function?}
+
+All the function are defined at the path \sphinxstyleemphasis{progs/func}. You can define the funcion in seperate python files and then import it in the program according to your need.
+
+\sphinxstylestrong{3. Where in the data to processed stored in the application?}
+
+All the required files have been stored in \sphinxstyleemphasis{src/data}. You can put the data in the given folder to work upon. In case any new file in generated, they need to be placed in \sphinxstyleemphasis{src/tmp}.
+
+
 \chapter{Contributors}
 \label{\detokenize{contributors:contributors}}\label{\detokenize{contributors::doc}}
 Purushottam Sinha (\sphinxhref{mailto:B17053@students.iitmandi.ac.in}{B17053@students.iitmandi.ac.in})
 
 Deepak Kumar (\sphinxhref{mailto:B17039@students.iitmandi.ac.in}{B17039@students.iitmandi.ac.in})
 
-Vinay Kumar (\sphinxhref{mailto:B17070@students.iitmandi.ac.in}{B17070@students.iitmandi.ac.in})
+Vinay Kumar (\sphinxhref{mailto:B17068@students.iitmandi.ac.in}{B17068@students.iitmandi.ac.in})
 
 Roshan Sharma (\sphinxhref{mailto:B17054@students.iitmandi.ac.in}{B17054@students.iitmandi.ac.in})
 
 
 \chapter{Change Log}
 \label{\detokenize{change:change-log}}\label{\detokenize{change::doc}}
+commit 7727e45de7a637aa6bc2c58929d3a854404dd0c3
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Tue Nov 5 13:30:11 2019 +0530
+\begin{quote}
+
+Documentation Developer Completed, User Manual Completed
+\end{quote}
+
+commit 0e2c6ff73c66ae44eaf0a2d5a9154a0068854629
+Merge: 343844c bde5025
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Tue Nov 5 12:57:36 2019 +0530
+\begin{quote}
+
+Merge pull request \#21 from vinayskywalker/master
+
+error releted to file location resolved
+\end{quote}
+
+commit bde50257524fff7d35a967120330c96a283608dc
+Author: vinayskywalker \textless{}\sphinxhref{mailto:vinaykumar.dakshana17@gmail.com}{vinaykumar.dakshana17@gmail.com}\textgreater{}
+Date:   Tue Nov 5 18:21:48 2019 +0530
+\begin{quote}
+
+error releted to file location resolved
+\end{quote}
+
+commit 2c720cc8a9853b58a9d4417d6cb9b7ff352bde89
+Author: vinayskywalker \textless{}\sphinxhref{mailto:vinaykumar.dakshana17@gmail.com}{vinaykumar.dakshana17@gmail.com}\textgreater{}
+Date:   Tue Nov 5 00:30:52 2019 +0530
+\begin{quote}
+
+some error has resolved
+\end{quote}
+
+commit 343844c66f02d653977a81deefc5702eafa9e4d2
+Merge: 1898ff2 2c720cc
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Mon Nov 4 23:11:22 2019 +0530
+\begin{quote}
+
+Merge pull request \#20 from vinayskywalker/master
+
+some error has resolved
+\end{quote}
+
+commit 1898ff256d5221226b107ab49766475ba4abec9a
+Merge: 627c05e 3439a0d
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Sun Nov 3 11:03:59 2019 +0530
+\begin{quote}
+
+Merge pull request \#19 from vinayskywalker/master
+
+error related files and courses removed
+\end{quote}
+
+commit 3439a0d15c1fc190a090e00c12f435c44767c1d2
+Author: Vinay Kumar \textless{}\sphinxhref{mailto:45215239+vinayskywalker@users.noreply.github.com}{45215239+vinayskywalker@users.noreply.github.com}\textgreater{}
+Date:   Sun Nov 3 09:12:15 2019 +0530
+\begin{quote}
+
+updated readme
+\end{quote}
+
+commit 28a4e97ab0eb23ac43c5f3a9d9df56ee1b28ed41
+Author: vinayskywalker \textless{}\sphinxhref{mailto:vinaykumar.dakshana17@gmail.com}{vinaykumar.dakshana17@gmail.com}\textgreater{}
+Date:   Sun Nov 3 02:45:48 2019 +0530
+\begin{quote}
+
+error related files and courses removed
+\end{quote}
+
+commit 627c05e8635687ab376c5d537ca2d7acb61df446
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Sun Nov 3 00:43:09 2019 +0530
+\begin{quote}
+
+cleaned prog1
+\end{quote}
+
+commit 1950bb03d36a4e95f4b6e5e5c1742d51dc4445d3
+Merge: 5cd0997 84d9370
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Sun Nov 3 00:36:26 2019 +0530
+\begin{quote}
+
+Merge branch ‘master’ of \sphinxurl{https://github.com/PS-Ddevil/Time-table-assist-tool}
+\end{quote}
+
+commit 5cd09973fb57daffd0b4d8766a2c056000bfd4ac
+Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Sun Nov 3 00:34:25 2019 +0530
+\begin{quote}
+
+Completed Developer manual
+\end{quote}
+
+commit 84d9370f0b99f16f36bd7bce5f0c7eb6e93b706a
+Merge: 1a7729d 3c2fc16
+Author: Purushottam Sinha \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
+Date:   Sun Nov 3 00:27:03 2019 +0530
+\begin{quote}
+
+Merge pull request \#18 from deepakjnv880/master
+
+GUI1 updated and IIT Mandi logo added
+\end{quote}
+
+commit 3c2fc16aea454de3a310720ce799a68ed526e35a
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Sun Nov 3 00:13:41 2019 +0530
+\begin{quote}
+
+IIT Mandi logo added
+\end{quote}
+
+commit b7a62608b309aa7e9b59f91ca44acbcba3b45ce6
+Author: deepakjnv880 \textless{}\sphinxhref{mailto:b17039@students.iitmandi.ac.in}{b17039@students.iitmandi.ac.in}\textgreater{}
+Date:   Sun Nov 3 00:13:08 2019 +0530
+\begin{quote}
+
+GUI 1 updated
+\end{quote}
+
 commit 1493e4307eaa027ca98a43c2e5a36741b075533b
 Author: PS-Ddevil \textless{}\sphinxhref{mailto:sinhapurushottam911@gmail.com}{sinhapurushottam911@gmail.com}\textgreater{}
 Date:   Sat Nov 2 14:18:05 2019 +0530
@@ -1963,12 +2215,14 @@ Initial commit
 \label{\detokenize{help:need-help}}\label{\detokenize{help::doc}}
 If you’re having trouble please email \sphinxhref{mailto:b17053@students.iitmandi.ac.in}{b17053@students.iitmandi.ac.in}
 
+In case you want to report any bug, feel free to raise a issue in the github repo for the project.
+
 
 \chapter{License}
 \label{\detokenize{license:license}}\label{\detokenize{license::doc}}
 The MIT License (MIT)
 
-Copyright \textless{}YEAR\textgreater{} \textless{}COPYRIGHT HOLDER\textgreater{}
+Copyright 2019 , Purushottam Sinha
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

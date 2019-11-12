@@ -18,6 +18,7 @@ v = StringVar(frame1)
 lists=[]
 def DropDown():
     global lists,v
+    lists.sort()
     v.set("Select File")
     w = ttk.Combobox(frame1, textvariable=v, value=lists)
     w.grid(row=1,column=0,columnspan=3,sticky=W+E+N+S)
@@ -77,17 +78,7 @@ def ConstraintCheck(var,i,name,focus,*args):
                 
                 return
         wb.save(str(os.path.join(file_path, file)))
-
-    for file in lists:
-        if(file==v.get()):
-            continue
-        wb = openpyxl.load_workbook(str(os.path.join(file_path, file)))
-        ws=wb.active
-        for k in range(2,ws.max_row+1):  
-            if ws.cell(k,1).value==course:
-                ws.cell(k,8).value=var.get()  
-        wb.save(str(os.path.join(file_path, file)))
-
+       
     wb = openpyxl.load_workbook(str(os.path.join(file_path, v.get())))
     ws = wb.active
     
@@ -148,9 +139,9 @@ def DialogBox():
        global file_path
        
        global lists, v
-       print("--------------------1")
+    #    print("--------------------1")
        a=str(os.path.join(file_path, "course_faculty_main.xlsx"))
-       print("--------------------2")
+    #    print("--------------------2")
        wb = openpyxl.load_workbook(a)
        
        ws = wb.active
@@ -163,13 +154,11 @@ def DialogBox():
        print(os.listdir(file_path))
        for file in os.listdir(file_path):
            if file.endswith('.xlsx') and file!=".xlsx" and file!="course_faculty_main.xlsx"  and file!='course_faculty_optional.xlsx':
-               print(file)
+            #    print(file)
                a=str(os.path.join(file_path, file))
                lists.append(file)
             #    print(a)
                wb = openpyxl.load_workbook(a)
-
-               print("--------------------4")
                ws = wb.active
                if ws.cell(3,8).value is None :
                     ws.cell(1,7).value="Faculty name"
@@ -180,10 +169,8 @@ def DialogBox():
                                 ws.cell(i,7).value=faculty[j]
                                 break
                wb.save(a)
-       lists.sort()
        DropDown()
 B = Button(frame1, text ="Start", command = DialogBox)
-print("0000000000000000000000")
 B.grid(row=0,column=0,columnspan=3,sticky=W+E+N+S)
 B.config(width=45)
 
