@@ -28,18 +28,37 @@ def DropDown():
 vars = []
 def ConstraintCheck(var,i,name,focus,*args):
     global file_path
+    if(v.get()!="left_over.xlsx"):
+        for widget in frame2.winfo_children():
+            widget.config(bg='lightgray')
+        j=2
+        for widget in frame2.winfo_children():
+            if(widget.cget("text")=="Slot A" or widget.cget("text")=="Slot B" or widget.cget("text")=="Slot C" or widget.cget("text")=="Slot D" or widget.cget("text")=="Slot E" or widget.cget("text")=="Slot F" or widget.cget("text")=="Slot G" or widget.cget("text")=="Slot H" or  widget.cget("text")=="No Slots" ):
+                # print(j,i,var.get()[5],widget.cget("text")[5],"    sdjfhjds")
+                if(widget.cget("text")==var.get() and j!=i):
+                    widget.config(bg="RED")
+                    # print("dhsfhdjsgfh")
+                j+=1
+        
+    
+                   
     wb = openpyxl.load_workbook(str(os.path.join(file_path, v.get())))
     ws = wb.active
-    print(ws.cell(i+1,8).value,ws.cell(i,8).value,i,v.get(),file_path)
+    # print(ws.cell(i+1,8).value,ws.cell(i,8).value,i,v.get(),file_path)
     j=0
-    for j in range(2,ws.max_row+1):
-        c1=ws.cell(j,8)
-        if i==j:
-            continue
-        if c1.value==var.get():
-            messagebox.showerror("Error", var.get() + " is twice time and it will not be saved so please change ") 
-            var.set(ws.cell(i,8).value)
-            return
+    print(v.get())
+    print("left_over.xlsx")
+    if(v.get()!="left_over.xlsx"):
+        for j in range(2,ws.max_row+1):
+            c1=ws.cell(j,8)
+            if i==j:
+                continue
+            if c1.value==var.get():
+                messagebox.showerror("Error", var.get() + " is twice time and it will not be saved so please change ") 
+                var.set(ws.cell(i,8).value)
+                return
+        print("dfdhg hfgdhfdfdfasfdsf")
+    print("dfjd sfd                                  dfhjdgfhdgh fhdhfgdhfjs")
     wb.save(str(os.path.join(file_path, v.get())))
     prof=ws.cell(i,7).value
     slot=ws.cell(i,8).value
@@ -78,8 +97,15 @@ def ConstraintCheck(var,i,name,focus,*args):
         
     wb.save(str(os.path.join(file_path, v.get())))
 
-frame2=Frame(master2,bd=10,height=500,padx=10,pady=10,width=1500)
-frame2.pack()
+sf = ScrolledFrame(master2, width=640, height=480)
+sf.pack(side="top", expand=1, fill="both")
+
+# Bind the arrow keys and scroll wheel
+sf.bind_arrow_keys(master2)
+sf.bind_scroll_wheel(master2)
+
+# Create a frame within the ScrolledFrame
+frame2 = sf.display_widget(Frame)
 
 def DisplayGUI(*args):
     global file_path
