@@ -105,10 +105,4 @@ def final_time_table():
 
     wb.save("Courses-Slot-wise" + ".xlsx")
 
-
-
-
-    
-
-
 final_time_table()   
