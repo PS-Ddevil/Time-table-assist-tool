@@ -57,8 +57,8 @@ def ConstraintCheck(var,i,name,focus,*args):
                 messagebox.showerror("Error", var.get() + " is twice time and it will not be saved so please change ") 
                 var.set(ws.cell(i,8).value)
                 return
-        print("dfdhg hfgdhfdfdfasfdsf")
-    print("dfjd sfd                                  dfhjdgfhdgh fhdhfgdhfjs")
+        # print("dfdhg hfgdhfdfdfasfdsf")
+    # print("dfjd sfd                                  dfhjdgfhdgh fhdhfgdhfjs")
     wb.save(str(os.path.join(file_path, v.get())))
     prof=ws.cell(i,7).value
     slot=ws.cell(i,8).value
@@ -79,14 +79,26 @@ def ConstraintCheck(var,i,name,focus,*args):
         wb.save(str(os.path.join(file_path, file)))
 
     for file in lists:
+        # print("2222222222222222222222222222222222222333333333333333333333333333333333333")
         if(file==v.get()):
             continue
         wb = openpyxl.load_workbook(str(os.path.join(file_path, file)))
         ws=wb.active
         for k in range(2,ws.max_row+1):  
             if ws.cell(k,1).value==course:
+                # print("2222222222222222222222222222222222222222222222222")
+                for j in range(2,ws.max_row+1):
+                    c1=ws.cell(j,8)
+                    if k==j:
+                        continue
+                    if c1.value==var.get():
+                        messagebox.showerror("Error", "In file:"+file + " is twice time and it will not be saved so please change ") 
+                        var.set(ws.cell(i,8).value)
+                        return
+                # print("dfdhg hfgdhfdfdfasfdsf")
                 ws.cell(k,8).value=var.get()  
         wb.save(str(os.path.join(file_path, file)))
+
 
     wb = openpyxl.load_workbook(str(os.path.join(file_path, v.get())))
     ws = wb.active
