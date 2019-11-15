@@ -37,6 +37,8 @@
 <div class="section" id="setting-up-the-project">
 <h2><strong>Setting Up the Project</strong><a class="headerlink" href="#setting-up-the-project" title="Permalink to this headline">¶</a></h2>
 <p>Software requirement:</p>
+<p><strong>NOTE:</strong></p>
+<p><strong>Ensure Python3 in installed in your system. In case both version of python in installed then use python3 in place of python. Otherwise, if python3 is default then use python. Also use pip ot pip3 accordingly</strong></p>
 <p>Either install all python dependencies using requirment.txt :-</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
@@ -58,14 +60,27 @@
 <li><p>Elective docs files (need to be save in <em>src/data/basket_elective_docs</em>. Any other location wont be considered.)</p></li>
 <li><p>A file for the courselist i.e all the courses with their respective course code and faculty list being offered in a given semester for the various batches need to be stored (the file has to save in “src/data” in ods format having the name as Courselist.ods, failing to do so will lead to unpredictable malfuntions.)</p></li>
 <li><p>In case of any change in the classroom they need to be saved in the prog3.py file at the location <em>progs/prog3.py</em>. To get detailed steps refer to FAQ in the end of the this page.</p></li>
+<li><p>Create a folder in src/tmp with the name baskets.</p></li>
 <li><p>Follow the step of working with Landing GUI to initialise the required state for working of the application.</p></li>
 </ol>
 </div>
 <div class="section" id="working-in-landing-gui">
 <h2><strong>Working in Landing GUI</strong><a class="headerlink" href="#working-in-landing-gui" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>To open the window run the following code in cmd (Windows) or terminal (Linux)</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p><strong>NOTE: In case you use python3 to use python3 version then run python3 main3.py</strong></p>
 <a class="reference internal image-reference" href="_images/GUI0_main.png"><img alt="_images/GUI0_main.png" class="align-center" src="_images/GUI0_main.png" style="width: 486.59999999999997px; height: 502.2px;" /></a>
-<p>Click on Initialise to make all the required file.</p>
+<ol class="arabic simple" start="2">
+<li><p>Click on Initialise to make all the required file. Wait till the window shown below appears.</p></li>
+</ol>
 <a class="reference internal image-reference" href="_images/GUI0_main_1.png"><img alt="_images/GUI0_main_1.png" class="align-center" src="_images/GUI0_main_1.png" style="width: 458.4px; height: 360.59999999999997px;" /></a>
+<ol class="arabic simple" start="3">
+<li><p>The window have all the course which has multiple professor. By default the first professor is assumed as the main professor. To change that you can edit them in src/tmp/baskets/course_faculty_optional.xlsx</p></li>
+</ol>
 </div>
 <div class="section" id="working-in-gui-1">
 <h2><strong>Working in GUI #1</strong><a class="headerlink" href="#working-in-gui-1" title="Permalink to this headline">¶</a></h2>
@@ -79,6 +94,7 @@
 </pre></div>
 </div>
 <p>and then click on the Time Table Button.</p>
+<p><strong>NOTE: In case you use python3 to use python3 version then run python3 main3.py</strong></p>
 <ol class="arabic simple" start="2">
 <li><p>Select the slots from drop down</p></li>
 </ol>
@@ -129,6 +145,7 @@
 </pre></div>
 </div>
 <p>and then click on the Slot Selection Button.</p>
+<p><strong>NOTE: In case you use python3 to use python3 version then run python3 main3.py</strong></p>
 <ol class="arabic simple" start="2">
 <li><p>Select the slots from drop down</p></li>
 </ol>
@@ -195,6 +212,7 @@
 </pre></div>
 </div>
 <p>and then click on the Class Selection Button.</p>
+<p><strong>NOTE: In case you use python3 to use python3 version then run python3 main3.py</strong></p>
 <ol class="arabic simple" start="2">
 <li><p>Select the Classrooms</p></li>
 </ol>
@@ -255,6 +273,19 @@
 <li><p>Folow the steps in main GUI opeations.</p></li>
 <li><p>Operation in the applicaion should be done in the way that all the courses should be allocated slots, before the classrom are given.</p></li>
 </ol>
+<p><strong>3. How to add a new basket after initialisation is already done?</strong></p>
+<p>Follow the following steps to make a new basket.</p>
+<ol class="arabic simple">
+<li><p>Go to src/tmp/baskets/ and create a new excel sheet.</p></li>
+<li><p>Open any already created basket and use the same convention to make the new basket.</p></li>
+<li><p>Rename the new excel sheet as the basket name.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>In case of elective name it as the minor it belong (Suggestion). The name should be unique.</p></li>
+<li><p>In case of core course list, use the semester and branch to uniquely identify it.</p></li>
+</ul>
+</div></blockquote>
 </div>
 </div>
 

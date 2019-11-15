@@ -7,6 +7,10 @@
 
 Software requirement:
 
+**NOTE:**
+
+**Ensure Python3 in installed in your system. In case both version of python in installed then use python3 in place of python. Otherwise, if python3 is default then use python. Also use pip ot pip3 accordingly**
+
 Either install all python dependencies using requirment.txt :-
 
 .. code-block:: python
@@ -35,23 +39,34 @@ Following document are required for a smooth functioning of the applicaion.
 
 3. In case of any change in the classroom they need to be saved in the prog3.py file at the location *progs/prog3.py*. To get detailed steps refer to FAQ in the end of the this page.
 
-4. Follow the step of working with Landing GUI to initialise the required state for working of the application.
+4. Create a folder in src/tmp with the name baskets.
+
+5. Follow the step of working with Landing GUI to initialise the required state for working of the application.
 
 
 **Working in Landing GUI**
 ============================
+
+1. To open the window run the following code in cmd (Windows) or terminal (Linux)
+
+.. code-block:: python
+
+    python main.py
+
+**NOTE: In case you use python3 to use python3 version then run python3 main3.py**
 
 .. image:: img/GUI0_main.png
     :scale: 60%
     :align: center
 
 
-Click on Initialise to make all the required file.
+2. Click on Initialise to make all the required file. Wait till the window shown below appears.
 
 .. image:: img/GUI0_main_1.png
     :scale: 60%
     :align: center
 
+3. The window have all the course which has multiple professor. By default the first professor is assumed as the main professor. To change that you can edit them in src/tmp/baskets/course_faculty_optional.xlsx
 
 **Working in GUI #1**
 ======================
@@ -70,6 +85,8 @@ Click on Initialise to make all the required file.
     python main.py
 
 and then click on the Time Table Button.
+
+**NOTE: In case you use python3 to use python3 version then run python3 main3.py**
 
 2. Select the slots from drop down
 
@@ -134,6 +151,8 @@ Case 2
     python main.py
 
 and then click on the Slot Selection Button.
+
+**NOTE: In case you use python3 to use python3 version then run python3 main3.py**
 
 2. Select the slots from drop down
 
@@ -224,6 +243,8 @@ Case 2
 
 and then click on the Class Selection Button.
 
+**NOTE: In case you use python3 to use python3 version then run python3 main3.py**
+
 2. Select the Classrooms
 
 * The window opens up as a seperate pop up. Click on the Start button.
@@ -303,3 +324,17 @@ Any client is expected to follow the following workflow while operatiing this ap
 2. Folow the steps in main GUI opeations.
 
 3. Operation in the applicaion should be done in the way that all the courses should be allocated slots, before the classrom are given.  
+
+**3. How to add a new basket after initialisation is already done?**
+
+Follow the following steps to make a new basket.
+
+1. Go to src/tmp/baskets/ and create a new excel sheet.
+
+2. Open any already created basket and use the same convention to make the new basket.
+
+3. Rename the new excel sheet as the basket name. 
+
+ * In case of elective name it as the minor it belong (Suggestion). The name should be unique.
+
+ * In case of core course list, use the semester and branch to uniquely identify it.
