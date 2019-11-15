@@ -7,22 +7,22 @@ import sqlite3
 from PIL import ImageTk
 
 def TimeTable1():
-    os.system("python progs/prog1.py")
+    os.system("python3 progs/prog1.py")
     print(os.getcwd())
 def TimeTable2():
-    os.system("python progs/func/final_time_table.py")
+    os.system("python3 progs/func/final_time_table.py")
     print(os.getcwd())
 def SlotSlection():
-    os.system("python progs/prog2.py")
+    os.system("python3 progs/prog2.py")
     print(os.getcwd())
 def ClassSelection():
-    os.system("python progs/prog3.py")
+    os.system("python3 progs/prog3.py")
 def Initialise():
-    os.system("python progs/func/extract_docxs.py")
-    os.system("python progs/func/read_create.py")
-    os.system("python progs/func/read_create_E.py")
-    os.system("python progs/func/extract_ods.py")
-    os.system("python progs/func/multi_faculty.py")
+    os.system("python3 progs/func/extract_docxs.py")
+    os.system("python3 progs/func/read_create.py")
+    os.system("python3 progs/func/read_create_E.py")
+    os.system("python3 progs/func/extract_ods.py")
+    os.system("python3 progs/func/multi_faculty.py")
 master=Tk()
 master.title("Main")
 master.geometry("790x790+100+100")
