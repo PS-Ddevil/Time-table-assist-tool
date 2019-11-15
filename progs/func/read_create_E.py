@@ -34,7 +34,7 @@ def read_create():
                 if file.endswith('.xlsx') and file!=".xlsx" and file!="course_faculty_main.xlsx"  and file!='course_faculty_optional.xlsx':
                     
                     a=str(os.path.join(file_path, file))
-                    if(check==1):
+                    if(check==1 or row[1] != ""):
                         break
                     wb = openpyxl.load_workbook(a)
                     ws = wb.worksheets[0]

@@ -30,6 +30,7 @@ def parse_all_docxs_table():
                     fname=tuple(text)[0]+'.xlsx'
                     fname=fname.replace(" ", "_")
                     fname=fname.replace("/", "_")
+                    fname=fname.replace(":", "_")
                     fname='./src/tmp/baskets/'+fname
                     if str(os.path.isfile(fname))==False:
                         print(os.path.isfile(fname))
